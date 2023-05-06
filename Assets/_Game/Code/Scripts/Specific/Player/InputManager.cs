@@ -6,6 +6,13 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour {
 
+    public enum LookAtControls {
+        Mouse,
+        Controller
+    }
+
+    public static LookAtControls LookAtControl = LookAtControls.Mouse;
+
     [SerializeField] private MovementController _mc;
     [SerializeField] private WeaponsManager _wm;
     [SerializeField] private Laser _laser;
@@ -34,11 +41,13 @@ public class InputManager : MonoBehaviour {
     private void Look_Mouse(InputAction.CallbackContext obj)
     {
         _lookToward.LookAtMouse(obj.ReadValue<Vector2>());
+        LookAtControl = LookAtControls.Mouse;
     }
 
     private void Look_Gamepad(InputAction.CallbackContext obj)
     {
         _lookToward.LookAtDirection(obj.ReadValue<Vector2>());
+        LookAtControl = LookAtControls.Controller;
     }
 
     private void Laser_performed(InputAction.CallbackContext obj)

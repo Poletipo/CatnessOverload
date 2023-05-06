@@ -70,11 +70,11 @@ public class ZombieEnemy : MonoBehaviour {
 
     private void OnDeath()
     {
-        GameObject coin = PoolManager.GetPoolObject(Coin);
+        GameObject coin = GameManager.Instance.PoolManager.GetPoolObject(Coin);
         coin.GetComponent<Coin>().Setup(transform.position, Quaternion.identity);
 
         StencilSpawner.SpawnStencil(BurnMark, 1.5f, new Vector3(transform.position.x, 0.1f, transform.position.z), Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
-        GameObject explosion = PoolManager.GetPoolObject(Explosion);
+        GameObject explosion = GameManager.Instance.PoolManager.GetPoolObject(Explosion);
         explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
 
 

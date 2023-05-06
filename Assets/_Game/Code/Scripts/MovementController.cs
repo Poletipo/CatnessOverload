@@ -1,8 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MovementController : MonoBehaviour {
+
+    public Action OnDirectionChanged;
 
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private float _speed = 5;
@@ -11,7 +14,13 @@ public class MovementController : MonoBehaviour {
 
     public Vector2 MoveInput {
         get { return _moveInput; }
-        set { _moveInput = value; }
+        set {
+
+            if (_moveInput != value) {
+                OnDirectionChanged?.Invoke();
+            }
+            _moveInput = value;
+        }
     }
 
     Vector3 _direction = new Vector3();

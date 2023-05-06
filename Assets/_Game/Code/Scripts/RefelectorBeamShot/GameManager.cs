@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance {
         get {
             if (_instance == null) {
-
+                Debug.Log("Creation gamemanager");
                 GameObject gameManagerGameObject = Resources.Load<GameObject>("GameManager");
                 GameObject managerObject = Instantiate(gameManagerGameObject);
                 _instance = managerObject.GetComponent<GameManager>();
@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public PoolManager PoolManager { get; private set; }
     public GameObject Player { get; private set; }
     public GameObject CameraObject { get; private set; }
     public AudioSource AudioManager { get; private set; }
@@ -43,10 +44,8 @@ public class GameManager : MonoBehaviour {
 
     private void OnSceneLoaded()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
-        GameUI = GameObject.FindGameObjectWithTag("GameUI").GetComponent<GameUI>();
-        PauseUI = GameObject.Find("PauseUI").GetComponent<PauseUI>();
-        AudioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>();
+        PoolManager = transform.Find("PoolManager").GetComponent<PoolManager>();
+        AudioManager = transform.Find("AudioManager").GetComponent<AudioSource>();
         CameraObject = Camera.main.gameObject;
     }
 

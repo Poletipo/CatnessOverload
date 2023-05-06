@@ -108,7 +108,7 @@ public class Spawner : MonoBehaviour {
             spawnPosition = RandomPointInBounds(spawnBounds);
         }
 
-        GameObject cat = PoolManager.GetPoolObject(SpawnedObject);
+        GameObject cat = GameManager.Instance.PoolManager.GetPoolObject(SpawnedObject);
         int catHp = HealthStart + Mathf.FloorToInt(_currentGameTime / HealthTimeMuliplier) * HealthAddition;
         cat.GetComponent<ZombieEnemy>().Setup(spawnPosition, Quaternion.identity, catHp);
 

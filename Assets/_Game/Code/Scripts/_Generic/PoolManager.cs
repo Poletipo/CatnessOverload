@@ -6,13 +6,12 @@ public class PoolManager : MonoBehaviour {
 
     private static Dictionary<GameObject, List<GameObject>> PooledList;
 
-
-    private void Start()
+    private void Awake()
     {
         PooledList = new Dictionary<GameObject, List<GameObject>>();
     }
 
-    public static GameObject GetPoolObject(GameObject spawneObject)
+    public GameObject GetPoolObject(GameObject spawneObject)
     {
         if (!PooledList.ContainsKey(spawneObject)) {
             PooledList.Add(spawneObject, new List<GameObject>());

@@ -98,7 +98,7 @@ public class ReflectorBullet : MonoBehaviour {
 
         _direction = Vector3.Reflect(_direction, hit.normal).normalized;
 
-        GameObject sparks = PoolManager.GetPoolObject(ImpactVFX);
+        GameObject sparks = GameManager.Instance.PoolManager.GetPoolObject(ImpactVFX);
         sparks.GetComponent<DestroyVFX>().Setup(hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));
 
         if (UnityEngine.Random.Range(0, 100) < TargetingPercent) {

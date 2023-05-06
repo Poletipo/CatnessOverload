@@ -1,53 +1,56 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LookToward : MonoBehaviour {
 
-    [SerializeField] Transform _transform;
     [SerializeField] float _angleOffset = 0;
     [SerializeField] float _rotationSpeed;
     private Plane _plane = new Plane(Vector3.up, 0);
+    private Quaternion _lookAtRotation;
 
+    private Vector3 _worldMousePosition;
 
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (InputManager.LookAtControl == InputManager.LookAtControls.Mouse) {
+            UpdateRotation();
+        }
+    }
 
+    private void UpdateRotation()
+    {
+        Vector3 localMousePosition = _worldMousePosition - transform.position;
+
+        float desiredAngle = Mathf.Atan2(localMousePosition.z, -localMousePosition.x) * Mathf.Rad2Deg;
+        _lookAtRotation = Quaternion.AngleAxis(desiredAngle - _angleOffset, Vector3.up);
+        //_lookAtRotation = Quaternion.RotateTowards(transform.rotation,
+        //Quaternion.AngleAxis(desiredAngle - _angleOffset, Vector3.down), _rotationSpeed);
+        transform.rotation = _lookAtRotation;
     }
 
     public void LookAtDirection(Vector2 direction)
     {
         float desiredAngle = Mathf.Atan2(direction.y, -direction.x) * Mathf.Rad2Deg;
-
-
-
-        Quaternion rotation = Quaternion.RotateTowards(_transform.rotation, Quaternion.AngleAxis(desiredAngle, Vector3.up), _rotationSpeed);
-
-
-        _transform.rotation = rotation;// Quaternion.AngleAxis(desiredAngle - 90, Vector3.up);
+        _lookAtRotation = Quaternion.RotateTowards(transform.rotation, Quaternion.AngleAxis(desiredAngle, Vector3.up), _rotationSpeed);
+        transform.rotation = _lookAtRotation;// Quaternion.AngleAxis(desiredAngle - 90, Vector3.up);
     }
 
 
 
     public void LookAtMouse(Vector2 mousePosition)
     {
-        Vector3 worldMousePosition;
         float distance;
         Ray ray = Camera.main.ScreenPointToRay(mousePosition);
         if (_plane.Raycast(ray, out distance)) {
-            worldMousePosition = ray.GetPoint(distance);
-
-            Vector3 localMousePosition = worldMousePosition - transform.position;
-
-            float lookAtAngle = Mathf.Atan2(localMousePosition.z, localMousePosition.x) * Mathf.Rad2Deg;
-            _transform.rotation = Quaternion.AngleAxis(lookAtAngle - _angleOffset, Vector3.down);
+            _worldMousePosition = ray.GetPoint(distance);
         }
     }
 

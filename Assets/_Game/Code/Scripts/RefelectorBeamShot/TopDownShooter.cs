@@ -22,18 +22,9 @@ public class TopDownShooter : MonoBehaviour {
         }
     }
 
-    public bool InputEnabled = true;
-
-    public GameObject AimFocus;
-    public GameObject MoveFocus;
-
-    public Transform Wheels;
 
     public GameObject Explosion;
     public ParticleSystem Smoke;
-
-    private Vector3 _controllerDir;
-    private Vector3 _moveDirection;
 
     private Health health;
 
@@ -82,8 +73,6 @@ public class TopDownShooter : MonoBehaviour {
     private async void OnDeath()
     {
         IsDead = true;
-        AimFocus.transform.position = transform.position;
-        MoveFocus.transform.position = transform.position;
 
         GetComponent<Animation>().Play();
 
@@ -98,9 +87,7 @@ public class TopDownShooter : MonoBehaviour {
 
     void Update()
     {
-        if (!IsDead && InputEnabled) {
-            Move();
-            Look();
+        if (!IsDead) {
 
             healthIntervalTimer += Time.deltaTime;
 
@@ -115,44 +102,6 @@ public class TopDownShooter : MonoBehaviour {
             }
         }
 
-    }
-
-    private void Move()
-    {
-
-        _moveDirection.x = Input.GetAxisRaw("Horizontal");
-        _moveDirection.z = Input.GetAxisRaw("Vertical");
-        _moveDirection.Normalize();
-
-        if (_moveDirection.magnitude > 0) {
-            Wheels.rotation = Quaternion.Lerp(Wheels.rotation, Quaternion.LookRotation(_moveDirection, Vector3.up), 10 * Time.deltaTime);
-        }
-
-        MoveFocus.transform.position = Vector3.Lerp(MoveFocus.transform.position, (transform.position + _moveDirection * 5f), 8f * Time.deltaTime);
-    }
-
-    private void Look()
-    {
-
-        _controllerDir.x = -Input.GetAxisRaw("RightStickX");
-        _controllerDir.y = Input.GetAxisRaw("RightStickY");
-
-        if (_controllerDir.magnitude > 0) {
-            isController = true;
-        }
-        else if (Input.GetAxisRaw("Mouse X") > 0 || Input.GetAxisRaw("Mouse Y") > 0) {
-            isController = false;
-        }
-
-        AimFocus.transform.position = transform.position + _controllerDir.normalized * _controllerDir.magnitude;
-
-        if (isController && _controllerDir.magnitude > 0) {
-            Vector3 mousePosition = _controllerDir;
-
-
-            float lookAtAngle = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.up);
-        }
     }
 
     public bool Pay(int cost)
