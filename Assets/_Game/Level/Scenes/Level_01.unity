@@ -130,12 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2267443074874994800, guid: c1c4c4fa0ec79504da56e9c7695737c8,
-        type: 3}
-      propertyPath: _lookToward
-      value: 
-      objectReference: {fileID: 6943428839134730313, guid: c1c4c4fa0ec79504da56e9c7695737c8,
-        type: 3}
+    - target: {fileID: 373795201, guid: c1c4c4fa0ec79504da56e9c7695737c8, type: 3}
+      propertyPath: _groundOffset
+      value: 1.287
+      objectReference: {fileID: 0}
     - target: {fileID: 7741046365085364626, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}
       propertyPath: m_Name

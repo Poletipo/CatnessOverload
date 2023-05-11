@@ -7,7 +7,8 @@ public class LookToward : MonoBehaviour {
 
     [SerializeField] float _angleOffset = 0;
     [SerializeField] float _rotationSpeed;
-    private Plane _plane = new Plane(Vector3.up, 0);
+    [SerializeField] float _groundOffset = 0;
+    private Plane _plane;
     private Quaternion _lookAtRotation;
 
     private Vector3 _worldMousePosition;
@@ -15,6 +16,7 @@ public class LookToward : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
+        _plane = new Plane(Vector3.up, -_groundOffset);
     }
 
     // Update is called once per frame

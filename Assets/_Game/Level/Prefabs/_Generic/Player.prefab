@@ -195,7 +195,7 @@ MonoBehaviour:
   _mc: {fileID: 1903713549177209950}
   _wm: {fileID: 5057252073005344487}
   _laser: {fileID: 787768681}
-  _lookToward: {fileID: 0}
+  _lookToward: {fileID: 373795201}
 --- !u!1 &1309811065219037261
 GameObject:
   m_ObjectHideFlags: 0
