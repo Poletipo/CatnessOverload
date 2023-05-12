@@ -71,6 +71,15 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""87d2949d-ad86-41b2-823b-f09436636bd3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -379,6 +388,28 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""LookMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""122fa6ba-a8db-4779-ae62-e7d8a815bb74"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""88b6b338-5c4b-48f0-ba9a-ef75b19da42b"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -971,6 +1002,7 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
         m_Player_LookMouse = m_Player.FindAction("LookMouse", throwIfNotFound: true);
         m_Player_PrimaryFire = m_Player.FindAction("PrimaryFire", throwIfNotFound: true);
         m_Player_Laser = m_Player.FindAction("Laser", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1049,6 +1081,7 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
     private readonly InputAction m_Player_LookMouse;
     private readonly InputAction m_Player_PrimaryFire;
     private readonly InputAction m_Player_Laser;
+    private readonly InputAction m_Player_Pause;
     public struct PlayerActions
     {
         private @CatnessOverloadInputs m_Wrapper;
@@ -1058,6 +1091,7 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
         public InputAction @LookMouse => m_Wrapper.m_Player_LookMouse;
         public InputAction @PrimaryFire => m_Wrapper.m_Player_PrimaryFire;
         public InputAction @Laser => m_Wrapper.m_Player_Laser;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1082,6 +1116,9 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
             @Laser.started += instance.OnLaser;
             @Laser.performed += instance.OnLaser;
             @Laser.canceled += instance.OnLaser;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1101,6 +1138,9 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
             @Laser.started -= instance.OnLaser;
             @Laser.performed -= instance.OnLaser;
             @Laser.canceled -= instance.OnLaser;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1288,6 +1328,7 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
         void OnLookMouse(InputAction.CallbackContext context);
         void OnPrimaryFire(InputAction.CallbackContext context);
         void OnLaser(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

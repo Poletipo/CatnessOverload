@@ -11,8 +11,6 @@ public class TopDownShooter : MonoBehaviour {
     public float healthInterval = 1;
     public float healthIntervalTimer = 1;
 
-    private bool isController = false;
-
     private bool _isDead;
 
     public bool IsDead {

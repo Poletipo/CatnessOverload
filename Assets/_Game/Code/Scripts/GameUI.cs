@@ -62,12 +62,16 @@ public class GameUI : MonoBehaviour {
     {
         _player = GameManager.Instance.Player;
 
-        playerHealth = _player.GetComponent<Health>();
-        playerHealth.OnHpChanged += OnHpChanged;
-        playerHealth.OnDeath += OnDeath;
+        if (_player != null) {
 
-        playerTopDownShooter = _player.GetComponent<TopDownShooter>();
-        playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
+            playerHealth = _player.GetComponent<Health>();
+            playerHealth.OnHpChanged += OnHpChanged;
+            playerHealth.OnDeath += OnDeath;
+
+            playerTopDownShooter = _player.GetComponent<TopDownShooter>();
+            playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
+        }
+
 
         HealthOriginPosition = HealthOrigin.position;
     }

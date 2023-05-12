@@ -36,6 +36,14 @@ public class InputManager : MonoBehaviour {
 
         _inputs.Player.Laser.performed += Laser_performed;
 
+        _inputs.Player.Pause.performed += Pause_performed;
+
+
+    }
+
+    private void Pause_performed(InputAction.CallbackContext obj)
+    {
+        PauseManager.PauseGame();
     }
 
     private void Look_Mouse(InputAction.CallbackContext obj)
@@ -78,6 +86,8 @@ public class InputManager : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        if (LookAtControl == LookAtControls.Mouse) {
+            _lookToward.LookAtDirection(_inputs.Player.LookMouse.ReadValue<Vector2>());
+        }
     }
 }
