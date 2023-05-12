@@ -1689,8 +1689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc19eef83df300a45ade4741141a118b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 1
-  position: {x: 0, y: 0, z: 0}
 --- !u!23 &99328591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18999,11 +18997,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4d4a87eed0f37849a87c48fa5494ef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetOffset: {fileID: 1284901196}
-  targetFocus:
-  - {fileID: 1996390623}
-  - {fileID: 99328589}
-  smoothSpeed: 0.1
 --- !u!114 &1404880558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25855,8 +25848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc19eef83df300a45ade4741141a118b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priority: 0.831
-  position: {x: 0, y: 0, z: 0}
 --- !u!23 &1996390625
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28047,16 +28038,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1648316881}
     m_Modifications:
-    - target: {fileID: 7741046365085364617, guid: c1c4c4fa0ec79504da56e9c7695737c8,
-        type: 3}
-      propertyPath: AimFocus
-      value: 
-      objectReference: {fileID: 1996390622}
-    - target: {fileID: 7741046365085364617, guid: c1c4c4fa0ec79504da56e9c7695737c8,
-        type: 3}
-      propertyPath: MoveFocus
-      value: 
-      objectReference: {fileID: 99328588}
     - target: {fileID: 7741046365085364617, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}
       propertyPath: _cameraShake

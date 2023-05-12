@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance {
         get {
             if (_instance == null) {
-                Debug.Log("Creation gamemanager");
                 GameObject gameManagerGameObject = Resources.Load<GameObject>("GameManager");
                 GameObject managerObject = Instantiate(gameManagerGameObject);
                 _instance = managerObject.GetComponent<GameManager>();
