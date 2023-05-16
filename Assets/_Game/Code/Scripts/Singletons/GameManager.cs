@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour {
 
@@ -22,13 +23,19 @@ public class GameManager : MonoBehaviour {
     }
 
     public PoolManager PoolManager { get; private set; }
-    public GameObject Player { get; private set; }
     public GameObject CameraObject { get; private set; }
     public AudioSource AudioManager { get; private set; }
     public GameUI GameUI { get; private set; }
     public PauseUI PauseUI { get; private set; }
+    Factory[] factories;
 
     public bool FirstTimeSession = true;
+
+    public void Create()
+    {
+        Debug.Log("Try to create GameManager");
+    }
+
 
     private void Initialize()
     {
@@ -45,6 +52,12 @@ public class GameManager : MonoBehaviour {
     {
         PoolManager = transform.Find("PoolManager").GetComponent<PoolManager>();
         AudioManager = transform.Find("AudioManager").GetComponent<AudioSource>();
+
+        factories = GetComponentsInChildren<Factory>();
+        foreach (Factory item in factories) {
+            item.Initialize();
+        }
+
         CameraObject = Camera.main.gameObject;
     }
 

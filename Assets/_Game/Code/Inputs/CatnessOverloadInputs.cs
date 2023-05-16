@@ -930,6 +930,45 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Debug"",
+            ""id"": ""0ffba2e8-7cf0-439c-991c-86a0cc591e87"",
+            ""actions"": [
+                {
+                    ""name"": ""Test01"",
+                    ""type"": ""Button"",
+                    ""id"": ""5359a8ea-6653-42d6-bebb-6f0814fb696e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""fb867252-8b7f-4672-b28f-4a20896770bd"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Test01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""16848cc2-15cf-4c71-80d6-0d53dd4007d7"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Test01"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -1015,6 +1054,9 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
         m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+        // Debug
+        m_Debug = asset.FindActionMap("Debug", throwIfNotFound: true);
+        m_Debug_Test01 = m_Debug.FindAction("Test01", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1276,6 +1318,52 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // Debug
+    private readonly InputActionMap m_Debug;
+    private List<IDebugActions> m_DebugActionsCallbackInterfaces = new List<IDebugActions>();
+    private readonly InputAction m_Debug_Test01;
+    public struct DebugActions
+    {
+        private @CatnessOverloadInputs m_Wrapper;
+        public DebugActions(@CatnessOverloadInputs wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Test01 => m_Wrapper.m_Debug_Test01;
+        public InputActionMap Get() { return m_Wrapper.m_Debug; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DebugActions set) { return set.Get(); }
+        public void AddCallbacks(IDebugActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DebugActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Add(instance);
+            @Test01.started += instance.OnTest01;
+            @Test01.performed += instance.OnTest01;
+            @Test01.canceled += instance.OnTest01;
+        }
+
+        private void UnregisterCallbacks(IDebugActions instance)
+        {
+            @Test01.started -= instance.OnTest01;
+            @Test01.performed -= instance.OnTest01;
+            @Test01.canceled -= instance.OnTest01;
+        }
+
+        public void RemoveCallbacks(IDebugActions instance)
+        {
+            if (m_Wrapper.m_DebugActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDebugActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DebugActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DebugActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DebugActions @Debug => new DebugActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -1342,5 +1430,9 @@ public partial class @CatnessOverloadInputs: IInputActionCollection2, IDisposabl
         void OnRightClick(InputAction.CallbackContext context);
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+    }
+    public interface IDebugActions
+    {
+        void OnTest01(InputAction.CallbackContext context);
     }
 }

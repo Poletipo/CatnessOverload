@@ -55,21 +55,21 @@ public class GameUI : MonoBehaviour {
     private GameObject _player;
     private bool playerIsDead = false;
     private Health playerHealth;
-    private TopDownShooter playerTopDownShooter;
+    private Player playerTopDownShooter;
 
     // Start is called before the first frame update
     void Start()
     {
-        _player = GameManager.Instance.Player;
+        _player = ObjectManager.GetObjectsOfType<Player>()[0];
 
-        if (_player != null) {
+        if (false) { //_player != null) {
 
-            playerHealth = _player.GetComponent<Health>();
-            playerHealth.OnHpChanged += OnHpChanged;
-            playerHealth.OnDeath += OnDeath;
+            //playerHealth = _player.GetComponent<Health>();
+            //playerHealth.OnHpChanged += OnHpChanged;
+            //playerHealth.OnDeath += OnDeath;
 
-            playerTopDownShooter = _player.GetComponent<TopDownShooter>();
-            playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
+            //playerTopDownShooter = _player.GetComponent<Player>();
+            //playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
         }
 
 

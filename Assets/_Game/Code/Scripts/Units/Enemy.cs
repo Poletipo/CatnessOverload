@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ZombieEnemy : MonoBehaviour {
+public class Enemy : Unit {
 
     GameObject player;
     NavMeshAgent agent;
@@ -32,9 +32,9 @@ public class ZombieEnemy : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        player = GameManager.Instance.Player;
-        playerHealth = player.GetComponent<Health>();
-        playerHealth.OnDeath += OnPlayerDeath;
+        player = ObjectManager.GetObjectsOfType<Player>()[0];
+        //playerHealth = player.GetComponent<Health>();
+        //playerHealth.OnDeath += OnPlayerDeath;
 
         agent = GetComponent<NavMeshAgent>();
         health = GetComponent<Health>();
@@ -70,11 +70,11 @@ public class ZombieEnemy : MonoBehaviour {
 
     private void OnDeath()
     {
-        GameObject coin = GameManager.Instance.PoolManager.GetPoolObject(Coin);
+        GameObject coin = PoolManager.GetPoolObject(Coin);
         coin.GetComponent<Coin>().Setup(transform.position, Quaternion.identity);
 
         StencilSpawner.SpawnStencil(BurnMark, 1.5f, new Vector3(transform.position.x, 0.1f, transform.position.z), Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
-        GameObject explosion = GameManager.Instance.PoolManager.GetPoolObject(Explosion);
+        GameObject explosion = PoolManager.GetPoolObject(Explosion);
         explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
 
 

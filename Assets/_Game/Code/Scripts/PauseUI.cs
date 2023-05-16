@@ -11,6 +11,10 @@ public class PauseUI : MonoBehaviour {
     void Start()
     {
         _gameUI = GameManager.Instance.GameUI;
+
+        PauseManager.OnPause += OpenPauseMenu;
+        PauseManager.OnUnPause += ClosePauseMenu;
+
     }
 
     public void OpenPauseMenu()

@@ -37,8 +37,14 @@ public class Spawner : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameManager.Instance.Player.transform;
-        Player.GetComponent<Health>().OnDeath += OnPlayerDeath;
+        if (ObjectManager.GetObjectsOfType<Player>()[0] == null) {
+            isSpawning = false;
+            return;
+        }
+
+        Player = ObjectManager.GetObjectsOfType<Player>()[0].transform;
+
+        //Player.GetComponent<Health>().OnDeath += OnPlayerDeath;
         spawnBounds = GetComponent<BoxCollider>().bounds;
         path = new NavMeshPath();
         possibleSpawningPoints = new List<SpawnPointValue>();
@@ -108,9 +114,9 @@ public class Spawner : MonoBehaviour {
             spawnPosition = RandomPointInBounds(spawnBounds);
         }
 
-        GameObject cat = GameManager.Instance.PoolManager.GetPoolObject(SpawnedObject);
+        GameObject cat = PoolManager.GetPoolObject(SpawnedObject);
         int catHp = HealthStart + Mathf.FloorToInt(_currentGameTime / HealthTimeMuliplier) * HealthAddition;
-        cat.GetComponent<ZombieEnemy>().Setup(spawnPosition, Quaternion.identity, catHp);
+        cat.GetComponent<Enemy>().Setup(spawnPosition, Quaternion.identity, catHp);
 
     }
 
@@ -119,7 +125,7 @@ public class Spawner : MonoBehaviour {
     {
         _currentGameTime += Time.deltaTime;
         if (isSpawning) {
-            GameManager.Instance.GameUI.UpdateTimer(_currentGameTime);
+            //GameManager.Instance.GameUI.UpdateTimer(_currentGameTime);
         }
 
         IntervalSpawnTime = SpawnRateCurve.Evaluate(_currentGameTime / EstimateTimeGame);

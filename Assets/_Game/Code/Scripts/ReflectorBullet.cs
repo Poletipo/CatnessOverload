@@ -86,7 +86,7 @@ public class ReflectorBullet : MonoBehaviour {
             if (target.tag == "Enemy") {
                 target.GetComponent<NavMeshAgent>().velocity = _direction * 5;
                 target.GetComponent<Health>().Hurt(_bulletDamage);
-                target.GetComponent<ZombieEnemy>().Stun();
+                target.GetComponent<Enemy>().Stun();
             }
         }
 
@@ -98,7 +98,7 @@ public class ReflectorBullet : MonoBehaviour {
 
         _direction = Vector3.Reflect(_direction, hit.normal).normalized;
 
-        GameObject sparks = GameManager.Instance.PoolManager.GetPoolObject(ImpactVFX);
+        GameObject sparks = PoolManager.GetPoolObject(ImpactVFX);
         sparks.GetComponent<DestroyVFX>().Setup(hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));
 
         if (UnityEngine.Random.Range(0, 100) < TargetingPercent) {

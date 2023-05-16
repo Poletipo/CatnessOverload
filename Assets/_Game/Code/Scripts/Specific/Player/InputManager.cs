@@ -38,7 +38,13 @@ public class InputManager : MonoBehaviour {
 
         _inputs.Player.Pause.performed += Pause_performed;
 
+        _inputs.Debug.Test01.performed += Test01_performed;
 
+    }
+
+    private void Test01_performed(InputAction.CallbackContext obj)
+    {
+        PlayerSpawner.Instance.InstantiateObject();
     }
 
     private void Pause_performed(InputAction.CallbackContext obj)

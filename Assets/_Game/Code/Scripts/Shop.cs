@@ -32,9 +32,9 @@ public abstract class Shop : MonoBehaviour {
     {
 
         if (_player == null) {
-            _player = GameManager.Instance.Player;
+            _player = ObjectManager.GetObjectsOfType<Player>()[0];
         }
-        bool validPayment = _player.GetComponent<TopDownShooter>().Pay(Cost);
+        bool validPayment = _player.GetComponent<Player>().Pay(Cost);
 
         if (validPayment) {
             GameManager.Instance.AudioManager.PlayOneShot(BuySound);

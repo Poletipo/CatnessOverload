@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class TopDownShooter : MonoBehaviour {
+public class Player : Unit {
 
     public float healthInterval = 1;
     public float healthIntervalTimer = 1;
@@ -22,11 +22,8 @@ public class TopDownShooter : MonoBehaviour {
 
 
     public GameObject Explosion;
-    public ParticleSystem Smoke;
 
-    private Health health;
-
-    private bool _isSmoking = false;
+    [SerializeField] Health _health;
 
     public Action OnMoneyChanged;
 
@@ -48,25 +45,10 @@ public class TopDownShooter : MonoBehaviour {
 
     private void Start()
     {
-        health = GetComponent<Health>();
-        health.OnDeath += OnDeath;
-        health.OnHpChanged += OnHpChanged;
+        _health.OnDeath += OnDeath;
     }
 
-    private void OnHpChanged()
-    {
-        float hpPercent = 1 - (float)health.Hp / health.MaxHp;
 
-        if (hpPercent >= 0.54f && !_isSmoking) {
-            _isSmoking = true;
-            Smoke.Play();
-        }
-        else if (hpPercent < 0.54f && _isSmoking) {
-            Smoke.Stop();
-            _isSmoking = false;
-        }
-
-    }
 
     private async void OnDeath()
     {
@@ -90,7 +72,7 @@ public class TopDownShooter : MonoBehaviour {
             healthIntervalTimer += Time.deltaTime;
 
             if (healthIntervalTimer > healthInterval) {
-                health.Heal(1);
+                _health.Heal(1);
                 healthIntervalTimer = 0;
             }
         }

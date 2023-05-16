@@ -87,7 +87,7 @@ public class Firearm : MonoBehaviour {
         for (int i = 0; i < nbBulletPerShot; i++) {
             float angleOffset = Random.Range(-maxAngleOffset, maxAngleOffset);
             Quaternion bulletAngle = muzzlePos.rotation * Quaternion.Euler(0, angleOffset, 0);
-            GameObject projectile = GameManager.Instance.PoolManager.GetPoolObject(bullet);
+            GameObject projectile = PoolManager.GetPoolObject(bullet);
 
 
             Vector3 bulletDirection = bulletAngle * Vector3.forward;

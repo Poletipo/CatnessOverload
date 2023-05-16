@@ -486,7 +486,7 @@ MonoBehaviour:
   healthIntervalTimer: 1
   Explosion: {fileID: 4039262999100813065, guid: ca172fd0c035bd94f95c1025562ca9b2,
     type: 3}
-  Smoke: {fileID: 1170964039759412286}
+  _health: {fileID: 2223367512514571018}
   _moneyAmount: 0
   _cameraShake: {fileID: 0}
 --- !u!136 &7741046365085364619
@@ -820,12 +820,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e4808f4a630d2a488c09c65244f1cd5, type: 3}
---- !u!198 &1170964039759412286 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5108390856025850972, guid: 0e4808f4a630d2a488c09c65244f1cd5,
-    type: 3}
-  m_PrefabInstance: {fileID: 6243326072928860258}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7741046364225155921
 PrefabInstance:
   m_ObjectHideFlags: 0

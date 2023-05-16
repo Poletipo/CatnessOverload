@@ -28,7 +28,7 @@ public class Coin : MonoBehaviour {
     {
         if (other.tag == "Player") {
 
-            other.GetComponent<TopDownShooter>().MoneyAmount += CoinValue;
+            other.GetComponent<Player>().MoneyAmount += CoinValue;
             GameManager.Instance.AudioManager.PlayOneShot(CoinShuffle);
 
             DestroyCoin();
