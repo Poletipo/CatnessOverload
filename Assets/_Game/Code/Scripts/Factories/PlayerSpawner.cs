@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerSpawner : Factory {
 
+    Action OnPlayerSpawned;
 
     private static PlayerSpawner _instance;
 
@@ -28,6 +30,7 @@ public class PlayerSpawner : Factory {
         Player player = Instantiate(_player);
 
         ObjectManager.AddObject(player.gameObject, _player.GetType());
+        OnPlayerSpawned?.Invoke();
 
     }
 

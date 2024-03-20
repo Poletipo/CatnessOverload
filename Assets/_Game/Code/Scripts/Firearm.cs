@@ -27,7 +27,7 @@ public class Firearm : MonoBehaviour {
     private float fireRateTimer = 0;
 
     bool isPrincipalActivated = false;
-    bool isSecondaryActivated = false;
+    //bool isSecondaryActivated = false;
 
     public int nbBurst = 1;
     int burstCount = 0;
