@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Shop : MonoBehaviour {
+public abstract class Shop : MonoBehaviour
+{
     public int Cost;
     public float CostIncreaseMultiplier = 1.5f;
     public Color color;
@@ -16,6 +17,12 @@ public abstract class Shop : MonoBehaviour {
     public string stringPrompt;
 
     abstract public void Upgrade();
+
+
+    private void Start()
+    {
+        _player = ObjectManager.GetObjectsOfType<Player>()[0];
+    }
 
     // Update is called once per frame
     void Update()

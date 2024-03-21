@@ -4,15 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputManager : MonoBehaviour {
+public class InputManager : MonoBehaviour
+{
 
-    public enum LookAtControls {
+    public enum LookAtControls
+    {
         Mouse,
         Controller
     }
 
     public static LookAtControls LookAtControl = LookAtControls.Mouse;
 
+    [SerializeField] private Player _player;
     [SerializeField] private MovementController _mc;
     [SerializeField] private WeaponsManager _wm;
     [SerializeField] private Laser _laser;

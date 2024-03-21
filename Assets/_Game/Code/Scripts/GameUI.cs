@@ -7,7 +7,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameUI : MonoBehaviour {
+public class GameUI : MonoBehaviour
+{
 
     [Header("Health")]
     [SerializeField]
@@ -62,14 +63,14 @@ public class GameUI : MonoBehaviour {
     {
         _player = ObjectManager.GetObjectsOfType<Player>()[0];
 
-        if (false) { //_player != null) {
+        if (_player != null) {
 
-            //playerHealth = _player.GetComponent<Health>();
-            //playerHealth.OnHpChanged += OnHpChanged;
-            //playerHealth.OnDeath += OnDeath;
+            playerHealth = _player.GetComponent<Player>().GetHealth();
+            playerHealth.OnHpChanged += OnHpChanged;
+            playerHealth.OnDeath += OnDeath;
 
-            //playerTopDownShooter = _player.GetComponent<Player>();
-            //playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
+            playerTopDownShooter = _player.GetComponent<Player>();
+            playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
         }
 
 

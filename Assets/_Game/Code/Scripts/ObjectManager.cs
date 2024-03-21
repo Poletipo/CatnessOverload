@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectManager : MonoBehaviour {
+public class ObjectManager : MonoBehaviour
+{
     private static Dictionary<Type, List<GameObject>> objectDictionary = new Dictionary<Type, List<GameObject>>();
     public static void AddObject(GameObject obj, Type objectType)
     {
 
-        Debug.Log($"{obj.name} : {objectType}");
+        Debug.Log($"Added {obj.name} : {objectType}");
 
         if (!objectDictionary.ContainsKey(objectType)) {
             objectDictionary[objectType] = new List<GameObject>();

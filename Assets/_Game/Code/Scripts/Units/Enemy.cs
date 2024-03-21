@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : Unit {
+public class Enemy : Unit
+{
 
     GameObject player;
     NavMeshAgent agent;
@@ -33,8 +34,8 @@ public class Enemy : Unit {
     void Start()
     {
         player = ObjectManager.GetObjectsOfType<Player>()[0];
-        //playerHealth = player.GetComponent<Health>();
-        //playerHealth.OnDeath += OnPlayerDeath;
+        playerHealth = player.GetComponent<Player>().GetHealth();
+        playerHealth.OnDeath += OnPlayerDeath;
 
         agent = GetComponent<NavMeshAgent>();
         health = GetComponent<Health>();
@@ -92,13 +93,24 @@ public class Enemy : Unit {
 
     private void Update()
     {
+
+        HandleAttack();
+
+        if (_isStunned) {
+            _stunnedTimer += Time.deltaTime;
+            if (_stunnedTimer >= 0.5f) {
+                StopStun();
+            }
+        }
+    }
+
+    private void HandleAttack()
+    {
         hitIntervalTimer += Time.deltaTime;
 
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
         if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned) {
-
-
 
             playerHealth.Hurt((int)(MinHurtDistance / distance));
 
@@ -111,15 +123,9 @@ public class Enemy : Unit {
         else if (distance > MinHurtDistance && Hearts.isPlaying) {
             Hearts.Stop();
         }
-
-
-        if (_isStunned) {
-            _stunnedTimer += Time.deltaTime;
-            if (_stunnedTimer >= 0.5f) {
-                StopStun();
-            }
-        }
     }
+
+
 
 
     public void Stun()

@@ -6,7 +6,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Player : Unit {
+public class Player : Unit
+{
 
     public float healthInterval = 1;
     public float healthIntervalTimer = 1;
@@ -24,6 +25,13 @@ public class Player : Unit {
     public GameObject Explosion;
 
     [SerializeField] Health _health;
+    [SerializeField] InputManager _inputManager;
+
+
+    public Health GetHealth()
+    {
+        return _health;
+    }
 
     public Action OnMoneyChanged;
 
