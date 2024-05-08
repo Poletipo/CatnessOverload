@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
-public class CameraShake : MonoBehaviour {
-
+public class CameraShake : MonoBehaviour
+{
 
     private float _trauma;
-
     public float Trauma {
         get { return _trauma; }
         set {
@@ -14,19 +14,17 @@ public class CameraShake : MonoBehaviour {
             _trauma = value;
         }
     }
-
-
-    private float _shakeIntensity = 0;
-
-    public int TraumaPower = 2;
-
     public float MaxShakeIntensity = 1f;
-    public Vector3 PositionMultiplier = Vector3.one;
-    public float MaxShakeAngle = 45f;
-    public float ShakeFrequency = 1f;
+    public int TraumaPower = 2;
 
     private Vector3 _shakeOffset;
     private Vector3 _rotationOffset;
+    private float _shakeIntensity = 0;
+
+
+    public CinemachineVirtualCamera cineCam;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,39 +39,37 @@ public class CameraShake : MonoBehaviour {
             Trauma -= Time.deltaTime;
         }
 
-    }
-
-
-    public Vector3 GetPositionOffset()
-    {
-        float timer = Time.time * ShakeFrequency;
-
-
         _shakeIntensity = Mathf.Pow(Trauma, TraumaPower);
 
-        _shakeOffset.x = GetPerlinNoise(151, timer) * _shakeIntensity * MaxShakeIntensity * PositionMultiplier.x;
-        _shakeOffset.y = GetPerlinNoise(954, timer) * _shakeIntensity * MaxShakeIntensity * PositionMultiplier.y;
-        _shakeOffset.z = GetPerlinNoise(598, timer) * _shakeIntensity * MaxShakeIntensity * PositionMultiplier.z;
-
-        return _shakeOffset;
+        cineCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = _shakeIntensity * MaxShakeIntensity;
     }
 
-
-    public Vector3 GetRotationOffset()
-    {
-        float timer = Time.time * ShakeFrequency;
-        _rotationOffset.x = GetPerlinNoise(151, timer) * _shakeIntensity * MaxShakeAngle;
-        _rotationOffset.y = GetPerlinNoise(954, timer) * _shakeIntensity * MaxShakeAngle;
-        _rotationOffset.z = GetPerlinNoise(598, timer) * _shakeIntensity * MaxShakeAngle;
+    //public Vector3 GetPositionOffset() {
+    //    float timer = Time.time * ShakeFrequency;
 
 
-        return _rotationOffset;
-    }
+    //    _shakeIntensity = Mathf.Pow(Trauma, TraumaPower);
 
-    private float GetPerlinNoise(int seed, float timer)
-    {
-        return (-0.5f + Mathf.PerlinNoise(timer + seed, timer + seed));
-    }
+    //    _shakeOffset.x = GetPerlinNoise(151, timer) * _shakeIntensity * MaxShakeIntensity * PositionMultiplier.x;
+    //    _shakeOffset.y = GetPerlinNoise(954, timer) * _shakeIntensity * MaxShakeIntensity * PositionMultiplier.y;
+    //    _shakeOffset.z = GetPerlinNoise(598, timer) * _shakeIntensity * MaxShakeIntensity * PositionMultiplier.z;
+
+    //    return _shakeOffset;
+    //}
+
+    //public Vector3 GetRotationOffset() {
+    //    float timer = Time.time * ShakeFrequency;
+    //    _rotationOffset.x = GetPerlinNoise(151, timer) * _shakeIntensity * MaxShakeAngle;
+    //    _rotationOffset.y = GetPerlinNoise(954, timer) * _shakeIntensity * MaxShakeAngle;
+    //    _rotationOffset.z = GetPerlinNoise(598, timer) * _shakeIntensity * MaxShakeAngle;
+
+    //    return _rotationOffset;
+    //}
+
+    //private float GetPerlinNoise(int seed, float timer) {
+    //    return (-0.5f + Mathf.PerlinNoise(timer + seed, timer + seed));
+    //}
+
 
 
     public void AddTrauma(float traumaValue)

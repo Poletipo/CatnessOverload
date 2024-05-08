@@ -17,7 +17,7 @@ public class GameUI : MonoBehaviour
     public AnimationCurve HealthAdvancement;
     public RectTransform HealthOrigin;
     private Vector3 HealthOriginPosition;
-    public CameraShake HealthShake;
+    //public CameraShake HealthShake;
 
     [Header("Money")]
     [SerializeField]
@@ -223,8 +223,8 @@ public class GameUI : MonoBehaviour
         if (_healthSlider.fillAmount > 0.5f) {
             float trauma = (_healthSlider.fillAmount - 0.5f) * 2.5f;
 
-            HealthShake.SetTrauma(trauma);
-            HealthOrigin.position = HealthOriginPosition + HealthShake.GetPositionOffset();
+            //HealthShake.SetTrauma(trauma);
+            //HealthOrigin.position = HealthOriginPosition + HealthShake.GetPositionOffset();
         }
     }
 }
