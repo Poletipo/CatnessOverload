@@ -57,8 +57,8 @@ public class InputManager : MonoBehaviour
 
     private void Look_Mouse(InputAction.CallbackContext obj)
     {
-        _lookToward.LookAtMouse(obj.ReadValue<Vector2>());
         LookAtControl = LookAtControls.Mouse;
+        //_lookToward.LookAtMouse(obj.ReadValue<Vector2>());
     }
 
     private void Look_Gamepad(InputAction.CallbackContext obj)
@@ -93,10 +93,10 @@ public class InputManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (LookAtControl == LookAtControls.Mouse) {
-            _lookToward.LookAtDirection(_inputs.Player.LookMouse.ReadValue<Vector2>());
+            _lookToward.LookAtMouse(_inputs.Player.LookMouse.ReadValue<Vector2>());
         }
     }
 }
