@@ -47,9 +47,6 @@ public class Player : Unit
         }
     }
 
-    // TEST 
-    public CameraShake _cameraShake;
-
 
     private void Start()
     {
