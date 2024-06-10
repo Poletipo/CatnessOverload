@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ReflectorBullet : MonoBehaviour {
+public class ReflectorBullet : MonoBehaviour
+{
 
     [Range(0, 90)]
     public float MaxAngleTargeting = 45f;
@@ -19,6 +20,11 @@ public class ReflectorBullet : MonoBehaviour {
     public int TargetingPercent = 50;
 
     public float TimeToDie = 8f;
+
+    private float _startTime = 0;
+
+
+
 
     [Header("Damage")]
     [Range(0, 100)]
@@ -41,6 +47,7 @@ public class ReflectorBullet : MonoBehaviour {
 
     public IEnumerator Setup(Vector3 position, Vector3 direction, int reboundCount)
     {
+        _startTime = Time.time;
         _bulletDamage = BaseBulletDamage;
         transform.position = position;
         MaxRebound = reboundCount;
@@ -61,6 +68,20 @@ public class ReflectorBullet : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+        if (_startTime + TimeToDie < Time.time) {
+            EndBullet();
+            return;
+        }
+
+
+        MoveBullet();
+
+    }
+
+
+    private void MoveBullet()
+    {
         transform.position += _direction * Speed * Time.deltaTime;
 
         if (Physics.Linecast(previousPosition, transform.position, out hitInfo, wallMask,
@@ -75,6 +96,8 @@ public class ReflectorBullet : MonoBehaviour {
         }
         previousPosition = transform.position;
     }
+
+
 
     private void HitTarget(GameObject target)
     {
