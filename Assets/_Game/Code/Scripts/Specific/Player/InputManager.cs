@@ -46,6 +46,11 @@ public class InputManager : MonoBehaviour
 
         _inputs.Debug.Test01.performed += Test01_performed;
 
+
+
+        PauseManager.OnPause += DisableInputs;
+        PauseManager.OnUnPause += EnableInputs;
+
     }
 
     private void Interact_performed(InputAction.CallbackContext obj)
@@ -60,15 +65,7 @@ public class InputManager : MonoBehaviour
 
     private void Pause_performed(InputAction.CallbackContext obj)
     {
-        PauseManager.PauseGame();
-
-        if (PauseManager.GetPauseStatus()) {
-            DisableInputs();
-        }
-        else {
-            EnableInputs();
-        }
-
+        PauseManager.ChangePauseStatus();
     }
 
     private void EnableInputs()

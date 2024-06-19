@@ -182,7 +182,7 @@ public class GameUI : MonoBehaviour
 
     public void OpenPauseMenu()
     {
-        //GameManager.Instance.PauseUI.OpenPauseMenu();
+        PauseManager.ChangePauseStatus();
     }
 
     public void RestartLevel()

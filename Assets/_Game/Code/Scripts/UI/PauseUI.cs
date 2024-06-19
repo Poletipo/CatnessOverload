@@ -25,6 +25,11 @@ public class PauseUI : MonoBehaviour
         PauseMenuOrigin.SetActive(false);
     }
 
+    public void ResumeGame()
+    {
+        PauseManager.UnPauseGame();
+    }
+
     public void QuitGame()
     {
         Application.Quit();

@@ -13,7 +13,7 @@ public static class PauseManager
     static bool _gameIsPaused = false;
 
 
-    public static void PauseGame()
+    public static void ChangePauseStatus()
     {
         if (_gameIsPaused) {
             OnUnPause?.Invoke();
@@ -25,6 +25,26 @@ public static class PauseManager
             Time.timeScale = 0;
             _gameIsPaused = true;
         }
+    }
+
+    public static void UnPauseGame()
+    {
+        if (!_gameIsPaused) {
+            return;
+        }
+        OnUnPause?.Invoke();
+        Time.timeScale = 1;
+        _gameIsPaused = false;
+    }
+
+    public static void PauseGame()
+    {
+        if (_gameIsPaused) {
+            return;
+        }
+        OnPause?.Invoke();
+        Time.timeScale = 0;
+        _gameIsPaused = true;
     }
 
     public static bool GetPauseStatus()
