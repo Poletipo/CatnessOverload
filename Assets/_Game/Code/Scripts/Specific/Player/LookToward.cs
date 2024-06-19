@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookToward : MonoBehaviour {
+public class LookToward : MonoBehaviour
+{
 
     [SerializeField] float _angleOffset = 0;
     [SerializeField] float _rotationSpeed;
@@ -41,7 +42,7 @@ public class LookToward : MonoBehaviour {
     public void LookAtDirection(Vector2 direction)
     {
         float desiredAngle = Mathf.Atan2(direction.y, -direction.x) * Mathf.Rad2Deg;
-        _lookAtRotation = Quaternion.RotateTowards(transform.rotation, Quaternion.AngleAxis(desiredAngle, Vector3.up), _rotationSpeed);
+        _lookAtRotation = Quaternion.RotateTowards(transform.rotation, Quaternion.AngleAxis(desiredAngle - 90, Vector3.up), _rotationSpeed);
         transform.rotation = _lookAtRotation;// Quaternion.AngleAxis(desiredAngle - 90, Vector3.up);
     }
 

@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseUI : MonoBehaviour {
+public class PauseUI : MonoBehaviour
+{
 
     public GameObject PauseMenuOrigin;
-    private GameUI _gameUI;
 
     // Start is called before the first frame update
     void Start()
     {
-        _gameUI = GameManager.Instance.GameUI;
-
         PauseManager.OnPause += OpenPauseMenu;
         PauseManager.OnUnPause += ClosePauseMenu;
 
@@ -20,13 +18,11 @@ public class PauseUI : MonoBehaviour {
     public void OpenPauseMenu()
     {
         PauseMenuOrigin.SetActive(true);
-        _gameUI.HideUI();
     }
 
     public void ClosePauseMenu()
     {
         PauseMenuOrigin.SetActive(false);
-        _gameUI.ShowUI();
     }
 
     public void QuitGame()

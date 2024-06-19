@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletCountPowerup : Shop {
+public class BulletCountPowerup : Shop
+{
 
     public override void Upgrade()
     {
-        Firearm firearm = _player.GetComponent<Firearm>();
+        Firearm firearm = _player.WeaponManager.GetWeapon();
 
         firearm.nbBulletPerShot += 1;
         firearm.maxAngleOffset += 5;

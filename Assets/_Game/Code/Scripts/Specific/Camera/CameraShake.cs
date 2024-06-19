@@ -22,14 +22,15 @@ public class CameraShake : MonoBehaviour
     private float _shakeIntensity = 0;
 
 
-    public CinemachineVirtualCamera cineCam;
-
-
+    CinemachineBrain _cinemachineBrain;
+    CinemachineVirtualCamera _cineCam;
 
     // Start is called before the first frame update
     void Start()
     {
         _shakeOffset = Vector3.zero;
+        _cinemachineBrain = GetComponent<CinemachineBrain>();
+        _cineCam = (CinemachineVirtualCamera)_cinemachineBrain.ActiveVirtualCamera;
     }
 
     // Update is called once per frame
@@ -41,7 +42,7 @@ public class CameraShake : MonoBehaviour
 
         _shakeIntensity = Mathf.Pow(Trauma, TraumaPower);
 
-        cineCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = _shakeIntensity * MaxShakeIntensity;
+        _cineCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = _shakeIntensity * MaxShakeIntensity;
     }
 
     //public Vector3 GetPositionOffset() {

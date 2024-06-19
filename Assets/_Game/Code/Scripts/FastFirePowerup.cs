@@ -9,7 +9,7 @@ public class FastFirePowerup : Shop
 
     public override void Upgrade()
     {
-        Firearm firearm = _player.GetComponent<Firearm>();
+        Firearm firearm = _player.WeaponManager.GetWeapon();
         firearm.fireRateSpeed /= FireRateIncreaseMultiplier;
         Cost = (int)(Cost * CostIncreaseMultiplier);
     }

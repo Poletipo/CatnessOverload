@@ -4854,7 +4854,7 @@ GameObject:
   - component: {fileID: 2928440272184120157}
   - component: {fileID: 4980528198469965841}
   m_Layer: 10
-  m_Name: MechantZombie
+  m_Name: CatEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -3,28 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseManager : MonoBehaviour {
+public static class PauseManager
+{
 
     public static Action OnPause;
     public static Action OnUnPause;
 
 
-    public static bool gameIsPaused;
+    static bool _gameIsPaused = false;
 
 
     public static void PauseGame()
     {
-        if (gameIsPaused) {
-            OnPause?.Invoke();
+        if (_gameIsPaused) {
+            OnUnPause?.Invoke();
             Time.timeScale = 1;
-            gameIsPaused = false;
+            _gameIsPaused = false;
         }
         else {
-            OnUnPause?.Invoke();
+            OnPause?.Invoke();
             Time.timeScale = 0;
-            gameIsPaused = true;
+            _gameIsPaused = true;
         }
+    }
 
+    public static bool GetPauseStatus()
+    {
+        return _gameIsPaused;
     }
 
 }

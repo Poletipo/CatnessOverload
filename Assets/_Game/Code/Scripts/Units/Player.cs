@@ -48,12 +48,14 @@ public class Player : Unit
     }
 
 
+    public WeaponManager WeaponManager { get; private set; }
+
     private void Start()
     {
         _health.OnDeath += OnDeath;
+
+        WeaponManager = GetComponentInChildren<WeaponManager>();
     }
-
-
 
     private async void OnDeath()
     {

@@ -4,9 +4,11 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Spawner : MonoBehaviour {
+public class Spawner : MonoBehaviour
+{
 
-    struct SpawnPointValue {
+    struct SpawnPointValue
+    {
         public Transform spawnPoint;
         public float distance;
     }
@@ -18,7 +20,7 @@ public class Spawner : MonoBehaviour {
     public GameObject SpawnedObject;
     public float IntervalSpawnTime = 5;
     private float _intervalSpawnTimer = 0;
-    public Camera cam;
+    Camera _cam;
     public int ValidSpawnPointCount = 3;
     public bool isSpawning = true;
 
@@ -41,6 +43,8 @@ public class Spawner : MonoBehaviour {
             isSpawning = false;
             return;
         }
+
+        _cam = Camera.main;
 
         Player = ObjectManager.GetObjectsOfType<Player>()[0].transform;
 
@@ -146,7 +150,7 @@ public class Spawner : MonoBehaviour {
     public bool IsOutOfScreen(Transform target)
     {
         bool isOutOfScreen = false;
-        Vector3 viewPos = cam.WorldToViewportPoint(target.position);
+        Vector3 viewPos = _cam.WorldToViewportPoint(target.position);
 
 
         if (viewPos.x < 0 || viewPos.x > 1 ||

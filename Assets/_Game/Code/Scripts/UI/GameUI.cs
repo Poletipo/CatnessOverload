@@ -23,15 +23,17 @@ public class GameUI : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _moneyValue;
 
-    [Header("Shop")]
-    public Animation ShopBtnAnimation;
-    public GameObject ShopOrigin;
-    public TextMeshProUGUI ShopPrompt;
-    public TextMeshProUGUI ShopCostValue;
+    //[Header("Shop")]
+    //public Animation ShopBtnAnimation;
+    //public GameObject ShopOrigin;
+    //public TextMeshProUGUI ShopPrompt;
+    //public TextMeshProUGUI ShopCostValue;
+    //private Shop currentShop;
 
-    [Header("Shop")]
+    //[Header("Shop")]
     public GameObject GameOverOrigin;
-    private Shop currentShop;
+
+    public ShopUI ShopMenu;
 
     [Header("Audio")]
     public Sprite AudioOn;
@@ -73,7 +75,7 @@ public class GameUI : MonoBehaviour
             playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
         }
 
-
+        OnMoneyChanged();
         HealthOriginPosition = HealthOrigin.position;
     }
 
@@ -130,35 +132,6 @@ public class GameUI : MonoBehaviour
         _healthSlider.color = HealthColor.Evaluate(sliderValue);
     }
 
-    public void ShowShopPrompt(string prompt, int cost, Color color, Shop currentShop)
-    {
-        ShopCostValue.text = cost.ToString();
-        ShopPrompt.text = prompt;
-        ShopPrompt.color = color;
-        this.currentShop = currentShop;
-        ShopOrigin.SetActive(true);
-    }
-
-    public void HideShopPrompt()
-    {
-        currentShop = null;
-        ShopOrigin.SetActive(false);
-    }
-
-    public void TryShop()
-    {
-        bool validPayment = currentShop.TryShopping();
-
-        if (validPayment) {
-            ShopBtnAnimation.Play("BtnGranted");
-        }
-        else {
-            ShopBtnAnimation.Play("BtnDenied");
-        }
-
-    }
-
-
     public void HideUI()
     {
         GetComponent<CanvasGroup>().alpha = 0;
@@ -209,7 +182,7 @@ public class GameUI : MonoBehaviour
 
     public void OpenPauseMenu()
     {
-        GameManager.Instance.PauseUI.OpenPauseMenu();
+        //GameManager.Instance.PauseUI.OpenPauseMenu();
     }
 
     public void RestartLevel()
