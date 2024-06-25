@@ -12,7 +12,6 @@ public class PauseUI : MonoBehaviour
     {
         PauseManager.OnPause += OpenPauseMenu;
         PauseManager.OnUnPause += ClosePauseMenu;
-
     }
 
     public void OpenPauseMenu()
