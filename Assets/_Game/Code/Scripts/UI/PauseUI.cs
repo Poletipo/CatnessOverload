@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseUI : MonoBehaviour
 {
@@ -12,6 +13,12 @@ public class PauseUI : MonoBehaviour
     {
         PauseManager.OnPause += OpenPauseMenu;
         PauseManager.OnUnPause += ClosePauseMenu;
+    }
+
+    private void OnDestroy()
+    {
+        PauseManager.OnPause -= OpenPauseMenu;
+        PauseManager.OnUnPause -= ClosePauseMenu;
     }
 
     public void OpenPauseMenu()
@@ -31,7 +38,8 @@ public class PauseUI : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        PauseManager.UnPauseGame();
+        SceneManager.LoadScene(0);
     }
 
 }

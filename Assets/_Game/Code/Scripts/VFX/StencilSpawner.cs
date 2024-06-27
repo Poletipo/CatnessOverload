@@ -1,22 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class StencilSpawner : MonoBehaviour {
+public class StencilSpawner : MonoBehaviour
+{
     private static Dictionary<GameObject, List<GameObject>> StencilList;
-
 
     private void Start()
     {
         StencilList = new Dictionary<GameObject, List<GameObject>>();
+        SceneManager.sceneUnloaded += SceneManager_sceneUnloaded;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void SceneManager_sceneUnloaded(Scene arg0)
     {
-
+        StencilList.Clear();
     }
-
 
     public static void SpawnStencil(GameObject spawnObject, float spawnDistance, Vector3 position, Quaternion rotation)
     {

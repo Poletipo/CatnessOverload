@@ -29,8 +29,10 @@ public abstract class Shop : MonoBehaviour
         if (GameManager.Instance.UIManager == null) {
             return;
         }
-        GameManager.Instance.UIManager.InGameMenu.
-            ShopMenu.AddShopListener(this);
+
+        GameUI UI = GameManager.Instance.UIManager.
+            GetUIWidget(typeof(GameUI)).GetComponent<GameUI>();
+        UI.ShopMenu.AddShopListener(this);
     }
 
     public bool TryShopping()

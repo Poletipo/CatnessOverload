@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Game/Level/Scenes/SCN_MainMenu.unity
+    guid: 0c9c42bccab3b114fa0b3a989998e392
+  - enabled: 1
     path: Assets/_Game/Level/Scenes/SCN_Junkyard.unity
     guid: 64699701b8acc584880bc1cca595e637
+  - enabled: 1
+    path: Assets/_Game/Level/Scenes/SCN_Sewer.unity
+    guid: 69a91d785d767934da974f6779812622
   m_configObjects: {}

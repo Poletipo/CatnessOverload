@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour {
+public class Coin : MonoBehaviour
+{
 
     public int CoinValue = 50;
     public Rigidbody rb;

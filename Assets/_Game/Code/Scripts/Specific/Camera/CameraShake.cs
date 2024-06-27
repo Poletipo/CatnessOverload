@@ -6,7 +6,7 @@ using Cinemachine;
 public class CameraShake : MonoBehaviour
 {
 
-    private float _trauma;
+    private float _trauma = 0;
     public float Trauma {
         get { return _trauma; }
         set {
@@ -30,12 +30,21 @@ public class CameraShake : MonoBehaviour
     {
         _shakeOffset = Vector3.zero;
         _cinemachineBrain = GetComponent<CinemachineBrain>();
-        _cineCam = (CinemachineVirtualCamera)_cinemachineBrain.ActiveVirtualCamera;
+        SetupCamNoise();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (_cineCam == null) {
+            SetupCamNoise();
+            return;
+        }
+
+        if (Trauma <= 0) {
+            return;
+        }
+
         if (Trauma > 0) {
             Trauma -= Time.deltaTime;
         }
@@ -44,6 +53,16 @@ public class CameraShake : MonoBehaviour
 
         _cineCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = _shakeIntensity * MaxShakeIntensity;
     }
+
+    void SetupCamNoise()
+    {
+        _cineCam = (CinemachineVirtualCamera)_cinemachineBrain.ActiveVirtualCamera;
+        if (_cineCam == null) {
+            return;
+        }
+        _cineCam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0;
+    }
+
 
     //public Vector3 GetPositionOffset() {
     //    float timer = Time.time * ShakeFrequency;

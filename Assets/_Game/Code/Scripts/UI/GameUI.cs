@@ -60,6 +60,13 @@ public class GameUI : MonoBehaviour
     private Health playerHealth;
     private Player playerTopDownShooter;
 
+    private void Awake()
+    {
+        GameManager.Instance.UIManager.ClearUI();
+        GameManager.Instance.UIManager.AddWidget(gameObject);
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +85,13 @@ public class GameUI : MonoBehaviour
         OnMoneyChanged();
         HealthOriginPosition = HealthOrigin.position;
     }
+
+
+    private void OnDestroy()
+    {
+        playerTopDownShooter.OnMoneyChanged -= OnMoneyChanged;
+    }
+
 
     private async void OnDeath()
     {

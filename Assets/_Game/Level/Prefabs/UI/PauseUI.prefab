@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 1999890029863958477}
   - component: {fileID: 8397942911974095271}
   m_Layer: 0
-  m_Name: GameOverBG
+  m_Name: PauseBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,7 +705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7298940512318601488
 RectTransform:
   m_ObjectHideFlags: 0

@@ -42,7 +42,7 @@ public class Player : Unit
     public int MoneyAmount {
         get { return _moneyAmount; }
         set {
-            _moneyAmount = Mathf.Clamp(value, 0, 1000000);
+            _moneyAmount = Mathf.Clamp(value, 0, int.MaxValue);
             OnMoneyChanged?.Invoke();
         }
     }

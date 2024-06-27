@@ -36,16 +36,30 @@ public class GameManager : MonoBehaviour
 
     public bool FirstTimeSession = true;
 
+    private void Start()
+    {
+        if (_instance != null && _instance != this) {
+            Destroy(gameObject);
+        }
+    }
+
     public void Create()
     {
-        Debug.Log("Try to create GameManager");
+        Debug.Log("TODO: Try to create GameManager");
     }
 
 
     private void Initialize()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
         OnSceneLoaded();
+    }
+
+    private void OnSceneUnloaded(Scene arg0)
+    {
+        PoolManager.Reset();
+        ObjectManager.ResetList();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)

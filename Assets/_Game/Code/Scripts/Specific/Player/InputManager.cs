@@ -53,6 +53,30 @@ public class InputManager : MonoBehaviour
 
     }
 
+    private void OnDestroy()
+    {
+        _inputs.Player.Move.performed -= Move_performed;
+        _inputs.Player.Move.canceled -= Move_performed;
+
+        _inputs.Player.PrimaryFire.performed -= Fire_performed;
+        _inputs.Player.PrimaryFire.canceled -= Fire_performed;
+
+        _inputs.Player.LookGamepad.performed -= Look_Gamepad;
+        _inputs.Player.LookMouse.performed -= Look_Mouse;
+
+        _inputs.Player.Laser.performed -= Laser_performed;
+
+        _inputs.Player.Pause.performed -= Pause_performed;
+
+        _inputs.Player.Interact.performed -= Interact_performed;
+
+        _inputs.Debug.Test01.performed -= Test01_performed;
+
+        PauseManager.OnPause -= DisableInputs;
+        PauseManager.OnUnPause -= EnableInputs;
+    }
+
+
     private void Interact_performed(InputAction.CallbackContext obj)
     {
         _interacter.Interact();

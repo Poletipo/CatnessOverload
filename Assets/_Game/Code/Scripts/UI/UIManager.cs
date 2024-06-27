@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,18 +6,29 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
 
-    public GameObject MainMenu;
-    public PauseUI PauseMenu;
-    public GameUI InGameMenu;
-
-
-
     // Start is called before the first frame update
     void Start()
     {
-        PauseMenu = GetComponentInChildren<PauseUI>();
-        InGameMenu = GetComponentInChildren<GameUI>();
+
     }
+
+    public void AddWidget(GameObject widget)
+    {
+        widget.transform.SetParent(transform);
+    }
+
+    public GameObject GetUIWidget(Type widgetType)
+    {
+        return GetComponentInChildren(widgetType).gameObject;
+    }
+
+    public void ClearUI()
+    {
+        for (int i = 1; i < transform.childCount; i++) {
+            Destroy(transform.GetChild(i).gameObject);
+        }
+    }
+
 
     // Update is called once per frame
     void Update()

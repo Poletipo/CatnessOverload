@@ -41,4 +41,11 @@ public class ObjectManager : MonoBehaviour
         }
         return null;
     }
+
+    public static void ResetList()
+    {
+        objectDictionary.Clear();
+    }
+
+
 }

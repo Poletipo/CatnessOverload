@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class PoolManager : MonoBehaviour {
+public class PoolManager : MonoBehaviour
+{
 
     private static Dictionary<GameObject, List<GameObject>> PooledList = new Dictionary<GameObject, List<GameObject>>();
 
@@ -33,6 +34,11 @@ public class PoolManager : MonoBehaviour {
         pooledObjects.Add(tmp);
 
         return tmp as T;
+    }
+
+    public void Reset()
+    {
+        PooledList.Clear();
     }
 
 
