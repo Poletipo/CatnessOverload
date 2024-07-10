@@ -16,6 +16,12 @@ public class TitleScreenUI : MonoBehaviour
         
     }
 
+
+    public void ShowLevelSelectionScreen(){
+        GameObject mainMenu = GameManager.Instance.UIManager.GetUIWidget(typeof(MainMenuUI));
+        mainMenu.GetComponent<MainMenuUI>().ShowLevelSelectionScreen();
+    }
+
     //TODO : Go to level selection
     //TODO : Quit Button
 }
