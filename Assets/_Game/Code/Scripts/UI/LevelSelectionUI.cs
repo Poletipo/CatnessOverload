@@ -36,5 +36,10 @@ public class LevelSelectionUI : MonoBehaviour
         SceneManager.LoadScene(MapToLoad.MapNameToLoad);
     }
 
+    public void BackToTitleScreen(){
+        GameObject mainMenuUI = GameManager.Instance.UIManager.GetUIWidget(typeof(MainMenuUI));
+        mainMenuUI.GetComponent<MainMenuUI>().ShowTitleScreen();
+    }
+
 
 }

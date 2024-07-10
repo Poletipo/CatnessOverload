@@ -104,8 +104,8 @@ public class GameUI : MonoBehaviour
             await Task.Yield();
         }
 
-        MoveJoystick.SetActive(false);
-        AimJoystick.SetActive(false);
+        //MoveJoystick.SetActive(false);
+        //AimJoystick.SetActive(false);
         FinalTimerValue.text = TimerValue.text;
 
         GameOverOrigin.SetActive(true);

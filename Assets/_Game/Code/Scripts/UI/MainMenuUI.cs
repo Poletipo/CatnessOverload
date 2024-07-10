@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MainMenuUI : MonoBehaviour
 {
+
+    [SerializeField] LevelSelectionUI _levelSelectionScreen;
+    [SerializeField] GameObject _titleScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,9 +15,15 @@ public class MainMenuUI : MonoBehaviour
         GameManager.Instance.UIManager.AddWidget(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
+    public void ShowLevelSelectionScreen(){
+        _titleScreen.SetActive(false);
+        _levelSelectionScreen.gameObject.SetActive(true);
     }
+
+    public void ShowTitleScreen(){
+        _titleScreen.SetActive(true);
+        _levelSelectionScreen.gameObject.SetActive(false);
+    }
+
+
 }
