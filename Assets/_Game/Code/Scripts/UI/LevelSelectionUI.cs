@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelSelectionUI : MonoBehaviour
+public class LevelSelectionUI : UIScreen
 {
 
     [SerializeField] MapInfo MapToLoad;
@@ -17,13 +17,6 @@ public class LevelSelectionUI : MonoBehaviour
     {
         SelectedMapText.text = MapToLoad.MapName;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
 
     public void ChangeMap(MapInfo info)
     {
@@ -41,5 +34,8 @@ public class LevelSelectionUI : MonoBehaviour
         mainMenuUI.GetComponent<MainMenuUI>().ShowTitleScreen();
     }
 
-
+    public override void Setup()
+    {
+        
+    }
 }
