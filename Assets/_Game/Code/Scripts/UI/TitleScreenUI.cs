@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,18 +17,26 @@ public class TitleScreenUI : UIScreen
         _mainMenuUI = GameManager.Instance.UIManager.
             GetUIWidget(typeof(MainMenuUI)).GetComponent<MainMenuUI>();
 
-        _mainMenuUI.GetInputs().UI.Navigate.performed += NavigationPerformed; 
+        GameManager.Instance.UIManager.GetInputs().UI.Navigate.performed += NavigationPerformed; 
 
 
         Setup();
     }
 
+    void OnDestroy(){
+        GameManager.Instance.UIManager.GetInputs().UI.Navigate.performed -= NavigationPerformed;
+    }
+
     private void NavigationPerformed(InputAction.CallbackContext context)
     {
+        if(!isActiveAndEnabled){
+            return;
+        }
+
         if(GameManager.Instance.UIManager.GetEventSystem().currentSelectedGameObject != null ){
             return;
         }
-        
+
         GameManager.Instance.UIManager.SetSelectedWdget(_firstWidget);
     }
 

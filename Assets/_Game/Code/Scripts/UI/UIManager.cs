@@ -9,10 +9,18 @@ public class UIManager : MonoBehaviour
 
     EventSystem _eventSystem;
 
+    private CatnessOverloadInputs _inputs;
+
+    public CatnessOverloadInputs GetInputs(){
+        return _inputs;
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
         _eventSystem = GetComponentInChildren<EventSystem>();
+        _inputs = new CatnessOverloadInputs();
+        _inputs.Enable();
         Debug.Log(_eventSystem == null);
     }
 

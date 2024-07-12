@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseUI : MonoBehaviour
+public class PauseUI : UIScreen
 {
 
     public GameObject PauseMenuOrigin;
+
+    [SerializeField] GameObject _firstWidget;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class PauseUI : MonoBehaviour
     public void OpenPauseMenu()
     {
         PauseMenuOrigin.SetActive(true);
+        Setup();
     }
 
     public void ClosePauseMenu()
@@ -42,4 +45,8 @@ public class PauseUI : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public override void Setup()
+    {
+        GameManager.Instance.UIManager.GetEventSystem().SetSelectedGameObject(_firstWidget);
+    }
 }
