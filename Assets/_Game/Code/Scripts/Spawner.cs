@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
     List<SpawnPointValue> possibleSpawningPoints;
 
     [Header("Spawner Parameters")]
-    private Transform Player;
+    private Transform PlayerTransform;
     public GameObject SpawnedObject;
     public float IntervalSpawnTime = 5;
     private float _intervalSpawnTimer = 0;
@@ -39,19 +39,28 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (ObjectManager.GetObjectsOfType<Player>()[0] == null) {
+        if (GameManager.Instance.GameplayRules.GetPlayer() == null) {
             isSpawning = false;
             return;
         }
 
         _cam = Camera.main;
 
-        Player = ObjectManager.GetObjectsOfType<Player>()[0].transform;
+        PlayerTransform = GameManager.Instance.GameplayRules.GetPlayer().transform;
 
-        //Player.GetComponent<Health>().OnDeath += OnPlayerDeath;
+        PlayerTransform.GetComponent<Player>().GetHealth().OnDeath += OnPlayerDeath;
         spawnBounds = GetComponent<BoxCollider>().bounds;
         path = new NavMeshPath();
         possibleSpawningPoints = new List<SpawnPointValue>();
+    }
+
+    void OnDestroy(){
+
+        if(PlayerTransform == null){
+            return;
+        }
+
+        PlayerTransform.GetComponent<Player>().GetHealth().OnDeath -= OnPlayerDeath;
     }
 
     private void OnPlayerDeath()
@@ -70,7 +79,7 @@ public class Spawner : MonoBehaviour
 
             if (IsOutOfScreen(child)) {
 
-                NavMesh.CalculatePath(child.position, Player.position, NavMesh.AllAreas, path);
+                NavMesh.CalculatePath(child.position, PlayerTransform.position, NavMesh.AllAreas, path);
 
                 float distance = 0.0f;
                 for (int j = 0; j < path.corners.Length - 1; ++j) {
@@ -127,7 +136,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _currentGameTime += Time.deltaTime;
+        _currentGameTime = GameManager.Instance.GameplayRules.GetGameplayTimer();
         if (isSpawning) {
             //GameManager.Instance.GameUI.UpdateTimer(_currentGameTime);
         }

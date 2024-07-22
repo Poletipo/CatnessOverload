@@ -24,13 +24,6 @@ public class GameUI : MonoBehaviour
     private TextMeshProUGUI _moneyValue;
 
     //[Header("Shop")]
-    //public Animation ShopBtnAnimation;
-    //public GameObject ShopOrigin;
-    //public TextMeshProUGUI ShopPrompt;
-    //public TextMeshProUGUI ShopCostValue;
-    //private Shop currentShop;
-
-    //[Header("Shop")]
     public GameObject GameOverOrigin;
 
     public ShopUI ShopMenu;
@@ -55,10 +48,9 @@ public class GameUI : MonoBehaviour
     public TextMeshProUGUI PreviousTimerValue;
     private float timer = 0;
 
-    private GameObject _player;
+    private Player _player;
     private bool playerIsDead = false;
     private Health playerHealth;
-    private Player playerTopDownShooter;
 
     private void Awake()
     {
@@ -68,19 +60,24 @@ public class GameUI : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        _player = ObjectManager.GetObjectsOfType<Player>()[0];
+        while(_player == null){
+            _player = GameManager.Instance.GameplayRules.GetPlayer();
+            yield return null;
+        }
 
         if (_player != null) {
 
-            playerHealth = _player.GetComponent<Player>().GetHealth();
+            playerHealth = _player.GetHealth();
             playerHealth.OnHpChanged += OnHpChanged;
             playerHealth.OnDeath += OnDeath;
 
-            playerTopDownShooter = _player.GetComponent<Player>();
-            playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
+            _player.OnMoneyChanged += OnMoneyChanged;
         }
+
+        GameManager.Instance.GameplayRules.OnTimerChanged += UpdateTimer;
+
 
         OnMoneyChanged();
         HealthOriginPosition = HealthOrigin.position;
@@ -89,7 +86,15 @@ public class GameUI : MonoBehaviour
 
     private void OnDestroy()
     {
-        playerTopDownShooter.OnMoneyChanged -= OnMoneyChanged;
+        if(_player==null){
+            return;
+        }
+        _player.OnMoneyChanged -= OnMoneyChanged;
+
+        if(GameManager.Instance.GameplayRules==null){
+            return;
+        }
+        GameManager.Instance.GameplayRules.OnTimerChanged -= UpdateTimer;
     }
 
 
@@ -133,7 +138,7 @@ public class GameUI : MonoBehaviour
 
     private void OnMoneyChanged()
     {
-        _moneyValue.text = playerTopDownShooter.MoneyAmount.ToString();
+        _moneyValue.text = _player.MoneyAmount.ToString();
     }
 
     private void OnHpChanged()

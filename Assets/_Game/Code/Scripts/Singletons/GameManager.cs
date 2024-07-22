@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
     public GameObject CameraObject { get; private set; }
     public AudioSource AudioManager { get; private set; }
     public UIManager UIManager { get; private set; }
+
+    public GameplayRules GameplayRules;
+
     Factory[] factories;
 
     public bool FirstTimeSession = true;
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour
     {
         PoolManager.Reset();
         ObjectManager.ResetList();
+        GameplayRules = null;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
@@ -79,6 +83,9 @@ public class GameManager : MonoBehaviour
         }
 
         CameraObject = Camera.main.gameObject;
+
+        GameplayRules = FindObjectOfType<GameplayRules>();
+
     }
 
 }
