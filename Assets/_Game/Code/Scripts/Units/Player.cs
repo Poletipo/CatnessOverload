@@ -50,6 +50,10 @@ public class Player : Unit
 
     public WeaponManager WeaponManager { get; private set; }
 
+    [SerializeField] Animation _animation;
+
+
+
     private void Start()
     {
         _health.OnDeath += OnDeath;
@@ -61,7 +65,7 @@ public class Player : Unit
     {
         IsDead = true;
 
-        GetComponent<Animation>().Play();
+        _animation.Play(); // TODO : Reconnect animation component from visuals
 
         float end = Time.time + 1;
 

@@ -21,7 +21,6 @@ public class UIManager : MonoBehaviour
         _eventSystem = GetComponentInChildren<EventSystem>();
         _inputs = new CatnessOverloadInputs();
         _inputs.Enable();
-        Debug.Log(_eventSystem == null);
     }
 
     public EventSystem GetEventSystem(){

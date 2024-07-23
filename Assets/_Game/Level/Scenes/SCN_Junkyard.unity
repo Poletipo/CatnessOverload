@@ -18571,7 +18571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404880553}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5540627, y: 0.00000002864776, z: -0.000000019066826, w: 0.83247495}
+  m_LocalRotation: {x: 0.5540627, y: -0.000000028647767, z: 0.000000019066832, w: 0.83247495}
   m_LocalPosition: {x: 0, y: 31.11, z: -16.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -27315,26 +27315,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BulletBounceShop
       objectReference: {fileID: 0}
-    - target: {fileID: 508408318640688757, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 508408318640688757, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 508408318640688757, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: color.r
-      value: 0.32300568
-      objectReference: {fileID: 0}
-    - target: {fileID: 508408318640688758, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 508408318640688758, guid: 1958777d0d6fd0e4d9b250163cba3584,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27384,65 +27364,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196277, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_text
-      value: 'Bullet Bounce Upgrade
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196277, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: ab1a2af347de6fb4692de73e3627dbab,
-        type: 2}
-    - target: {fileID: 6596690280491196277, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196277, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196277, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.22545147
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196277, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -8271140823202645347, guid: ab1a2af347de6fb4692de73e3627dbab,
-        type: 2}
-    - target: {fileID: 6596690280491196277, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278255417
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196278, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 285.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196278, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -68.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196278, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 23.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6596690280491196279, guid: 1958777d0d6fd0e4d9b250163cba3584,
-        type: 3}
-      propertyPath: m_Name
-      value: BulletBounceUpgrade
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27643,12 +27564,12 @@ PrefabInstance:
     - target: {fileID: 6951721469448158237, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000002864776
+      value: -0.000000028647767
       objectReference: {fileID: 0}
     - target: {fileID: 6951721469448158237, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000019066826
+      value: 0.000000019066832
       objectReference: {fileID: 0}
     - target: {fileID: 7741046365085364626, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}
