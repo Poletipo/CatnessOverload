@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class ShopUI : MonoBehaviour
 {
 
     [Header("Shop")]
-    GameObject ShopUILayer;
+    [SerializeField] GameObject ShopUILayer;
     public Animation ShopBtnAnimation;
     public TextMeshProUGUI ShopPrompt;
     public TextMeshProUGUI ShopCostValue;
@@ -17,7 +18,6 @@ public class ShopUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ShopUILayer = transform.GetChild(0).gameObject;
     }
 
     public void AddShopListener(Shop shop)
@@ -27,8 +27,21 @@ public class ShopUI : MonoBehaviour
         shop.OnTryingShopping += ShoppingButtonAnimation;
     }
 
+    public void RemoveShopListener(Shop shop)
+    {
+        shop.OnEntering -= ShowShopPrompt;
+        shop.OnExiting -= HideShopPrompt;
+        shop.OnTryingShopping -= ShoppingButtonAnimation;
+    }
+
+    void Update(){
+    }
+
     public void ShowShopPrompt(Shop currentShop)
     {
+        if(ShopUILayer==null){
+            return;
+        }
         ShopUILayer.SetActive(true);
         ShopCostValue.text = currentShop.Cost.ToString();
         ShopPrompt.text = currentShop.stringPrompt;

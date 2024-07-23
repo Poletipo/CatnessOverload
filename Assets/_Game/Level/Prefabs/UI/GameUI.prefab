@@ -2101,6 +2101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverOrigin
       objectReference: {fileID: 0}
+    - target: {fileID: 4830375705483268659, guid: 8c48a330d191ec748b199363b6ab5262,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7861279647799446875, guid: 8c48a330d191ec748b199363b6ab5262,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

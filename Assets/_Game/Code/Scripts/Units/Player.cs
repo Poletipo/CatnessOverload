@@ -65,7 +65,7 @@ public class Player : Unit
     {
         IsDead = true;
 
-        _animation.Play(); // TODO : Reconnect animation component from visuals
+        _animation.Play();
 
         float end = Time.time + 1;
 

@@ -852,6 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25bc02b854c6bb342b978b6a28bb8ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShopUILayer: {fileID: 7152980151661202730}
   ShopBtnAnimation: {fileID: 7233635048034403360}
   ShopPrompt: {fileID: 2080915730970461907}
   ShopCostValue: {fileID: 2880525432830878040}

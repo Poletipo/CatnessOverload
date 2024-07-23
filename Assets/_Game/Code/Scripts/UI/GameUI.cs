@@ -204,11 +204,6 @@ public class GameUI : MonoBehaviour
         PauseManager.ChangePauseStatus();
     }
 
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(0);
-    }
-
     // Update is called once per frame
     void Update()
     {

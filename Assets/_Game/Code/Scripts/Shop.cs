@@ -23,16 +23,25 @@ public abstract class Shop : MonoBehaviour
 
     abstract public void Upgrade();
 
-    private void Start()
+    private IEnumerator Start()
     {
 
         if (GameManager.Instance.UIManager == null) {
-            return;
+            yield break;
         }
 
+
+        yield return null;
         GameUI UI = GameManager.Instance.UIManager.
             GetUIWidget(typeof(GameUI)).GetComponent<GameUI>();
         UI.ShopMenu.AddShopListener(this);
+    }
+
+    void OnDestroy(){
+        
+        GameUI UI = GameManager.Instance.UIManager.
+            GetUIWidget(typeof(GameUI)).GetComponent<GameUI>();
+        UI.ShopMenu.RemoveShopListener(this);
     }
 
     public bool TryShopping()
