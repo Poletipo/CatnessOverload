@@ -503,6 +503,91 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4244653665010980560, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244653665010980560, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244653665010980560, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 854684045162390870}
+    - target: {fileID: 4244653665010980560, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244653665010980560, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244653665010980560, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TitleScreenUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244653665010980560, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215344737022972276, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215344737022972276, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215344737022972276, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5215344737022972276, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341596331252663238, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_Name
+      value: Btn_Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913595444568952007, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913595444568952007, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913595444568952007, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913595444568952007, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265068916283970952, guid: bb06fccf7d98ec545888888753fa4f0a,
+        type: 3}
+      propertyPath: m_text
+      value: QUIT
+      objectReference: {fileID: 0}
     - target: {fileID: 8815507070915451522, guid: bb06fccf7d98ec545888888753fa4f0a,
         type: 3}
       propertyPath: m_Name

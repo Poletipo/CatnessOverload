@@ -24,7 +24,7 @@ public class GameUI : MonoBehaviour
     private TextMeshProUGUI _moneyValue;
 
     //[Header("Shop")]
-    public GameObject GameOverOrigin;
+    public GameOverUI GameOverUI;
 
     public ShopUI ShopMenu;
 
@@ -42,10 +42,6 @@ public class GameUI : MonoBehaviour
     public GameObject AimJoystick;
 
     [Header("GameOver")]
-    public TextMeshProUGUI FinalTimerValue;
-    public GameObject NewRecordTxt;
-    public TextMeshProUGUI PreviousTimerTxt;
-    public TextMeshProUGUI PreviousTimerValue;
     private float timer = 0;
 
     private Player _player;
@@ -83,6 +79,10 @@ public class GameUI : MonoBehaviour
         HealthOriginPosition = HealthOrigin.position;
     }
 
+    private void OnDeath()
+    {
+        GameOverUI.ShowGameOver();
+    }
 
     private void OnDestroy()
     {
@@ -95,45 +95,6 @@ public class GameUI : MonoBehaviour
             return;
         }
         GameManager.Instance.GameplayRules.OnTimerChanged -= UpdateTimer;
-    }
-
-
-    private async void OnDeath()
-    {
-
-        float end = Time.time + 2f;
-
-        playerIsDead = true;
-
-        while (Time.time < end) {
-            await Task.Yield();
-        }
-
-        //MoveJoystick.SetActive(false);
-        //AimJoystick.SetActive(false);
-        FinalTimerValue.text = TimerValue.text;
-
-        GameOverOrigin.SetActive(true);
-
-        float bestTime = SaveTime.LoadTimeData();
-
-        PreviousTimerValue.text = TimeToString(bestTime);
-
-        if (bestTime < timer) {
-            // New record!
-            NewRecordTxt.SetActive(true);
-            SaveTime.SaveTimeData(timer);
-            if (bestTime == -1) {
-                // no previous record
-                PreviousTimerTxt.text = "";
-                PreviousTimerValue.text = "";
-            }
-        }
-        else {
-            //show normal time
-            NewRecordTxt.SetActive(false);
-            PreviousTimerTxt.text = "Best Time:";
-        }
     }
 
     private void OnMoneyChanged()

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -50,11 +49,12 @@ public class TitleScreenUI : UIScreen
         _mainMenuUI.ShowLevelSelectionScreen();
     }
 
-    public override void Setup()
-    {
-        Debug.Log("Seeteup title");
-        GameManager.Instance.UIManager.SetSelectedWdget(_firstWidget);
+    public void QuitGame(){
+        Application.Quit();
     }
 
-    //TODO : Quit Button
+    public override void Setup()
+    {
+        GameManager.Instance.UIManager.SetSelectedWdget(_firstWidget);
+    }
 }

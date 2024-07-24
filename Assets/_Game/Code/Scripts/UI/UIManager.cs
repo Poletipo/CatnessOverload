@@ -38,6 +38,11 @@ public class UIManager : MonoBehaviour
 
     public GameObject GetUIWidget(Type widgetType)
     {
+
+        if(GetComponentInChildren(widgetType) == null){
+            return null;
+        }
+
         return GetComponentInChildren(widgetType).gameObject;
     }
 
