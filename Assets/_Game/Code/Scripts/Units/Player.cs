@@ -65,6 +65,8 @@ public class Player : Unit
     {
         IsDead = true;
 
+        _inputManager.DisableInputs();
+
         _animation.Play();
 
         float end = Time.time + 1;

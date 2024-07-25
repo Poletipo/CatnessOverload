@@ -76,7 +76,6 @@ public class InputManager : MonoBehaviour
         PauseManager.OnUnPause -= EnableInputs;
     }
 
-
     private void Interact_performed(InputAction.CallbackContext obj)
     {
         _interacter.Interact();
@@ -92,18 +91,24 @@ public class InputManager : MonoBehaviour
         PauseManager.ChangePauseStatus();
     }
 
-    private void EnableInputs()
+    public void EnableInputs()
     {
-        _inputs.Player.PrimaryFire.Enable();
-        _inputs.Player.Laser.Enable();
-        _inputs.Player.Interact.Enable();
+
+        _inputs.Enable();
+
+        // _inputs.Player.PrimaryFire.Enable();
+        // _inputs.Player.Laser.Enable();
+        // _inputs.Player.Interact.Enable();
     }
 
-    private void DisableInputs()
+    public void DisableInputs()
     {
-        _inputs.Player.PrimaryFire.Disable();
-        _inputs.Player.Laser.Disable();
-        _inputs.Player.Interact.Disable();
+
+        _inputs.Disable();
+
+        // _inputs.Player.PrimaryFire.Disable();
+        // _inputs.Player.Laser.Disable();
+        // _inputs.Player.Interact.Disable();
     }
 
     private void Look_Mouse(InputAction.CallbackContext obj)
