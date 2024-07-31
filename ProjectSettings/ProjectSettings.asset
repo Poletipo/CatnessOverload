@@ -161,7 +161,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Pletipo.CatnessOverload
-    Standalone: com.Pletipo.CutenessOverload
+    Standalone: com.Pletipo.Catness-Overload
   buildNumber:
     Standalone: 0
     VisionOS: 0
