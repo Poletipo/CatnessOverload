@@ -13,8 +13,9 @@ public class RandomTexture : MonoBehaviour {
     {
         mat = GetComponent<Renderer>().material;
 
+        int index = Random.Range(0, textures.Length);
 
-        mat.SetTexture("_MainTex", textures[Random.Range(0, textures.Length)]);
+        mat.SetTexture("_BaseMap", textures[index]);
 
     }
 
