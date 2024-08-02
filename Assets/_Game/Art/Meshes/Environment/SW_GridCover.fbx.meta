@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 480ff2e8b84ad6b44b78402ddf4a8e31
+guid: 06e39824674b41e4c815c3c977fa8e51
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,18 +7,9 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MAT_Floor_Ciment
-    second: {fileID: 2100000, guid: 207ef810a26e5f640911fc0a4c96b214, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_Grid
-    second: {fileID: 2100000, guid: ab03bb82ebe4062418a1255707d7163d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_SewerBrick
-    second: {fileID: 2100000, guid: d4cacee35a212b04383118e77080307e, type: 2}
+      name: MAT_Metal
+    second: {fileID: 6832884059430902459, guid: 642012e5008a793439e9749c91a87cb5,
+      type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

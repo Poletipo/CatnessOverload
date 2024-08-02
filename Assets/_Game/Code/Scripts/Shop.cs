@@ -37,8 +37,12 @@ public abstract class Shop : MonoBehaviour
         UI.ShopMenu.AddShopListener(this);
     }
 
-    void OnDestroy(){
+    void OnDisable(){
         
+        if(GameManager.Instance.UIManager == null){
+            return;
+        }
+
         GameUI UI = GameManager.Instance.UIManager.
             GetUIWidget(typeof(GameUI)).GetComponent<GameUI>();
         UI.ShopMenu.RemoveShopListener(this);

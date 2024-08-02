@@ -1,21 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
-public class RandomTexture : MonoBehaviour {
+public class RandomTextureDecal : MonoBehaviour {
     
-    public Texture[] textures;
+    public Material[] textures;
 
     private Material mat;
 
     // Start is called before the first frame update
     void Start()
     {
-        mat = GetComponent<Renderer>().material;
+        mat = GetComponent<DecalProjector>().material;
+
 
         int index = Random.Range(0, textures.Length);
+        Debug.Log(index);
 
-        mat.SetTexture("_BaseMap", textures[index]);
+        mat = textures[index];
 
     }
 

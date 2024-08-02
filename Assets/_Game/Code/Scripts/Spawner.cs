@@ -37,12 +37,13 @@ public class Spawner : MonoBehaviour
     private NavMeshPath path;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        if (GameManager.Instance.GameplayRules.GetPlayer() == null) {
+        while (GameManager.Instance.GameplayRules.GetPlayer() == null) {
             isSpawning = false;
-            return;
+            yield return null;
         }
+        isSpawning = true;
 
         _cam = Camera.main;
 
@@ -54,7 +55,7 @@ public class Spawner : MonoBehaviour
         possibleSpawningPoints = new List<SpawnPointValue>();
     }
 
-    void OnDestroy(){
+    void OnDisable(){
 
         if(PlayerTransform == null){
             return;
