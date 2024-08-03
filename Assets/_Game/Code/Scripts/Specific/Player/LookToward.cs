@@ -47,7 +47,6 @@ public class LookToward : MonoBehaviour
     }
 
 
-
     public void LookAtMouse(Vector2 mousePosition)
     {
         float distance;
@@ -55,6 +54,10 @@ public class LookToward : MonoBehaviour
         if (_plane.Raycast(ray, out distance)) {
             _worldMousePosition = ray.GetPoint(distance);
         }
+    }
+
+    public Quaternion GetLookAtRotation(){
+        return _lookAtRotation;
     }
 
 
