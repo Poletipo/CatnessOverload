@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class LevelSelectionUI : UIScreen
     [SerializeField] MapInfo MapToLoad;
 
     [SerializeField] TextMeshProUGUI SelectedMapText;
+    [SerializeField] Image SelectedMapImage;
 
     [SerializeField] GameObject _firstWidget;
     [SerializeField] GameObject _playButton;
@@ -23,7 +25,7 @@ public class LevelSelectionUI : UIScreen
     // Start is called before the first frame update
     void Start()
     {
-        SelectedMapText.text = MapToLoad.MapName;
+        ChangeMap(MapToLoad);
         GameManager.Instance.UIManager.GetInputs().UI.Cancel.performed += BackToTitleScreenInput;
         GameManager.Instance.UIManager.GetInputs().UI.Navigate.performed += NavigationPerformed;
     }
@@ -55,13 +57,20 @@ public class LevelSelectionUI : UIScreen
 
     private void BackToTitleScreenInput(InputAction.CallbackContext context)
     {
-        BackToTitleScreen();
+        if(GameManager.Instance.UIManager.GetEventSystem().currentSelectedGameObject == _playButton){
+            GameManager.Instance.UIManager.SetSelectedWdget(_firstWidget);
+        }
+        else{
+            BackToTitleScreen();
+        }
+
     }
 
     public void ChangeMap(MapInfo info)
     {
         MapToLoad = info;
         SelectedMapText.text = MapToLoad.MapName;
+        SelectedMapImage.sprite = MapToLoad.Thumbnail;
     }
 
     public void LoadLevel()

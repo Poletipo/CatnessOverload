@@ -15,3 +15,4 @@ MonoBehaviour:
   MapName: Junktown
   MapNameToLoad: SCN_Junkyard
   Description: This is the town of the junk
+  Thumbnail: {fileID: 21300000, guid: fa60212a6af93da4787cd00c1b0b6cd4, type: 3}

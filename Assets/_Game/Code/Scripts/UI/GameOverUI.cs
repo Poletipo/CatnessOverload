@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameOverUI : UIScreen
@@ -20,6 +22,24 @@ public class GameOverUI : UIScreen
     public override void Setup()
     {
         GameManager.Instance.UIManager.GetEventSystem().SetSelectedGameObject(_firstWidget);
+        GameManager.Instance.UIManager.GetInputs().UI.Navigate.performed += NavigationPerformed;
+    }
+
+    private void NavigationPerformed(InputAction.CallbackContext context)
+    {
+        if(!VisualLayer.activeSelf){
+            return;
+        }
+
+        if(GameManager.Instance.UIManager.GetEventSystem().currentSelectedGameObject != null ){
+            return;
+        }
+
+        GameManager.Instance.UIManager.SetSelectedWdget(_firstWidget);
+    }
+
+    void OnDestroy(){
+        GameManager.Instance.UIManager.GetInputs().UI.Navigate.performed -= NavigationPerformed;
     }
 
     public void QuitToMainMenu(){
