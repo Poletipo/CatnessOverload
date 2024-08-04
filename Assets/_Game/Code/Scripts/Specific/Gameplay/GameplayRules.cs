@@ -8,8 +8,8 @@ public class GameplayRules : MonoBehaviour
     public Action<float> OnTimerChanged;
     public Action OnGameEnded;
 
-    int DeadEnemyCount = 0;
-    int SpwanedEnemyCount = 0;
+    // int DeadEnemyCount = 0;
+    // int SpwanedEnemyCount = 0;
 
     float _gameplayTimer = 0;
 

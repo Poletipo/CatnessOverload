@@ -68,14 +68,20 @@ public class GameOverUI : UIScreen
 
         FinalTimerValue.text = TimeToString(timer);
 
-        float bestTime = SaveTime.LoadTimeData();
+        string mapName = SceneManager.GetActiveScene().name;
+
+
+        float bestTime = 0;
+        if(SaveTime.SaveExist() && SaveTime.ContainsData(mapName)){
+            bestTime = SaveTime.GetData(mapName).time;
+        }
 
         PreviousTimerValue.text = TimeToString(bestTime);
 
         if (bestTime < timer) {
             // New record!
             NewRecordTxt.SetActive(true);
-            SaveTime.SaveTimeData(timer);
+            SaveTime.SaveTimeData(mapName,timer);
             if (bestTime == -1) {
                 // no previous record
                 PreviousTimerTxt.text = "";
