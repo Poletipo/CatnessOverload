@@ -13,6 +13,9 @@ public class LookToward : MonoBehaviour
     private Quaternion _lookAtRotation;
 
     private Vector3 _worldMousePosition;
+    private float _distanceToMouse = 0;
+
+    private float _joystickMagnitude = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -32,15 +35,16 @@ public class LookToward : MonoBehaviour
     {
         Vector3 localMousePosition = _worldMousePosition - transform.position;
 
+        _distanceToMouse = localMousePosition.magnitude;
+
         float desiredAngle = Mathf.Atan2(localMousePosition.z, -localMousePosition.x) * Mathf.Rad2Deg;
         _lookAtRotation = Quaternion.AngleAxis(desiredAngle - _angleOffset, Vector3.up);
-        //_lookAtRotation = Quaternion.RotateTowards(transform.rotation,
-        //Quaternion.AngleAxis(desiredAngle - _angleOffset, Vector3.down), _rotationSpeed);
         transform.rotation = _lookAtRotation;
     }
 
     public void LookAtDirection(Vector2 direction)
     {
+        _joystickMagnitude = direction.magnitude;
         float desiredAngle = Mathf.Atan2(direction.y, -direction.x) * Mathf.Rad2Deg;
         _lookAtRotation = Quaternion.RotateTowards(transform.rotation, Quaternion.AngleAxis(desiredAngle - 90, Vector3.up), _rotationSpeed);
         transform.rotation = _lookAtRotation;// Quaternion.AngleAxis(desiredAngle - 90, Vector3.up);
@@ -60,5 +64,11 @@ public class LookToward : MonoBehaviour
         return _lookAtRotation;
     }
 
+    public float GetMouseDistance(){
+        return _distanceToMouse;
+    }
 
+    public float GetJoystickMagnitude(){
+        return _joystickMagnitude;
+    } 
 }
