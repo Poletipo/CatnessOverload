@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 
 public class UIManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class UIManager : MonoBehaviour
     EventSystem _eventSystem;
 
     private CatnessOverloadInputs _inputs;
+
+    [SerializeField] Transform _permanentUI;
+    [SerializeField] Transform _TempUI;
 
     public CatnessOverloadInputs GetInputs(){
         return _inputs;
@@ -33,24 +37,28 @@ public class UIManager : MonoBehaviour
 
     public void AddWidget(GameObject widget)
     {
-        widget.transform.SetParent(transform);
+        widget.transform.SetParent(_TempUI);
     }
 
     public GameObject GetUIWidget(Type widgetType)
     {
 
-        if(GetComponentInChildren(widgetType) == null){
+        if(_TempUI.GetComponentInChildren(widgetType) == null){
             return null;
         }
 
-        return GetComponentInChildren(widgetType).gameObject;
+        return _TempUI.GetComponentInChildren(widgetType).gameObject;
     }
 
     public void ClearUI()
     {
-        for (int i = 1; i < transform.childCount; i++) {
-            Destroy(transform.GetChild(i).gameObject);
+        for (int i = 0; i < _TempUI.childCount; i++) {
+            Destroy(_TempUI.GetChild(i).gameObject);
         }
+    }
+
+    public void StartScreenTransition(){
+        _permanentUI.GetComponentInChildren<ScreenTransition>().StartScreenTransition();
     }
 
 

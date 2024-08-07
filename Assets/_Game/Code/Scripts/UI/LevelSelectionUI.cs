@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -73,8 +74,10 @@ public class LevelSelectionUI : UIScreen
         SelectedMapImage.sprite = MapToLoad.Thumbnail;
     }
 
-    public void LoadLevel()
+    public async void LoadLevel()
     {
+        GameManager.Instance.UIManager.StartScreenTransition();
+        await Task.Delay(500);
         SceneManager.LoadScene(MapToLoad.MapNameToLoad);
     }
 

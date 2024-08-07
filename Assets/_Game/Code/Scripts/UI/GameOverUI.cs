@@ -42,11 +42,16 @@ public class GameOverUI : UIScreen
         GameManager.Instance.UIManager.GetInputs().UI.Navigate.performed -= NavigationPerformed;
     }
 
-    public void QuitToMainMenu(){
+    public async void QuitToMainMenu(){
+
+        GameManager.Instance.UIManager.StartScreenTransition();
+        await Task.Delay(500);
         SceneManager.LoadScene(0);
     }
 
-    public void RestartLevel(){
+    public async void RestartLevel(){
+        GameManager.Instance.UIManager.StartScreenTransition();
+        await Task.Delay(500);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

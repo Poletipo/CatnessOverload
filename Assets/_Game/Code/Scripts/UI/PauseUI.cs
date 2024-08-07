@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -71,9 +72,11 @@ public class PauseUI : UIScreen
         PauseManager.UnPauseGame();
     }
 
-    public void QuitGame()
+    public async void QuitGame()
     {
         PauseManager.UnPauseGame();
+        GameManager.Instance.UIManager.StartScreenTransition();
+        await Task.Delay(500);
         SceneManager.LoadScene(0);
     }
 
