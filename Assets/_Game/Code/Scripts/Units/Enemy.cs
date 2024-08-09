@@ -21,6 +21,7 @@ public class Enemy : Unit
 
     public GameObject Coin;
     public GameObject Explosion;
+    public GameObject Bolts;
     public GameObject BurnMark;
 
     public float MinHurtDistance = 5f;
@@ -86,6 +87,8 @@ public class Enemy : Unit
             Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
         GameObject explosion = PoolManager.GetPoolObject(Explosion);
         explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
+        GameObject bolts = PoolManager.GetPoolObject(Bolts);
+        bolts.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
 
 
         float shakeValue = (1.0f - (Vector3.Distance(transform.position, player.transform.position) / 15f));
