@@ -27,9 +27,11 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") {
+        Player player;
 
-            other.GetComponent<Player>().MoneyAmount += CoinValue;
+        if (other.TryGetComponent<Player>(out player)) {
+
+            player.MoneyAmount += CoinValue;
             GameManager.Instance.AudioManager.PlayOneShot(CoinShuffle);
 
             DestroyCoin();

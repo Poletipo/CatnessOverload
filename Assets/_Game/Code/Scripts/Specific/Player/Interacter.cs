@@ -27,7 +27,6 @@ public class Interacter : MonoBehaviour
         }
 
         _currentShop.TryShopping();
-
         return true;
     }
 
@@ -36,7 +35,9 @@ public class Interacter : MonoBehaviour
     {
         Shop shop;
 
+
         if (other.TryGetComponent<Shop>(out shop)) {
+            
             _currentShop = shop;
         }
     }

@@ -108,7 +108,7 @@ public class ReflectorBullet : MonoBehaviour
 
             if (target.tag == "Enemy") {
                 target.GetComponent<NavMeshAgent>().velocity = _direction * 5;
-                target.GetComponent<Health>().Hurt(_bulletDamage);
+                //target.GetComponent<Health>().Hurt(_bulletDamage);
                 target.GetComponent<Enemy>().Stun();
             }
         }

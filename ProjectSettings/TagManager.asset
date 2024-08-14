@@ -19,10 +19,10 @@ TagManager:
   - CameraIgnore
   - Wall
   - Enemy
-  - Coin
-  - Destructible
+  - Pickup
+  - Projectile
   - InvisibleWall
-  - 
+  - Ally
   - 
   - 
   - 

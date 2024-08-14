@@ -12,7 +12,7 @@ public class Enemy : Unit
     NavMeshAgent agent;
     Health health;
     Health playerHealth;
-    Damageable hitable;
+    Damageable damageable;
 
     public AudioClip[] punchSound;
     public AudioClip[] ExplosionSound;
@@ -21,7 +21,8 @@ public class Enemy : Unit
 
     public GameObject Coin;
     public GameObject Explosion;
-    public GameObject Bolts;
+    public GameObject HeartMissile;
+    [SerializeField] Transform _missileSpawnPoint;
     public GameObject BurnMark;
 
     public float MinHurtDistance = 5f;
@@ -42,8 +43,6 @@ public class Enemy : Unit
         health = GetComponent<Health>();
         health.OnHurt += OnHurt;
         health.OnDeath += OnDeath;
-
-        hitable = GetComponent<Damageable>();
     }
 
     private void OnDestroy()
@@ -56,7 +55,9 @@ public class Enemy : Unit
 
     private void OnPlayerDeath()
     {
-        //agent.isStopped = true;
+        if(agent.isOnNavMesh){
+            agent.isStopped = true;
+        }
     }
 
     public void Setup(Vector3 position, Quaternion rotation, int hp)
@@ -87,11 +88,8 @@ public class Enemy : Unit
             Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
         GameObject explosion = PoolManager.GetPoolObject(Explosion);
         explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
-        GameObject bolts = PoolManager.GetPoolObject(Bolts);
-        bolts.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
 
-
-        float shakeValue = (1.0f - (Vector3.Distance(transform.position, player.transform.position) / 15f));
+        float shakeValue = 1.0f - (Vector3.Distance(transform.position, player.transform.position) / 15f);
         GameManager.Instance.CameraObject.GetComponent<CameraShake>().AddTrauma(shakeValue);
         AudioSource.PlayClipAtPoint(ExplosionSound[UnityEngine.Random.Range(0, ExplosionSound.Length)], transform.position, 1f);
         StopStun();
@@ -122,12 +120,21 @@ public class Enemy : Unit
 
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
-        if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned) {
 
-            playerHealth.Hurt((int)(MinHurtDistance / distance));
+        if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned){
+            
+            GameObject missile = PoolManager.GetPoolObject(HeartMissile);
+            missile.GetComponent<HeartMissile>().Setup(_missileSpawnPoint.position, transform.rotation, player.transform);
 
             hitIntervalTimer = 0;
         }
+
+        // if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned) {
+
+        //     playerHealth.Hurt((int)(MinHurtDistance / distance));
+
+        //     hitIntervalTimer = 0;
+        // }
 
         if (distance < MinHurtDistance && !_isStunned && !Hearts.isPlaying) {
             Hearts.Play();

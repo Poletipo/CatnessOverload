@@ -50,7 +50,7 @@ public abstract class Shop : MonoBehaviour
 
     public bool TryShopping()
     {
-
+        
         if (_player == null) {
             return false;
         }
@@ -71,7 +71,7 @@ public abstract class Shop : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") {
+        if (other.GetComponent<Player>() != null ) {
             _player = other.GetComponent<Player>();
             _playerInZone = true;
             OnEntering?.Invoke(this);
@@ -80,7 +80,7 @@ public abstract class Shop : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player") {
+        if (other.GetComponent<Player>() != null) {
             _player = null;
             _playerInZone = false;
             OnExiting?.Invoke();
