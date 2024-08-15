@@ -26,7 +26,8 @@ public class Player : Unit
 
     [SerializeField] Health _health;
     [SerializeField] InputManager _inputManager;
-
+    [SerializeField] Damageable _damageable;
+    [SerializeField] HitFlash _hitFlash;
 
     public Health GetHealth()
     {
@@ -57,8 +58,14 @@ public class Player : Unit
     private void Start()
     {
         _health.OnDeath += OnDeath;
+        _damageable.OnHit += OnHit;
 
         WeaponManager = GetComponentInChildren<WeaponManager>();
+    }
+
+    private void OnHit(int damage)
+    {
+        _hitFlash.StartFlash();
     }
 
     private async void OnDeath()

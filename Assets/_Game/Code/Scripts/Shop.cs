@@ -37,7 +37,7 @@ public abstract class Shop : MonoBehaviour
         UI.ShopMenu.AddShopListener(this);
     }
 
-    void OnDisable(){
+    void OnApplicationQuit(){
         
         if(GameManager.Instance.UIManager == null){
             return;

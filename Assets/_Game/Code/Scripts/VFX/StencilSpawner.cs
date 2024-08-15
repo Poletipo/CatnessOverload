@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class StencilSpawner : MonoBehaviour
 {
-    private static Dictionary<GameObject, List<GameObject>> StencilList;
+    private static Dictionary<string, List<GameObject>> StencilList;
 
     private void Start()
     {
-        StencilList = new Dictionary<GameObject, List<GameObject>>();
+        StencilList = new Dictionary<string, List<GameObject>>();
         SceneManager.sceneUnloaded += SceneManager_sceneUnloaded;
     }
 
@@ -18,16 +18,16 @@ public class StencilSpawner : MonoBehaviour
         StencilList.Clear();
     }
 
-    public static void SpawnStencil(GameObject spawnObject, float spawnDistance, Vector3 position, Quaternion rotation)
+    public static void SpawnStencil(string spawnName, GameObject spawnObject, float spawnDistance, Vector3 position, Quaternion rotation)
     {
         bool validSpawn = true;
 
-        if (StencilList.ContainsKey(spawnObject)) {
+        if (StencilList.ContainsKey(spawnName)) {
 
             float sqrSpawnDistance = spawnDistance * spawnDistance;
 
-            for (int i = 1; i < StencilList[spawnObject].Count; i++) {
-                Vector3 distanceVector = position - StencilList[spawnObject][i].transform.position;
+            for (int i = 1; i < StencilList[spawnName].Count; i++) {
+                Vector3 distanceVector = position - StencilList[spawnName][i].transform.position;
 
                 float distance = Vector3.SqrMagnitude(distanceVector);
 
@@ -38,15 +38,15 @@ public class StencilSpawner : MonoBehaviour
             }
         }
         else {
-            StencilList.Add(spawnObject, new List<GameObject>());
-            StencilList[spawnObject].Add(new GameObject(spawnObject.name + "_Stencil"));
+            StencilList.Add(spawnName, new List<GameObject>());
+            StencilList[spawnName].Add(new GameObject(spawnName + "_Stencil"));
         }
 
         if (validSpawn) {
 
             GameObject tmp = Instantiate(spawnObject, position, rotation);
-            tmp.transform.parent = StencilList[spawnObject][0].transform;
-            StencilList[spawnObject].Add(tmp);
+            tmp.transform.parent = StencilList[spawnName][0].transform;
+            StencilList[spawnName].Add(tmp);
         }
     }
 

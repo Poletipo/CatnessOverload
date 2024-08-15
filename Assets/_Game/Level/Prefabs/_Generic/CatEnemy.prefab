@@ -5016,8 +5016,10 @@ MonoBehaviour:
   HeartMissile: {fileID: 380497711421993320, guid: ba68aa64e2d496f4798d5428e1167d54,
     type: 3}
   _missileSpawnPoint: {fileID: 1449067246704326554}
-  BurnMark: {fileID: 7029111667919281844, guid: b7ce1c430c2b1ed4293071f1466e0987,
-    type: 3}
+  BurnMarks:
+  - {fileID: 7029111667919281844, guid: b7ce1c430c2b1ed4293071f1466e0987, type: 3}
+  - {fileID: 7029111667919281844, guid: 4494bc9c20dcc0a4fa7e3db9d4bed9d8, type: 3}
+  - {fileID: 7029111667919281844, guid: 35796b7d93c98b04498aae0ac9380ad8, type: 3}
   MinHurtDistance: 5
   hitInterval: 1
   hitIntervalTimer: 0.2

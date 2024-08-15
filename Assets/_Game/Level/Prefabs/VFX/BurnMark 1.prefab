@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7029111667919281832}
   - component: {fileID: 7311615976230724523}
   m_Layer: 0
-  m_Name: BurnMark
+  m_Name: BurnMark 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 38de2cd7935a50a49927c20058bc289c, type: 2}
+  m_Material: {fileID: 2100000, guid: 016243656518f1f418f8c0018a5a0542, type: 2}
   m_DrawDistance: 1000
   m_FadeScale: 0.9
   m_StartAngleFade: 180

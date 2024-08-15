@@ -23,7 +23,7 @@ public class Enemy : Unit
     public GameObject Explosion;
     public GameObject HeartMissile;
     [SerializeField] Transform _missileSpawnPoint;
-    public GameObject BurnMark;
+    public GameObject[] BurnMarks;
 
     public float MinHurtDistance = 5f;
     public float hitInterval = 5f;
@@ -84,7 +84,7 @@ public class Enemy : Unit
         GameObject coin = PoolManager.GetPoolObject(Coin);
         coin.GetComponent<Coin>().Setup(transform.position, Quaternion.identity);
 
-        StencilSpawner.SpawnStencil(BurnMark, 1.5f, new Vector3(transform.position.x, 0.1f, transform.position.z),
+        StencilSpawner.SpawnStencil("BurnMarks", BurnMarks[UnityEngine.Random.Range(0,(BurnMarks.Length-1))], 1.5f, new Vector3(transform.position.x, 0.1f, transform.position.z),
             Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
         GameObject explosion = PoolManager.GetPoolObject(Explosion);
         explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
