@@ -8397,7 +8397,7 @@ Transform:
   m_GameObject: {fileID: 570572063}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5948227, y: -0.000000028647767, z: 0.000000019066832, w: 0.80385697}
-  m_LocalPosition: {x: 1.62, y: 11, z: 2.68}
+  m_LocalPosition: {x: 1.62, y: 11, z: 3.0800002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8415,7 +8415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba20e477a119cd46bce8c2f9f569a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxShakeIntensity: 1
+  MaxShakeIntensity: 10
   TraumaPower: 2
 --- !u!114 &570572068
 MonoBehaviour:

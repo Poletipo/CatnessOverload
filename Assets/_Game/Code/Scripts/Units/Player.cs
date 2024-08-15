@@ -66,6 +66,7 @@ public class Player : Unit
     private void OnHit(int damage)
     {
         _hitFlash.StartFlash();
+        GameManager.Instance.CameraObject.GetComponent<CameraShake>().SetTrauma(0.5f);
     }
 
     private async void OnDeath()
