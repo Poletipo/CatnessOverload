@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MapName: Sewer
   MapNameToLoad: SCN_Sewer
-  Description: The sewer under the city
+  Description: You've been overwhelmed and had to retreat in the sewers, but the
+    kitties are not giving up yet.
   Thumbnail: {fileID: 21300000, guid: 75f03f74cf8c3e2429e0596f21813eb2, type: 3}

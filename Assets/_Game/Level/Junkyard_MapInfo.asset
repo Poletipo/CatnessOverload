@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MapName: Junktown
   MapNameToLoad: SCN_Junkyard
-  Description: This is the town of the junk
+  Description: Robot cats are attacking the junkyard, and only a little robot turret
+    can protect us from their cute eyes.
   Thumbnail: {fileID: 21300000, guid: fa60212a6af93da4787cd00c1b0b6cd4, type: 3}

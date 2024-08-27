@@ -15,6 +15,7 @@ public class LevelSelectionUI : UIScreen
     [SerializeField] MapInfo MapToLoad;
 
     [SerializeField] TextMeshProUGUI SelectedMapText;
+    [SerializeField] TextMeshProUGUI SelectedMapDescription;
     [SerializeField] Image SelectedMapImage;
 
     [SerializeField] GameObject _firstWidget;
@@ -72,6 +73,7 @@ public class LevelSelectionUI : UIScreen
         MapToLoad = info;
         SelectedMapText.text = MapToLoad.MapName;
         SelectedMapImage.sprite = MapToLoad.Thumbnail;
+        SelectedMapDescription.text = MapToLoad.Description;
     }
 
     public async void LoadLevel()
