@@ -13,6 +13,8 @@ public class PauseUI : UIScreen
 
     [SerializeField] GameObject _firstWidget;
 
+    private bool _isReallyPaused = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +28,10 @@ public class PauseUI : UIScreen
 
     private void UnPause(InputAction.CallbackContext context)
     {
-        if(!PauseManager.GetPauseStatus()){
+        if(!_isReallyPaused){
+            _isReallyPaused = true;
             return;
         }
-
         PauseManager.UnPauseGame();
     }
 
@@ -57,7 +59,7 @@ public class PauseUI : UIScreen
     }
 
     public void OpenPauseMenu()
-    {
+    {   
         PauseMenuOrigin.SetActive(true);
         Setup();
     }
@@ -65,6 +67,7 @@ public class PauseUI : UIScreen
     public void ClosePauseMenu()
     {
         PauseMenuOrigin.SetActive(false);
+        _isReallyPaused = false;
     }
 
     public void ResumeGame()

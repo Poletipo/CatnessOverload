@@ -9,7 +9,7 @@ public class ObjectManager : MonoBehaviour
     public static void AddObject(GameObject obj, Type objectType)
     {
 
-        Debug.Log($"Added {obj.name} : {objectType}");
+        //Debug.Log($"Added {obj.name} : {objectType}");
 
         if (!objectDictionary.ContainsKey(objectType)) {
             objectDictionary[objectType] = new List<GameObject>();

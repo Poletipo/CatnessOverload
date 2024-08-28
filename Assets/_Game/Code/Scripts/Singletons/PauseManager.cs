@@ -16,11 +16,13 @@ public static class PauseManager
     public static void ChangePauseStatus()
     {
         if (_gameIsPaused) {
+            
             OnUnPause?.Invoke();
             Time.timeScale = 1;
             _gameIsPaused = false;
         }
         else {
+            Debug.Log("Pause I guess");
             OnPause?.Invoke();
             Time.timeScale = 0;
             _gameIsPaused = true;

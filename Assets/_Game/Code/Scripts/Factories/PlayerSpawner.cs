@@ -5,7 +5,7 @@ using System;
 
 public class PlayerSpawner : Factory {
 
-    Action OnPlayerSpawned;
+    public Action OnPlayerSpawned;
 
     private static PlayerSpawner _instance;
 

@@ -22,16 +22,11 @@ public class ScreenTransition : MonoBehaviour
         _animation.Play("ScreenTransitStart");
     }
 
-    
-
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        Debug.Log("looad scene");
         if(!_isTransitioning){
             return;
         }
-
 
         _isTransitioning = false;
 
