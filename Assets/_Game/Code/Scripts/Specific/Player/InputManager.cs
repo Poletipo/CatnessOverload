@@ -89,6 +89,7 @@ public class InputManager : MonoBehaviour
     private void Pause_performed(InputAction.CallbackContext obj)
     {
         PauseManager.ChangePauseStatus();
+        Debug.Log("Pause I guess");
     }
 
     public void EnableInputs()

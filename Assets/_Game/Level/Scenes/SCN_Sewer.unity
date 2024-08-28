@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b50f048c7c89b384387fdb2e5df48685,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: d92c36d33d2fb7e4dbd372837dd5a134,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -408,6 +410,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -481,6 +488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Pillar (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -565,6 +577,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -643,6 +660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Straight (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -733,6 +755,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -816,6 +843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SupportBeam (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -901,6 +933,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -983,6 +1020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1073,6 +1115,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1098,7 +1145,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &61689064
 Transform:
@@ -1200,6 +1247,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodPallet (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2674b87b38700744db33326fa2f392bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1282,6 +1334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1742,6 +1799,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCiment
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95127c71ac7e0b8409689a1c9eef9de3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2041,6 +2103,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2220,6 +2287,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Wall_Single (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2231,124 +2303,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 130966669}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &139232535
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 139232536}
-  - component: {fileID: 139232538}
-  - component: {fileID: 139232537}
-  m_Layer: 0
-  m_Name: Directional Light (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &139232536
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139232535}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 379165514}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &139232537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139232535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
---- !u!108 &139232538
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139232535}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1001 &144271240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2426,6 +2380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2506,6 +2465,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2531,7 +2495,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &149226509
 Transform:
@@ -2830,6 +2794,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2904,6 +2873,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 107d602437757484eab3fd7a597fe669,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2976,6 +2950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GuardRail (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3050,6 +3029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Wall_Single (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3245,6 +3229,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3375,7 +3364,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &218631295
 Transform:
@@ -3458,6 +3447,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3581,6 +3580,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle_Foam
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e836a9c741173df479752dcd87a1101e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3648,6 +3652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 326a9e05511c76d43914936c90b695d4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3738,6 +3747,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3811,6 +3825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Pillar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4016,6 +4035,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4090,6 +4114,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4113,11 +4142,11 @@ GameObject:
   - component: {fileID: 287094814}
   - component: {fileID: 287094813}
   m_Layer: 0
-  m_Name: Spot Light (1)
+  m_Name: Spot Light Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &287094812
 Transform:
@@ -4208,7 +4237,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -4286,6 +4315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GuardRail (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4802,6 +4836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4890,6 +4929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5079,6 +5123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5152,6 +5201,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5260,6 +5319,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5348,6 +5412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5438,6 +5507,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5478,7 +5552,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 139232536}
   - {fileID: 1550528862}
   - {fileID: 287094812}
   - {fileID: 1748770378}
@@ -5558,6 +5631,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GuardRail (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5744,6 +5822,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5833,6 +5916,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5858,7 +5946,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &398831432
 Transform:
@@ -6054,6 +6142,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Wall_Single
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6080,7 +6173,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &429810177
 MonoBehaviour:
@@ -6199,6 +6292,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6303,6 +6401,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6516,6 +6624,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Light (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6728,6 +6846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Wall_Single (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6802,6 +6925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6869,6 +6997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Pillar (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6952,6 +7085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7146,6 +7284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SupportBeam (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7446,6 +7589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7625,6 +7773,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Light (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7738,6 +7896,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7827,6 +7990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SupportBeam (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7894,6 +8062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Pillar (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8089,6 +8262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8112,11 +8290,11 @@ GameObject:
   - component: {fileID: 555089518}
   - component: {fileID: 555089517}
   m_Layer: 0
-  m_Name: Point Light (2)
+  m_Name: Spot Light River
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &555089516
 Transform:
@@ -8207,7 +8385,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -8280,6 +8458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8621,7 +8804,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &584806927
 MonoBehaviour:
@@ -8725,6 +8908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 107d602437757484eab3fd7a597fe669,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8750,7 +8938,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &597656427
 Transform:
@@ -8796,7 +8984,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &601549470
 Transform:
@@ -8918,6 +9106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9000,6 +9193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tole
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a9103fd70ec52d44adf3c73c56e28de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9189,6 +9387,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9262,6 +9465,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9428,6 +9641,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9576,6 +9794,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9691,6 +9914,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SupportBeam
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9765,6 +9993,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9838,6 +10071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10049,6 +10287,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10138,6 +10381,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle_Foam (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e836a9c741173df479752dcd87a1101e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10220,6 +10468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10310,6 +10563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10383,6 +10641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Pillar (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10668,6 +10931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 107d602437757484eab3fd7a597fe669,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10693,7 +10961,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &767471006
 Transform:
@@ -10897,6 +11165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10986,6 +11259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11074,6 +11352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11392,6 +11675,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11520,11 +11808,11 @@ GameObject:
   - component: {fileID: 856068253}
   - component: {fileID: 856068252}
   m_Layer: 0
-  m_Name: Point Light (4)
+  m_Name: Spot Light Closet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &856068251
 Transform:
@@ -11615,7 +11903,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -11642,7 +11930,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &861791413
 Transform:
@@ -16622,6 +16910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16695,6 +16988,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16797,6 +17100,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16870,6 +17178,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GuardRail (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16949,6 +17262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17280,6 +17598,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17364,6 +17687,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GuardRail (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17538,7 +17866,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1021556715
 Transform:
@@ -17622,6 +17950,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17694,6 +18027,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_DirtRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 99380e5ace7bc704498ee6e6b27ac8a2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17874,6 +18212,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17954,6 +18297,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18021,6 +18369,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Wall_Single (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18247,6 +18600,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18457,6 +18815,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 107d602437757484eab3fd7a597fe669,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18530,6 +18893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18648,6 +19016,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18674,7 +19047,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &1122291517
 MonoBehaviour:
@@ -18883,6 +19256,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18950,6 +19328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Wall_Single
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19045,6 +19428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19166,6 +19554,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19239,6 +19632,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19353,6 +19756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ladder
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84526c1817ff55a4fb01302780bcaf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19432,6 +19840,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19443,6 +19856,992 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1186766524}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1196163598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1196163599}
+  - component: {fileID: 1196163600}
+  m_Layer: 0
+  m_Name: LightProbes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1196163599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196163598}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1447968910}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &1196163600
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196163598}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 4.095648, y: 2.18541, z: 19.621716}
+  - {x: 4.095648, y: 2.18541, z: -33.824516}
+  - {x: 1.2277435, y: 2.18541, z: 15.614361}
+  - {x: -5.4265146, y: 2.18541, z: -33.824516}
+  - {x: 4.095648, y: 2.18541, z: -1.9704859}
+  - {x: -1.4422352, y: 2.18541, z: -1.9704859}
+  - {x: 4.095648, y: 0.4033985, z: 19.621716}
+  - {x: 4.095648, y: 0.4033985, z: -33.824516}
+  - {x: 1.2277435, y: 0.4033985, z: 15.614361}
+  - {x: -5.4265146, y: 0.4033985, z: -33.824516}
+  - {x: 4.095648, y: 0.4033985, z: -1.9704859}
+  - {x: -1.4422352, y: 0.4033985, z: -1.9704859}
+  - {x: 12.4556, y: 2.18541, z: -4.144526}
+  - {x: -1.4422352, y: 2.18541, z: -4.144526}
+  - {x: 12.4556, y: 0.4033985, z: -4.144526}
+  - {x: -1.4422352, y: 0.4033985, z: -4.144526}
+  - {x: 12.4556, y: 2.18541, z: -7.66686}
+  - {x: -1.4422352, y: 2.18541, z: -7.66686}
+  - {x: 12.4556, y: 0.4033985, z: -7.66686}
+  - {x: -1.4422352, y: 0.4033985, z: -7.66686}
+  - {x: 4.095648, y: 2.18541, z: -13.787638}
+  - {x: -1.4422352, y: 2.18541, z: -13.787638}
+  - {x: 4.095648, y: 0.4033985, z: -13.787638}
+  - {x: -1.4422352, y: 0.4033985, z: -13.787638}
+  - {x: -1.4422352, y: 2.18541, z: -33.824516}
+  - {x: -1.4422352, y: 0.4033985, z: -33.824516}
+  - {x: 4.095648, y: 2.18541, z: -15.808648}
+  - {x: -5.4265146, y: 2.18541, z: -15.808648}
+  - {x: 4.095648, y: 0.4033985, z: -15.808648}
+  - {x: -5.4265146, y: 0.4033985, z: -15.808648}
+  - {x: -1.4422352, y: 2.18541, z: -15.808648}
+  - {x: -1.4422352, y: 0.4033985, z: -15.808648}
+  - {x: 4.095648, y: 2.18541, z: -19.231342}
+  - {x: -15.33342, y: 2.18541, z: 0.3452587}
+  - {x: 4.095648, y: 0.4033985, z: -19.231342}
+  - {x: -15.33342, y: 0.4033985, z: 0.3452587}
+  - {x: -1.4422352, y: 2.18541, z: -19.231342}
+  - {x: -1.4422352, y: 0.4033985, z: -19.231342}
+  - {x: 4.095648, y: 2.18541, z: -24.643353}
+  - {x: -23.846657, y: 2.18541, z: -24.643353}
+  - {x: 4.095648, y: 0.4033985, z: -24.643353}
+  - {x: -23.846657, y: 0.4033985, z: -24.643353}
+  - {x: -1.4422352, y: 2.18541, z: -24.643353}
+  - {x: -1.4422352, y: 0.4033985, z: -24.643353}
+  - {x: 4.095648, y: 2.18541, z: -27.934713}
+  - {x: -23.846657, y: 2.18541, z: -34.05262}
+  - {x: 4.095648, y: 0.4033985, z: -27.934713}
+  - {x: -23.846657, y: 0.4033985, z: -34.05262}
+  - {x: -1.4422352, y: 2.18541, z: -27.934713}
+  - {x: -1.4422352, y: 0.4033985, z: -27.934713}
+  - {x: -5.4265146, y: 2.18541, z: -19.231342}
+  - {x: -5.4265146, y: 0.4033985, z: -19.231342}
+  - {x: -5.4265146, y: 2.18541, z: -24.643353}
+  - {x: -5.4265146, y: 0.4033985, z: -24.643353}
+  - {x: -5.4265146, y: 2.18541, z: -27.934713}
+  - {x: -5.4265146, y: 0.4033985, z: -27.934713}
+  - {x: -6.938257, y: 2.18541, z: -19.231342}
+  - {x: -6.938257, y: 0.4033985, z: -19.231342}
+  - {x: -6.938257, y: 2.18541, z: -24.643353}
+  - {x: -6.938257, y: 0.4033985, z: -24.643353}
+  - {x: -6.938257, y: 2.18541, z: -27.934713}
+  - {x: -6.938257, y: 0.4033985, z: -27.934713}
+  - {x: -10.069724, y: 2.18541, z: -19.231342}
+  - {x: -10.069724, y: 0.4033985, z: -19.231342}
+  - {x: -10.069724, y: 2.18541, z: -24.643353}
+  - {x: -10.069724, y: 0.4033985, z: -24.643353}
+  - {x: -10.069724, y: 2.18541, z: -27.934713}
+  - {x: -10.069724, y: 0.4033985, z: -27.934713}
+  - {x: -23.846657, y: 2.18541, z: -19.231342}
+  - {x: -23.846657, y: 0.4033985, z: -19.231342}
+  - {x: 4.095648, y: 2.18541, z: -21.12102}
+  - {x: 4.095648, y: 0.4033985, z: -21.12102}
+  - {x: -1.4422352, y: 2.18541, z: -21.12102}
+  - {x: -1.4422352, y: 0.4033985, z: -21.12102}
+  - {x: -5.4265146, y: 2.18541, z: -21.12102}
+  - {x: -5.4265146, y: 0.4033985, z: -21.12102}
+  - {x: -6.938257, y: 2.18541, z: -21.12102}
+  - {x: -6.938257, y: 0.4033985, z: -21.12102}
+  - {x: -10.069724, y: 2.18541, z: -21.12102}
+  - {x: -10.069724, y: 0.4033985, z: -21.12102}
+  - {x: -23.846657, y: 2.18541, z: -21.12102}
+  - {x: -23.846657, y: 0.4033985, z: -21.12102}
+  - {x: -23.846657, y: 2.18541, z: -27.934713}
+  - {x: -23.846657, y: 0.4033985, z: -27.934713}
+  - {x: -12.715274, y: 2.18541, z: -15.991893}
+  - {x: -12.715274, y: 0.4033985, z: -15.991893}
+  - {x: -12.715274, y: 2.18541, z: -24.643353}
+  - {x: -12.715274, y: 0.4033985, z: -24.643353}
+  - {x: -12.715274, y: 2.18541, z: -34.05262}
+  - {x: -12.715274, y: 0.4033985, z: -34.05262}
+  - {x: -12.715274, y: 2.18541, z: -19.231342}
+  - {x: -12.715274, y: 0.4033985, z: -19.231342}
+  - {x: -12.715274, y: 2.18541, z: -21.12102}
+  - {x: -12.715274, y: 0.4033985, z: -21.12102}
+  - {x: -12.715274, y: 2.18541, z: -27.934713}
+  - {x: -12.715274, y: 0.4033985, z: -27.934713}
+  - {x: 16.929674, y: 2.18541, z: 11.359608}
+  - {x: 16.929674, y: 0.4033985, z: 11.359608}
+  - {x: -15.33342, y: 2.18541, z: -15.991893}
+  - {x: -15.33342, y: 0.4033985, z: -15.991893}
+  - {x: -23.846657, y: 2.18541, z: -15.991893}
+  - {x: -23.846657, y: 0.4033985, z: -15.991893}
+  - {x: -15.33342, y: 2.18541, z: -14.085892}
+  - {x: -15.33342, y: 0.4033985, z: -14.085892}
+  - {x: -26.91959, y: 2.18541, z: -15.841854}
+  - {x: -26.91959, y: 0.4033985, z: -15.841854}
+  - {x: -15.33342, y: 2.18541, z: -11.431105}
+  - {x: -15.33342, y: 0.4033985, z: -11.431105}
+  - {x: -25.072403, y: 2.18541, z: -11.431105}
+  - {x: -25.072403, y: 0.4033985, z: -11.431105}
+  - {x: -16.845278, y: 2.18541, z: -2.5081074}
+  - {x: -16.845278, y: 0.4033985, z: -2.5081074}
+  - {x: -21.800207, y: 2.18541, z: -11.431105}
+  - {x: -21.800207, y: 0.4033985, z: -11.431105}
+  - {x: -35.102394, y: 2.18541, z: 14.145383}
+  - {x: -35.102394, y: 0.4033985, z: 14.145383}
+  - {x: -33.231155, y: 2.18541, z: 5.615625}
+  - {x: -33.231155, y: 0.4033985, z: 5.615625}
+  - {x: -25.072403, y: 2.18541, z: 0.3452587}
+  - {x: -25.072403, y: 0.4033985, z: 0.3452587}
+  - {x: -30.976582, y: 2.18541, z: 0.3452587}
+  - {x: -30.976582, y: 0.4033985, z: 0.3452587}
+  - {x: 11.900507, y: 2.18541, z: 8.525745}
+  - {x: 11.900507, y: 0.4033985, z: 8.525745}
+  - {x: -35.102394, y: 2.18541, z: 7.1741867}
+  - {x: -35.102394, y: 0.4033985, z: 7.1741867}
+  - {x: -30.976582, y: 2.18541, z: 14.145383}
+  - {x: -30.976582, y: 0.4033985, z: 14.145383}
+  - {x: -22.842289, y: 2.18541, z: 31.183712}
+  - {x: -22.842289, y: 0.4033985, z: 31.183712}
+  - {x: -25.072403, y: 2.18541, z: 7.1741867}
+  - {x: -25.072403, y: 0.4033985, z: 7.1741867}
+  - {x: -30.976582, y: 2.18541, z: 7.1741867}
+  - {x: -30.976582, y: 0.4033985, z: 7.1741867}
+  - {x: -25.072403, y: 2.18541, z: 14.145383}
+  - {x: -25.072403, y: 0.4033985, z: 14.145383}
+  - {x: -25.072403, y: 2.18541, z: 8.525745}
+  - {x: -25.072403, y: 0.4033985, z: 8.525745}
+  - {x: 16.929674, y: 2.18541, z: 11.359608}
+  - {x: 16.929674, y: 0.4033985, z: 11.359608}
+  - {x: 11.900507, y: 2.18541, z: 8.525745}
+  - {x: 11.900507, y: 0.4033985, z: 8.525745}
+  - {x: -19.310493, y: 2.18541, z: 14.145383}
+  - {x: -19.310493, y: 0.4033985, z: 14.145383}
+  - {x: -19.310493, y: 2.18541, z: 8.525745}
+  - {x: -19.310493, y: 0.4033985, z: 8.525745}
+  - {x: -19.310493, y: 2.18541, z: 14.145383}
+  - {x: -19.310493, y: 0.4033985, z: 14.145383}
+  - {x: -19.310493, y: 2.18541, z: 8.525745}
+  - {x: -19.310493, y: 0.4033985, z: 8.525745}
+  - {x: -15.398087, y: 2.18541, z: 14.145383}
+  - {x: -15.398087, y: 0.4033985, z: 14.145383}
+  - {x: -15.398087, y: 2.18541, z: 8.525745}
+  - {x: -15.398087, y: 0.4033985, z: 8.525745}
+  - {x: -15.398087, y: 2.18541, z: 14.145383}
+  - {x: -15.398087, y: 0.4033985, z: 14.145383}
+  - {x: -15.398087, y: 2.18541, z: 8.525745}
+  - {x: -15.398087, y: 0.4033985, z: 8.525745}
+  - {x: -8.853695, y: 2.18541, z: 14.145383}
+  - {x: -8.853695, y: 0.4033985, z: 14.145383}
+  - {x: -8.853695, y: 2.18541, z: 8.525745}
+  - {x: -8.853695, y: 0.4033985, z: 8.525745}
+  - {x: -8.853695, y: 2.18541, z: 14.145383}
+  - {x: -8.853695, y: 0.4033985, z: 14.145383}
+  - {x: -8.853695, y: 2.18541, z: 8.525745}
+  - {x: -8.853695, y: 0.4033985, z: 8.525745}
+  - {x: 4.095648, y: 2.18541, z: 1.9286945}
+  - {x: -1.4422352, y: 2.18541, z: 1.9286945}
+  - {x: 4.095648, y: 0.4033985, z: 1.9286945}
+  - {x: -1.4422352, y: 0.4033985, z: 1.9286945}
+  - {x: 4.095648, y: 2.18541, z: 4.006522}
+  - {x: -1.4422352, y: 2.18541, z: 4.006522}
+  - {x: 4.095648, y: 0.4033985, z: 4.006522}
+  - {x: -1.4422352, y: 0.4033985, z: 4.006522}
+  - {x: 1.3465517, y: 2.18541, z: 10.997159}
+  - {x: 1.3465517, y: 0.4033985, z: 10.997159}
+  - {x: 4.7466345, y: 2.18541, z: 8.525745}
+  - {x: 4.7466345, y: 0.4033985, z: 8.525745}
+  - {x: 1.3465517, y: 2.18541, z: 10.997159}
+  - {x: 1.3465517, y: 0.4033985, z: 10.997159}
+  - {x: 4.7466345, y: 2.18541, z: 8.525745}
+  - {x: 4.7466345, y: 0.4033985, z: 8.525745}
+  - {x: -6.4610453, y: 2.18541, z: 14.145383}
+  - {x: -6.4610453, y: 0.4033985, z: 14.145383}
+  - {x: -6.4610453, y: 2.18541, z: 8.525745}
+  - {x: -6.4610453, y: 0.4033985, z: 8.525745}
+  - {x: -6.4610453, y: 2.18541, z: 14.145383}
+  - {x: -6.4610453, y: 0.4033985, z: 14.145383}
+  - {x: -6.4610453, y: 2.18541, z: 8.525745}
+  - {x: -6.4610453, y: 0.4033985, z: 8.525745}
+  - {x: -2.368353, y: 2.18541, z: 14.145383}
+  - {x: -2.368353, y: 0.4033985, z: 14.145383}
+  - {x: -4.7610044, y: 2.18541, z: 17.655596}
+  - {x: -4.7610044, y: 0.4033985, z: 17.655596}
+  - {x: -2.368353, y: 2.18541, z: 14.145383}
+  - {x: -2.368353, y: 0.4033985, z: 14.145383}
+  - {x: -4.7610044, y: 2.18541, z: 17.655596}
+  - {x: -4.7610044, y: 0.4033985, z: 17.655596}
+  - {x: 4.7466345, y: 2.18541, z: 14.145383}
+  - {x: 4.7466345, y: 0.4033985, z: 14.145383}
+  - {x: 4.7466345, y: 2.18541, z: 14.145383}
+  - {x: 4.7466345, y: 0.4033985, z: 14.145383}
+  - {x: -2.368353, y: 2.18541, z: 8.525745}
+  - {x: -2.368353, y: 0.4033985, z: 8.525745}
+  - {x: -2.368353, y: 2.18541, z: 8.525745}
+  - {x: -2.368353, y: 0.4033985, z: 8.525745}
+  - {x: -4.6350746, y: 2.18541, z: 4.9997354}
+  - {x: -4.6350746, y: 0.4033985, z: 4.9997354}
+  - {x: -4.6350746, y: 2.18541, z: 4.9997354}
+  - {x: -4.6350746, y: 0.4033985, z: 4.9997354}
+  - {x: 7.6430006, y: 2.18541, z: 5.188629}
+  - {x: 7.6430006, y: 0.4033985, z: 5.188629}
+  - {x: 7.6430006, y: 2.18541, z: 5.188629}
+  - {x: 7.6430006, y: 0.4033985, z: 5.188629}
+  - {x: 7.7689295, y: 2.18541, z: 17.592632}
+  - {x: 7.7689295, y: 0.4033985, z: 17.592632}
+  - {x: 7.7689295, y: 2.18541, z: 17.592632}
+  - {x: 7.7689295, y: 0.4033985, z: 17.592632}
+  - {x: -21.800207, y: 2.18541, z: -24.643353}
+  - {x: -21.800207, y: 0.4033985, z: -24.643353}
+  - {x: -21.800207, y: 2.18541, z: -34.05262}
+  - {x: -21.800207, y: 0.4033985, z: -34.05262}
+  - {x: -21.800207, y: 2.18541, z: -19.231342}
+  - {x: -21.800207, y: 0.4033985, z: -19.231342}
+  - {x: -21.800207, y: 2.18541, z: -21.12102}
+  - {x: -21.800207, y: 0.4033985, z: -21.12102}
+  - {x: -27.884937, y: 2.18541, z: 3.2220244}
+  - {x: -27.884937, y: 0.4033985, z: 3.2220244}
+  - {x: -21.800207, y: 2.18541, z: -15.991893}
+  - {x: -21.800207, y: 0.4033985, z: -15.991893}
+  - {x: -21.800207, y: 2.18541, z: -14.085892}
+  - {x: -21.800207, y: 0.4033985, z: -14.085892}
+  - {x: 4.095648, y: 2.18541, z: -4.144526}
+  - {x: 4.095648, y: 0.4033985, z: -4.144526}
+  - {x: 4.095648, y: 2.18541, z: -7.66686}
+  - {x: 4.095648, y: 0.4033985, z: -7.66686}
+  - {x: 20.073946, y: 2.18541, z: -4.144526}
+  - {x: 20.073946, y: 0.4033985, z: -4.144526}
+  - {x: 20.073946, y: 2.18541, z: -7.66686}
+  - {x: 20.073946, y: 0.4033985, z: -7.66686}
+  - {x: 6.387892, y: 2.18541, z: -4.144526}
+  - {x: 6.387892, y: 0.4033985, z: -4.144526}
+  - {x: 6.387892, y: 2.18541, z: -7.66686}
+  - {x: 6.387892, y: 0.4033985, z: -7.66686}
+  - {x: 18.388472, y: 2.18541, z: -4.144526}
+  - {x: 18.388472, y: 0.4033985, z: -4.144526}
+  - {x: 18.388472, y: 2.18541, z: -7.66686}
+  - {x: 18.388472, y: 0.4033985, z: -7.66686}
+  - {x: 9.406005, y: 2.18541, z: 14.145383}
+  - {x: 9.406005, y: 0.4033985, z: 14.145383}
+  - {x: 9.406005, y: 2.18541, z: 8.525745}
+  - {x: 9.406005, y: 0.4033985, z: 8.525745}
+  - {x: 9.406005, y: 2.18541, z: 14.145383}
+  - {x: 9.406005, y: 0.4033985, z: 14.145383}
+  - {x: 9.406005, y: 2.18541, z: 8.525745}
+  - {x: 9.406005, y: 0.4033985, z: 8.525745}
+  - {x: 26.665262, y: 2.18541, z: 24.662746}
+  - {x: 26.665262, y: 0.4033985, z: 24.662746}
+  - {x: 38.070286, y: 2.18541, z: 8.525745}
+  - {x: 38.070286, y: 0.4033985, z: 8.525745}
+  - {x: 26.665262, y: 2.18541, z: 24.662746}
+  - {x: 26.665262, y: 0.4033985, z: 24.662746}
+  - {x: 38.070286, y: 2.18541, z: 8.525745}
+  - {x: 38.070286, y: 0.4033985, z: 8.525745}
+  - {x: 17.968214, y: 2.18541, z: 14.145383}
+  - {x: 17.968214, y: 0.4033985, z: 14.145383}
+  - {x: 17.968214, y: 2.18541, z: 8.525745}
+  - {x: 17.968214, y: 0.4033985, z: 8.525745}
+  - {x: 17.968214, y: 2.18541, z: 14.145383}
+  - {x: 17.968214, y: 0.4033985, z: 14.145383}
+  - {x: 17.968214, y: 2.18541, z: 8.525745}
+  - {x: 17.968214, y: 0.4033985, z: 8.525745}
+  - {x: 12.237601, y: 2.18541, z: 24.662746}
+  - {x: 12.237601, y: 0.4033985, z: 24.662746}
+  - {x: 19.855946, y: 2.18541, z: 8.525745}
+  - {x: 19.855946, y: 0.4033985, z: 8.525745}
+  - {x: 12.237601, y: 2.18541, z: 24.662746}
+  - {x: 12.237601, y: 0.4033985, z: 24.662746}
+  - {x: 19.855946, y: 2.18541, z: 8.525745}
+  - {x: 19.855946, y: 0.4033985, z: 8.525745}
+  - {x: 37.992847, y: 2.18541, z: 13.322642}
+  - {x: 37.992847, y: 0.4033985, z: 13.322642}
+  - {x: 37.992847, y: 2.18541, z: 13.322642}
+  - {x: 37.992847, y: 0.4033985, z: 13.322642}
+  - {x: 19.855946, y: 2.18541, z: 14.145383}
+  - {x: 19.855946, y: 0.4033985, z: 14.145383}
+  - {x: 19.855946, y: 2.18541, z: 14.145383}
+  - {x: 19.855946, y: 0.4033985, z: 14.145383}
+  - {x: 26.665262, y: 2.18541, z: 15.561183}
+  - {x: 26.665262, y: 0.4033985, z: 15.561183}
+  - {x: 26.665262, y: 2.18541, z: 15.561183}
+  - {x: 26.665262, y: 0.4033985, z: 15.561183}
+  - {x: 19.855946, y: 2.18541, z: 15.561183}
+  - {x: 19.855946, y: 0.4033985, z: 15.561183}
+  - {x: 19.855946, y: 2.18541, z: 15.561183}
+  - {x: 19.855946, y: 0.4033985, z: 15.561183}
+  - {x: 26.665262, y: 2.18541, z: 22.775013}
+  - {x: 26.665262, y: 0.4033985, z: 22.775013}
+  - {x: 26.665262, y: 2.18541, z: 22.775013}
+  - {x: 26.665262, y: 0.4033985, z: 22.775013}
+  - {x: 19.855946, y: 2.18541, z: 22.775013}
+  - {x: 19.855946, y: 0.4033985, z: 22.775013}
+  - {x: 19.855946, y: 2.18541, z: 22.775013}
+  - {x: 19.855946, y: 0.4033985, z: 22.775013}
+  - {x: 26.665262, y: 2.18541, z: 28.234972}
+  - {x: 26.665262, y: 0.4033985, z: 28.234972}
+  - {x: 26.665262, y: 2.18541, z: 28.234972}
+  - {x: 26.665262, y: 0.4033985, z: 28.234972}
+  - {x: 12.237601, y: 2.18541, z: 28.234972}
+  - {x: 12.237601, y: 0.4033985, z: 28.234972}
+  - {x: 12.237601, y: 2.18541, z: 28.234972}
+  - {x: 12.237601, y: 0.4033985, z: 28.234972}
+  - {x: 19.855946, y: 2.18541, z: 24.662746}
+  - {x: 19.855946, y: 0.4033985, z: 24.662746}
+  - {x: 19.855946, y: 2.18541, z: 24.662746}
+  - {x: 19.855946, y: 0.4033985, z: 24.662746}
+  - {x: 19.855946, y: 2.18541, z: 28.234972}
+  - {x: 19.855946, y: 0.4033985, z: 28.234972}
+  - {x: 19.855946, y: 2.18541, z: 28.234972}
+  - {x: 19.855946, y: 0.4033985, z: 28.234972}
+  - {x: 18.642403, y: 2.18541, z: 24.662746}
+  - {x: 18.642403, y: 0.4033985, z: 24.662746}
+  - {x: 18.642403, y: 2.18541, z: 24.662746}
+  - {x: 18.642403, y: 0.4033985, z: 24.662746}
+  - {x: 18.642403, y: 2.18541, z: 28.234972}
+  - {x: 18.642403, y: 0.4033985, z: 28.234972}
+  - {x: 18.642403, y: 2.18541, z: 28.234972}
+  - {x: 18.642403, y: 0.4033985, z: 28.234972}
+  - {x: -12.906895, y: 2.18541, z: 24.662746}
+  - {x: -12.906895, y: 0.4033985, z: 24.662746}
+  - {x: -12.906895, y: 2.18541, z: 24.662746}
+  - {x: -12.906895, y: 0.4033985, z: 24.662746}
+  - {x: -12.906895, y: 2.18541, z: 20.004837}
+  - {x: -12.906895, y: 0.4033985, z: 20.004837}
+  - {x: -12.906895, y: 2.18541, z: 20.004837}
+  - {x: -12.906895, y: 0.4033985, z: 20.004837}
+  - {x: 6.352483, y: 2.18541, z: 24.662746}
+  - {x: 6.352483, y: 0.4033985, z: 24.662746}
+  - {x: 6.352483, y: 2.18541, z: 24.662746}
+  - {x: 6.352483, y: 0.4033985, z: 24.662746}
+  - {x: 6.7160625, y: 2.18541, z: 29.24405}
+  - {x: 6.7160625, y: 0.4033985, z: 29.24405}
+  - {x: 6.7160625, y: 2.18541, z: 29.24405}
+  - {x: 6.7160625, y: 0.4033985, z: 29.24405}
+  - {x: 0.8269501, y: 2.18541, z: 24.662746}
+  - {x: 0.8269501, y: 0.4033985, z: 24.662746}
+  - {x: 0.8269501, y: 2.18541, z: 24.662746}
+  - {x: 0.8269501, y: 0.4033985, z: 24.662746}
+  - {x: 0.20366883, y: 2.18541, z: 29.24405}
+  - {x: 0.20366883, y: 0.4033985, z: 29.24405}
+  - {x: 0.20366883, y: 2.18541, z: 29.24405}
+  - {x: 0.20366883, y: 0.4033985, z: 29.24405}
+  - {x: -1.2780147, y: 2.18541, z: 24.662746}
+  - {x: -1.2780147, y: 0.4033985, z: 24.662746}
+  - {x: -1.2780147, y: 2.18541, z: 24.662746}
+  - {x: -1.2780147, y: 0.4033985, z: 24.662746}
+  - {x: -1.2780147, y: 2.18541, z: 28.033693}
+  - {x: -1.2780147, y: 0.4033985, z: 28.033693}
+  - {x: -1.2780147, y: 2.18541, z: 28.033693}
+  - {x: -1.2780147, y: 0.4033985, z: 28.033693}
+  - {x: 3.773901, y: 2.18541, z: 24.662746}
+  - {x: 3.773901, y: 0.4033985, z: 24.662746}
+  - {x: 3.773901, y: 2.18541, z: 24.662746}
+  - {x: 3.773901, y: 0.4033985, z: 24.662746}
+  - {x: 3.773901, y: 2.18541, z: 29.24405}
+  - {x: 3.773901, y: 0.4033985, z: 29.24405}
+  - {x: 3.773901, y: 2.18541, z: 29.24405}
+  - {x: 3.773901, y: 0.4033985, z: 29.24405}
+  - {x: 6.352483, y: 2.18541, z: 28.033693}
+  - {x: 6.352483, y: 0.4033985, z: 28.033693}
+  - {x: 6.352483, y: 2.18541, z: 28.033693}
+  - {x: 6.352483, y: 0.4033985, z: 28.033693}
+  - {x: 0.8269501, y: 2.18541, z: 28.033693}
+  - {x: 0.8269501, y: 0.4033985, z: 28.033693}
+  - {x: 0.8269501, y: 2.18541, z: 28.033693}
+  - {x: 0.8269501, y: 0.4033985, z: 28.033693}
+  - {x: 3.773901, y: 2.18541, z: 28.033693}
+  - {x: 3.773901, y: 0.4033985, z: 28.033693}
+  - {x: 3.773901, y: 2.18541, z: 28.033693}
+  - {x: 3.773901, y: 0.4033985, z: 28.033693}
+  - {x: 6.7160625, y: 2.18541, z: 32.55937}
+  - {x: 6.7160625, y: 0.4033985, z: 32.55937}
+  - {x: 6.7160625, y: 2.18541, z: 32.55937}
+  - {x: 6.7160625, y: 0.4033985, z: 32.55937}
+  - {x: 0.20366883, y: 2.18541, z: 32.55937}
+  - {x: 0.20366883, y: 0.4033985, z: 32.55937}
+  - {x: 0.20366883, y: 2.18541, z: 32.55937}
+  - {x: 0.20366883, y: 0.4033985, z: 32.55937}
+  - {x: 3.773901, y: 2.18541, z: 32.55937}
+  - {x: 3.773901, y: 0.4033985, z: 32.55937}
+  - {x: 3.773901, y: 2.18541, z: 32.55937}
+  - {x: 3.773901, y: 0.4033985, z: 32.55937}
+  - {x: -10.487237, y: 2.18541, z: 24.662746}
+  - {x: -10.487237, y: 0.4033985, z: 24.662746}
+  - {x: -10.487237, y: 2.18541, z: 24.662746}
+  - {x: -10.487237, y: 0.4033985, z: 24.662746}
+  - {x: -10.487237, y: 2.18541, z: 28.033693}
+  - {x: -10.487237, y: 0.4033985, z: 28.033693}
+  - {x: -10.487237, y: 2.18541, z: 28.033693}
+  - {x: -10.487237, y: 0.4033985, z: 28.033693}
+  - {x: -12.906895, y: 2.18541, z: 28.033693}
+  - {x: -12.906895, y: 0.4033985, z: 28.033693}
+  - {x: -12.906895, y: 2.18541, z: 28.033693}
+  - {x: -12.906895, y: 0.4033985, z: 28.033693}
+  - {x: -12.906895, y: 2.18541, z: 32.32309}
+  - {x: -12.906895, y: 0.4033985, z: 32.32309}
+  - {x: -12.906895, y: 2.18541, z: 32.32309}
+  - {x: -12.906895, y: 0.4033985, z: 32.32309}
+  - {x: -16.756348, y: 2.18541, z: 32.32309}
+  - {x: -16.756348, y: 0.4033985, z: 32.32309}
+  - {x: -16.756348, y: 2.18541, z: 32.32309}
+  - {x: -16.756348, y: 0.4033985, z: 32.32309}
+  - {x: -16.756348, y: 2.18541, z: 29.29852}
+  - {x: -16.756348, y: 0.4033985, z: 29.29852}
+  - {x: -16.756348, y: 2.18541, z: 29.29852}
+  - {x: -16.756348, y: 0.4033985, z: 29.29852}
+  - {x: -22.310562, y: 2.18541, z: 29.29852}
+  - {x: -22.310562, y: 0.4033985, z: 29.29852}
+  - {x: -22.310562, y: 2.18541, z: 29.29852}
+  - {x: -22.310562, y: 0.4033985, z: 29.29852}
+  - {x: -23.630375, y: 2.18541, z: 24.459204}
+  - {x: -23.630375, y: 0.4033985, z: 24.459204}
+  - {x: -23.630375, y: 2.18541, z: 24.459204}
+  - {x: -23.630375, y: 0.4033985, z: 24.459204}
+  - {x: -19.176006, y: 2.18541, z: 15.055538}
+  - {x: -19.176006, y: 0.4033985, z: 15.055538}
+  - {x: -19.176006, y: 2.18541, z: 15.055538}
+  - {x: -19.176006, y: 0.4033985, z: 15.055538}
+  - {x: -15.76649, y: 2.18541, z: 15.055538}
+  - {x: -15.76649, y: 0.4033985, z: 15.055538}
+  - {x: -15.76649, y: 2.18541, z: 15.055538}
+  - {x: -15.76649, y: 0.4033985, z: 15.055538}
+  - {x: -19.176006, y: 2.18541, z: 24.459204}
+  - {x: -19.176006, y: 0.4033985, z: 24.459204}
+  - {x: -19.176006, y: 2.18541, z: 24.459204}
+  - {x: -19.176006, y: 0.4033985, z: 24.459204}
+  - {x: -15.76649, y: 2.18541, z: 24.459204}
+  - {x: -15.76649, y: 0.4033985, z: 24.459204}
+  - {x: -15.76649, y: 2.18541, z: 24.459204}
+  - {x: -15.76649, y: 0.4033985, z: 24.459204}
+  - {x: -19.176006, y: 2.18541, z: 18.630032}
+  - {x: -19.176006, y: 0.4033985, z: 18.630032}
+  - {x: -19.176006, y: 2.18541, z: 18.630032}
+  - {x: -19.176006, y: 0.4033985, z: 18.630032}
+  - {x: -15.76649, y: 2.18541, z: 18.630032}
+  - {x: -15.76649, y: 0.4033985, z: 18.630032}
+  - {x: -15.76649, y: 2.18541, z: 18.630032}
+  - {x: -15.76649, y: 0.4033985, z: 18.630032}
+  - {x: -24.804344, y: 2.18541, z: 19.270933}
+  - {x: -24.804344, y: 0.4033985, z: 19.270933}
+  - {x: -24.804344, y: 2.18541, z: 19.270933}
+  - {x: -24.804344, y: 0.4033985, z: 19.270933}
+  - {x: -19.176006, y: 2.18541, z: 20.004837}
+  - {x: -19.176006, y: 0.4033985, z: 20.004837}
+  - {x: -19.176006, y: 2.18541, z: 20.004837}
+  - {x: -19.176006, y: 0.4033985, z: 20.004837}
+  - {x: -15.76649, y: 2.18541, z: 20.004837}
+  - {x: -15.76649, y: 0.4033985, z: 20.004837}
+  - {x: -15.76649, y: 2.18541, z: 20.004837}
+  - {x: -15.76649, y: 0.4033985, z: 20.004837}
+  - {x: 26.665262, y: 2.18541, z: 8.525745}
+  - {x: 26.665262, y: 0.4033985, z: 8.525745}
+  - {x: 26.665262, y: 2.18541, z: 8.525745}
+  - {x: 26.665262, y: 0.4033985, z: 8.525745}
+  - {x: 26.665262, y: 2.18541, z: 14.145383}
+  - {x: 26.665262, y: 0.4033985, z: 14.145383}
+  - {x: 26.665262, y: 2.18541, z: 14.145383}
+  - {x: 26.665262, y: 0.4033985, z: 14.145383}
+  - {x: 28.117788, y: 2.18541, z: 8.525745}
+  - {x: 28.117788, y: 0.4033985, z: 8.525745}
+  - {x: 28.117788, y: 2.18541, z: 8.525745}
+  - {x: 28.117788, y: 0.4033985, z: 8.525745}
+  - {x: 28.117788, y: 2.18541, z: 13.446019}
+  - {x: 28.117788, y: 0.4033985, z: 13.446019}
+  - {x: 28.117788, y: 2.18541, z: 13.446019}
+  - {x: 28.117788, y: 0.4033985, z: 13.446019}
+  - {x: 30.215883, y: 2.18541, z: -6.9858885}
+  - {x: 30.215883, y: 0.4033985, z: -6.9858885}
+  - {x: 30.215883, y: 2.18541, z: -6.9858885}
+  - {x: 30.215883, y: 0.4033985, z: -6.9858885}
+  - {x: 30.215883, y: 2.18541, z: 13.446019}
+  - {x: 30.215883, y: 0.4033985, z: 13.446019}
+  - {x: 30.215883, y: 2.18541, z: 13.446019}
+  - {x: 30.215883, y: 0.4033985, z: 13.446019}
+  - {x: 34.358276, y: 2.18541, z: -6.9858885}
+  - {x: 34.358276, y: 0.4033985, z: -6.9858885}
+  - {x: 34.358276, y: 2.18541, z: -6.9858885}
+  - {x: 34.358276, y: 0.4033985, z: -6.9858885}
+  - {x: 34.358276, y: 2.18541, z: 13.446019}
+  - {x: 34.358276, y: 0.4033985, z: 13.446019}
+  - {x: 34.358276, y: 2.18541, z: 13.446019}
+  - {x: 34.358276, y: 0.4033985, z: 13.446019}
+  - {x: 20.1153, y: 2.18541, z: -33.093758}
+  - {x: 20.1153, y: 0.4033985, z: -33.093758}
+  - {x: 20.1153, y: 2.18541, z: -33.093758}
+  - {x: 20.1153, y: 0.4033985, z: -33.093758}
+  - {x: 0.79845524, y: 2.18541, z: -15.775305}
+  - {x: 0.79845524, y: 0.4033985, z: -15.775305}
+  - {x: 0.79845524, y: 2.18541, z: -15.775305}
+  - {x: 0.79845524, y: 0.4033985, z: -15.775305}
+  - {x: 30.215883, y: 2.18541, z: 8.525745}
+  - {x: 30.215883, y: 0.4033985, z: 8.525745}
+  - {x: 30.215883, y: 2.18541, z: 8.525745}
+  - {x: 30.215883, y: 0.4033985, z: 8.525745}
+  - {x: 34.358276, y: 2.18541, z: 8.525745}
+  - {x: 34.358276, y: 0.4033985, z: 8.525745}
+  - {x: 34.358276, y: 2.18541, z: 8.525745}
+  - {x: 34.358276, y: 0.4033985, z: 8.525745}
+  - {x: 30.215883, y: 2.18541, z: 6.6428413}
+  - {x: 30.215883, y: 0.4033985, z: 6.6428413}
+  - {x: 30.215883, y: 2.18541, z: 6.6428413}
+  - {x: 30.215883, y: 0.4033985, z: 6.6428413}
+  - {x: 34.358276, y: 2.18541, z: 6.6428413}
+  - {x: 34.358276, y: 0.4033985, z: 6.6428413}
+  - {x: 34.358276, y: 2.18541, z: 6.6428413}
+  - {x: 34.358276, y: 0.4033985, z: 6.6428413}
+  - {x: 30.215883, y: 2.18541, z: 3.8453836}
+  - {x: 30.215883, y: 0.4033985, z: 3.8453836}
+  - {x: 30.215883, y: 2.18541, z: 3.8453836}
+  - {x: 30.215883, y: 0.4033985, z: 3.8453836}
+  - {x: 34.358276, y: 2.18541, z: 3.8453836}
+  - {x: 34.358276, y: 0.4033985, z: 3.8453836}
+  - {x: 34.358276, y: 2.18541, z: 3.8453836}
+  - {x: 34.358276, y: 0.4033985, z: 3.8453836}
+  - {x: 27.404978, y: 2.18541, z: 2.1776686}
+  - {x: 27.404978, y: 0.4033985, z: 2.1776686}
+  - {x: 27.404978, y: 2.18541, z: 2.1776686}
+  - {x: 27.404978, y: 0.4033985, z: 2.1776686}
+  - {x: 37.394054, y: 2.18541, z: 2.1776686}
+  - {x: 37.394054, y: 0.4033985, z: 2.1776686}
+  - {x: 37.394054, y: 2.18541, z: 2.1776686}
+  - {x: 37.394054, y: 0.4033985, z: 2.1776686}
+  - {x: 27.404978, y: 2.18541, z: -1.3640745}
+  - {x: 27.404978, y: 0.4033985, z: -1.3640745}
+  - {x: 27.404978, y: 2.18541, z: -1.3640745}
+  - {x: 27.404978, y: 0.4033985, z: -1.3640745}
+  - {x: 37.394054, y: 2.18541, z: -1.3640745}
+  - {x: 37.394054, y: 0.4033985, z: -1.3640745}
+  - {x: 37.394054, y: 2.18541, z: -1.3640745}
+  - {x: 37.394054, y: 0.4033985, z: -1.3640745}
+  - {x: 30.215883, y: 2.18541, z: -2.7695277}
+  - {x: 30.215883, y: 0.4033985, z: -2.7695277}
+  - {x: 30.215883, y: 2.18541, z: -2.7695277}
+  - {x: 30.215883, y: 0.4033985, z: -2.7695277}
+  - {x: 34.358276, y: 2.18541, z: -2.7695277}
+  - {x: 34.358276, y: 0.4033985, z: -2.7695277}
+  - {x: 34.358276, y: 2.18541, z: -2.7695277}
+  - {x: 34.358276, y: 0.4033985, z: -2.7695277}
+  - {x: 30.215883, y: 2.18541, z: -5.186908}
+  - {x: 30.215883, y: 0.4033985, z: -5.186908}
+  - {x: 30.215883, y: 2.18541, z: -5.186908}
+  - {x: 30.215883, y: 0.4033985, z: -5.186908}
+  - {x: 34.358276, y: 2.18541, z: -5.186908}
+  - {x: 34.358276, y: 0.4033985, z: -5.186908}
+  - {x: 34.358276, y: 2.18541, z: -5.186908}
+  - {x: 34.358276, y: 0.4033985, z: -5.186908}
+  - {x: 30.215883, y: 2.18541, z: 2.1776686}
+  - {x: 30.215883, y: 0.4033985, z: 2.1776686}
+  - {x: 30.215883, y: 2.18541, z: 2.1776686}
+  - {x: 30.215883, y: 0.4033985, z: 2.1776686}
+  - {x: 30.215883, y: 2.18541, z: -1.3640745}
+  - {x: 30.215883, y: 0.4033985, z: -1.3640745}
+  - {x: 30.215883, y: 2.18541, z: -1.3640745}
+  - {x: 30.215883, y: 0.4033985, z: -1.3640745}
+  - {x: 19.91194, y: 2.18541, z: -1.8171911}
+  - {x: 19.91194, y: 0.4033985, z: -1.8171911}
+  - {x: 19.91194, y: 2.18541, z: -1.8171911}
+  - {x: 19.91194, y: 0.4033985, z: -1.8171911}
+  - {x: 24.200542, y: 2.18541, z: -7.2388706}
+  - {x: 24.200542, y: 0.4033985, z: -7.2388706}
+  - {x: 24.200542, y: 2.18541, z: -7.2388706}
+  - {x: 24.200542, y: 0.4033985, z: -7.2388706}
+  - {x: 34.358276, y: 2.18541, z: 2.1776686}
+  - {x: 34.358276, y: 0.4033985, z: 2.1776686}
+  - {x: 34.358276, y: 2.18541, z: 2.1776686}
+  - {x: 34.358276, y: 0.4033985, z: 2.1776686}
+  - {x: 34.358276, y: 2.18541, z: -1.3640745}
+  - {x: 34.358276, y: 0.4033985, z: -1.3640745}
+  - {x: 34.358276, y: 2.18541, z: -1.3640745}
+  - {x: 34.358276, y: 0.4033985, z: -1.3640745}
+  - {x: 40.429836, y: 2.18541, z: -6.9490876}
+  - {x: 40.429836, y: 0.4033985, z: -6.9490876}
+  - {x: 40.429836, y: 2.18541, z: -6.9490876}
+  - {x: 40.429836, y: 0.4033985, z: -6.9490876}
+  - {x: 40.429836, y: 2.18541, z: -10.490831}
+  - {x: 40.429836, y: 0.4033985, z: -10.490831}
+  - {x: 40.429836, y: 2.18541, z: -10.490831}
+  - {x: 40.429836, y: 0.4033985, z: -10.490831}
+  - {x: 24.200542, y: 2.18541, z: 2.1776686}
+  - {x: 24.200542, y: 0.4033985, z: 2.1776686}
+  - {x: 24.200542, y: 2.18541, z: 2.1776686}
+  - {x: 24.200542, y: 0.4033985, z: 2.1776686}
+  - {x: 24.200542, y: 2.18541, z: 7.9349685}
+  - {x: 24.200542, y: 0.4033985, z: 7.9349685}
+  - {x: 24.200542, y: 2.18541, z: 7.9349685}
+  - {x: 24.200542, y: 0.4033985, z: 7.9349685}
+  - {x: 24.200542, y: 2.18541, z: 7.9349685}
+  - {x: 24.200542, y: 0.4033985, z: 7.9349685}
+  - {x: 24.200542, y: 2.18541, z: 7.9349685}
+  - {x: 24.200542, y: 0.4033985, z: 7.9349685}
+  - {x: 20.029436, y: 2.18541, z: 6.583766}
+  - {x: 20.029436, y: 0.4033985, z: 6.583766}
+  - {x: 20.029436, y: 2.18541, z: 6.583766}
+  - {x: 20.029436, y: 0.4033985, z: 6.583766}
+  - {x: 24.200542, y: 2.18541, z: -1.3640745}
+  - {x: 24.200542, y: 0.4033985, z: -1.3640745}
+  - {x: 24.200542, y: 2.18541, z: -1.3640745}
+  - {x: 24.200542, y: 0.4033985, z: -1.3640745}
+  - {x: 40.429836, y: 2.18541, z: 2.1776686}
+  - {x: 40.429836, y: 0.4033985, z: 2.1776686}
+  - {x: 40.429836, y: 2.18541, z: 2.1776686}
+  - {x: 40.429836, y: 0.4033985, z: 2.1776686}
+  - {x: 40.429836, y: 2.18541, z: -1.3640745}
+  - {x: 40.429836, y: 0.4033985, z: -1.3640745}
+  - {x: 40.429836, y: 2.18541, z: -1.3640745}
+  - {x: 40.429836, y: 0.4033985, z: -1.3640745}
+  - {x: 41.782295, y: 2.18541, z: 8.525745}
+  - {x: 41.782295, y: 0.4033985, z: 8.525745}
+  - {x: 41.782295, y: 2.18541, z: 8.525745}
+  - {x: 41.782295, y: 0.4033985, z: 8.525745}
+  - {x: 44.70754, y: 2.18541, z: 8.525745}
+  - {x: 44.70754, y: 0.4033985, z: 8.525745}
+  - {x: 44.70754, y: 2.18541, z: 8.525745}
+  - {x: 44.70754, y: 0.4033985, z: 8.525745}
+  - {x: 44.70754, y: 2.18541, z: 2.3827357}
+  - {x: 44.70754, y: 0.4033985, z: 2.3827357}
+  - {x: 44.70754, y: 2.18541, z: 2.3827357}
+  - {x: 44.70754, y: 0.4033985, z: 2.3827357}
+  - {x: 44.70754, y: 2.18541, z: -1.3615749}
+  - {x: 44.70754, y: 0.4033985, z: -1.3615749}
+  - {x: 44.70754, y: 2.18541, z: -1.3615749}
+  - {x: 44.70754, y: 0.4033985, z: -1.3615749}
+  - {x: 44.70754, y: 2.18541, z: -7.09505}
+  - {x: 44.70754, y: 0.4033985, z: -7.09505}
+  - {x: 44.70754, y: 2.18541, z: -7.09505}
+  - {x: 44.70754, y: 0.4033985, z: -7.09505}
+  - {x: 44.70754, y: 2.18541, z: -10.371321}
+  - {x: 44.70754, y: 0.4033985, z: -10.371321}
+  - {x: 44.70754, y: 2.18541, z: -10.371321}
+  - {x: 44.70754, y: 0.4033985, z: -10.371321}
+  - {x: 34.82022, y: 2.18541, z: -10.371321}
+  - {x: 34.82022, y: 0.4033985, z: -10.371321}
+  - {x: 34.82022, y: 2.18541, z: -10.371321}
+  - {x: 34.82022, y: 0.4033985, z: -10.371321}
+  - {x: 21.185898, y: 2.18541, z: -19.611858}
+  - {x: 21.185898, y: 0.4033985, z: -19.611858}
+  - {x: 21.185898, y: 2.18541, z: -19.611858}
+  - {x: 21.185898, y: 0.4033985, z: -19.611858}
+  - {x: 20.322775, y: 2.18541, z: -10.371321}
+  - {x: 20.322775, y: 0.4033985, z: -10.371321}
+  - {x: 20.322775, y: 2.18541, z: -10.371321}
+  - {x: 20.322775, y: 0.4033985, z: -10.371321}
+  - {x: 24.93342, y: 2.18541, z: -10.371321}
+  - {x: 24.93342, y: 0.4033985, z: -10.371321}
+  - {x: 24.93342, y: 2.18541, z: -10.371321}
+  - {x: 24.93342, y: 0.4033985, z: -10.371321}
+  - {x: 29.628664, y: 2.18541, z: -10.371321}
+  - {x: 29.628664, y: 0.4033985, z: -10.371321}
+  - {x: 29.628664, y: 2.18541, z: -10.371321}
+  - {x: 29.628664, y: 0.4033985, z: -10.371321}
+  - {x: 24.93342, y: 2.18541, z: -11.809504}
+  - {x: 24.93342, y: 0.4033985, z: -11.809504}
+  - {x: 24.93342, y: 2.18541, z: -11.809504}
+  - {x: 24.93342, y: 0.4033985, z: -11.809504}
+  - {x: 29.628664, y: 2.18541, z: -11.809504}
+  - {x: 29.628664, y: 0.4033985, z: -11.809504}
+  - {x: 29.628664, y: 2.18541, z: -11.809504}
+  - {x: 29.628664, y: 0.4033985, z: -11.809504}
+  - {x: 24.93342, y: 2.18541, z: -15.235762}
+  - {x: 24.93342, y: 0.4033985, z: -15.235762}
+  - {x: 24.93342, y: 2.18541, z: -15.235762}
+  - {x: 24.93342, y: 0.4033985, z: -15.235762}
+  - {x: 29.628664, y: 2.18541, z: -15.235762}
+  - {x: 29.628664, y: 0.4033985, z: -15.235762}
+  - {x: 29.628664, y: 2.18541, z: -15.235762}
+  - {x: 29.628664, y: 0.4033985, z: -15.235762}
+  - {x: 31.35258, y: 2.18541, z: -31.414045}
+  - {x: 31.35258, y: 0.4033985, z: -31.414045}
+  - {x: 31.35258, y: 2.18541, z: -31.414045}
+  - {x: 31.35258, y: 0.4033985, z: -31.414045}
+  - {x: 33.47432, y: 2.18541, z: -23.811138}
+  - {x: 33.47432, y: 0.4033985, z: -23.811138}
+  - {x: 33.47432, y: 2.18541, z: -23.811138}
+  - {x: 33.47432, y: 0.4033985, z: -23.811138}
+  - {x: 29.363443, y: 2.18541, z: -18.418377}
+  - {x: 29.363443, y: 0.4033985, z: -18.418377}
+  - {x: 29.363443, y: 2.18541, z: -18.418377}
+  - {x: 29.363443, y: 0.4033985, z: -18.418377}
+  - {x: 18.356907, y: 2.18541, z: -16.385042}
+  - {x: 18.356907, y: 0.4033985, z: -16.385042}
+  - {x: 18.356907, y: 2.18541, z: -16.385042}
+  - {x: 18.356907, y: 0.4033985, z: -16.385042}
+  - {x: 24.589523, y: 2.18541, z: -18.108957}
+  - {x: 24.589523, y: 0.4033985, z: -18.108957}
+  - {x: 24.589523, y: 2.18541, z: -18.108957}
+  - {x: 24.589523, y: 0.4033985, z: -18.108957}
+  - {x: 16.32357, y: 2.18541, z: -21.866209}
+  - {x: 16.32357, y: 0.4033985, z: -21.866209}
+  - {x: 16.32357, y: 2.18541, z: -21.866209}
+  - {x: 16.32357, y: 0.4033985, z: -21.866209}
+  - {x: 10.842403, y: 2.18541, z: -23.545921}
+  - {x: 10.842403, y: 0.4033985, z: -23.545921}
+  - {x: 10.842403, y: 2.18541, z: -23.545921}
+  - {x: 10.842403, y: 0.4033985, z: -23.545921}
+  - {x: 10.577186, y: 2.18541, z: -30.176367}
+  - {x: 10.577186, y: 0.4033985, z: -30.176367}
+  - {x: 10.577186, y: 2.18541, z: -30.176367}
+  - {x: 10.577186, y: 0.4033985, z: -30.176367}
+  - {x: 10.842403, y: 2.18541, z: -26.728537}
+  - {x: 10.842403, y: 0.4033985, z: -26.728537}
+  - {x: 10.842403, y: 2.18541, z: -26.728537}
+  - {x: 10.842403, y: 0.4033985, z: -26.728537}
+  - {x: 6.156891, y: 2.18541, z: -26.595926}
+  - {x: 6.156891, y: 0.4033985, z: -26.595926}
+  - {x: 6.156891, y: 2.18541, z: -26.595926}
+  - {x: 6.156891, y: 0.4033985, z: -26.595926}
+  - {x: 17.826473, y: 2.18541, z: -28.364044}
+  - {x: 17.826473, y: 0.4033985, z: -28.364044}
+  - {x: 17.826473, y: 2.18541, z: -28.364044}
+  - {x: 17.826473, y: 0.4033985, z: -28.364044}
+  - {x: 26.269238, y: 2.18541, z: -29.292307}
+  - {x: 26.269238, y: 0.4033985, z: -29.292307}
+  - {x: 26.269238, y: 2.18541, z: -29.292307}
+  - {x: 26.269238, y: 0.4033985, z: -29.292307}
+  - {x: 29.27504, y: 2.18541, z: -23.766937}
+  - {x: 29.27504, y: 0.4033985, z: -23.766937}
+  - {x: 29.27504, y: 2.18541, z: -23.766937}
+  - {x: 29.27504, y: 0.4033985, z: -23.766937}
+  - {x: 22.909813, y: 2.18541, z: -23.81114}
+  - {x: 22.909813, y: 0.4033985, z: -23.81114}
+  - {x: 22.909813, y: 2.18541, z: -23.81114}
+  - {x: 22.909813, y: 0.4033985, z: -23.81114}
+  - {x: -21.800207, y: 2.18541, z: -27.934713}
+  - {x: -21.800207, y: 0.4033985, z: -27.934713}
+  - {x: -17.035059, y: 2.18541, z: -31.526903}
+  - {x: -17.035059, y: 0.4033985, z: -31.526903}
+  - {x: -17.25499, y: 2.18541, z: -25.442175}
+  - {x: -17.25499, y: 0.4033985, z: -25.442175}
+  - {x: -17.328299, y: 2.18541, z: -20.677027}
+  - {x: -17.328299, y: 0.4033985, z: -20.677027}
+  - {x: -18.794498, y: 2.18541, z: -15.398709}
+  - {x: -18.794498, y: 0.4033985, z: -15.398709}
+  - {x: -16.082031, y: 2.18541, z: -5.5751734}
+  - {x: -16.082031, y: 0.4033985, z: -5.5751734}
+  - {x: -21.50697, y: 2.18541, z: -5.721793}
+  - {x: -21.50697, y: 0.4033985, z: -5.721793}
+  - {x: -28.984587, y: 2.18541, z: -8.141022}
+  - {x: -28.984587, y: 0.4033985, z: -8.141022}
+  - {x: -26.858597, y: 2.18541, z: -3.375873}
+  - {x: -26.858597, y: 0.4033985, z: -3.375873}
+  - {x: -30.976582, y: 2.18541, z: 8.952554}
+  - {x: -30.976582, y: 0.4033985, z: 8.952554}
+  - {x: -33.54243, y: 2.18541, z: 10.711993}
+  - {x: -33.54243, y: 0.4033985, z: 10.711993}
+  - {x: -27.384392, y: 2.18541, z: 10.711993}
+  - {x: -27.384392, y: 0.4033985, z: 10.711993}
+  - {x: -19.540222, y: 2.18541, z: 11.078543}
+  - {x: -19.540222, y: 0.4033985, z: 11.078543}
+  - {x: 38.01315, y: 2.18541, z: 11.186362}
+  - {x: 38.01315, y: 0.4033985, z: 11.186362}
+  - {x: -25.99683, y: 2.18541, z: 20.616}
+  - {x: -25.99683, y: 0.4033985, z: 20.616}
+  - {x: -25.99683, y: 2.18541, z: 24.97978}
+  - {x: -25.99683, y: 0.4033985, z: 24.97978}
+  - {x: -25.786528, y: 2.18541, z: 28.712654}
+  - {x: -25.786528, y: 0.4033985, z: 28.712654}
+  - {x: -23.846657, y: 2.18541, z: -14.085892}
+  - {x: -23.846657, y: 0.4033985, z: -14.085892}
+  - {x: -25.55384, y: 2.18541, z: -13.061581}
+  - {x: -25.55384, y: 0.4033985, z: -13.061581}
+  - {x: -30.724173, y: 2.18541, z: -13.012804}
+  - {x: -30.724173, y: 0.4033985, z: -13.012804}
+  - {x: -30.976582, y: 2.18541, z: -11.431105}
+  - {x: -30.976582, y: 0.4033985, z: -11.431105}
+  - {x: -33.176163, y: 2.18541, z: -13.410724}
+  - {x: -33.176163, y: 0.4033985, z: -13.410724}
+  - {x: -30.976583, y: 2.18541, z: -6.2620955}
+  - {x: -30.976583, y: 0.4033985, z: -6.2620955}
+  - {x: -33.5061, y: 2.18541, z: -6.4820533}
+  - {x: -33.5061, y: 0.4033985, z: -6.4820533}
+  - {x: -38.67511, y: 2.18541, z: -1.0930884}
+  - {x: -38.67511, y: 0.4033985, z: -1.0930884}
+  - {x: -30.86661, y: 2.18541, z: 4.295878}
+  - {x: -30.86661, y: 0.4033985, z: 4.295878}
+  - {x: -33.67107, y: 2.18541, z: 0.22665834}
+  - {x: -33.67107, y: 0.4033985, z: 0.22665834}
+  - {x: -13.779876, y: 2.18541, z: 13.566731}
+  - {x: -13.779876, y: 0.4033985, z: 13.566731}
+  - {x: -11.362772, y: 2.18541, z: 12.3959465}
+  - {x: -11.362772, y: 0.4033985, z: 12.3959465}
+  - {x: -13.704342, y: 2.18541, z: 10.696421}
+  - {x: -13.704342, y: 0.4033985, z: 10.696421}
+  - {x: -8.870134, y: 2.18541, z: 10.923024}
+  - {x: -8.870134, y: 0.4033985, z: 10.923024}
+  - {x: -8.681298, y: 2.18541, z: 12.62255}
+  - {x: -8.681298, y: 0.4033985, z: 12.62255}
+  - {x: -22.941523, y: 2.18541, z: 13.747173}
+  - {x: -22.941523, y: 0.4033985, z: 13.747173}
+  - {x: -24.873941, y: 2.18541, z: 11.421114}
+  - {x: -24.873941, y: 0.4033985, z: 11.421114}
+  - {x: -23.013092, y: 2.18541, z: 11.1348295}
+  - {x: -23.013092, y: 0.4033985, z: 11.1348295}
+  - {x: -21.080673, y: 2.18541, z: 12.101039}
+  - {x: -21.080673, y: 0.4033985, z: 12.101039}
+  - {x: -28.41671, y: 2.18541, z: 13.85453}
+  - {x: -28.41671, y: 0.4033985, z: 13.85453}
+  - {x: -31.029053, y: 2.18541, z: 11.886326}
+  - {x: -31.029053, y: 0.4033985, z: 11.886326}
+  - {x: -33.21197, y: 2.18541, z: 13.818745}
+  - {x: -33.21197, y: 0.4033985, z: 13.818745}
+  - {x: -7.3093166, y: 2.18541, z: 27.419554}
+  - {x: -7.3093166, y: 0.4033985, z: 27.419554}
+  - {x: -2.6792521, y: 2.18541, z: 27.670797}
+  - {x: -2.6792521, y: 0.4033985, z: 27.670797}
+  - {x: -4.4379587, y: 2.18541, z: 27.347769}
+  - {x: -4.4379587, y: 0.4033985, z: 27.347769}
+  - {x: -6.914505, y: 2.18541, z: 25.194252}
+  - {x: -6.914505, y: 0.4033985, z: 25.194252}
+  - {x: -3.8636878, y: 2.18541, z: 25.230145}
+  - {x: -3.8636878, y: 0.4033985, z: 25.230145}
+  - {x: 8.03232, y: 2.18541, z: 26.97407}
+  - {x: 8.03232, y: 0.4033985, z: 26.97407}
+  - {x: 10.273081, y: 2.18541, z: 27.486692}
+  - {x: 10.273081, y: 0.4033985, z: 27.486692}
+  - {x: 8.585079, y: 2.18541, z: 25.319674}
+  - {x: 8.585079, y: 0.4033985, z: 25.319674}
+  - {x: 15.47635, y: 2.18541, z: 26.479555}
+  - {x: 15.47635, y: 0.4033985, z: 26.479555}
+  - {x: 21.373592, y: 2.18541, z: 26.685564}
+  - {x: 21.373592, y: 0.4033985, z: 26.685564}
+  - {x: 24.036999, y: 2.18541, z: 27.385773}
+  - {x: 24.036999, y: 0.4033985, z: 27.385773}
+  - {x: 23.153112, y: 2.18541, z: 24.58809}
+  - {x: 23.153112, y: 0.4033985, z: 24.58809}
+  - {x: 19.155073, y: 2.18541, z: 26.661232}
+  - {x: 19.155073, y: 0.4033985, z: 26.661232}
+  - {x: 20.166702, y: 2.18541, z: 19.315533}
+  - {x: 20.166702, y: 0.4033985, z: 19.315533}
+  - {x: 25.859446, y: 2.18541, z: 19.325384}
+  - {x: 25.859446, y: 0.4033985, z: 19.325384}
+  - {x: 23.04247, y: 2.18541, z: 21.544056}
+  - {x: 23.04247, y: 0.4033985, z: 21.544056}
+  - {x: 23.273792, y: 2.18541, z: 16.407375}
+  - {x: 23.273792, y: 0.4033985, z: 16.407375}
+  - {x: 23.114214, y: 2.18541, z: 11.332208}
+  - {x: 23.114214, y: 0.4033985, z: 11.332208}
+  - {x: 30.296045, y: 2.18541, z: 11.499135}
+  - {x: 30.296045, y: 0.4033985, z: 11.499135}
+  - {x: 33.98402, y: 2.18541, z: 11.414961}
+  - {x: 33.98402, y: 0.4033985, z: 11.414961}
+  - {x: 41.6747, y: 2.18541, z: 12.908046}
+  - {x: 41.6747, y: 0.4033985, z: 12.908046}
+  - {x: 41.6747, y: 2.18541, z: 12.908046}
+  - {x: 41.6747, y: 0.4033985, z: 12.908046}
+  - {x: 40.384953, y: 2.18541, z: 11.416817}
+  - {x: 40.384953, y: 0.4033985, z: 11.416817}
+  - {x: 40.384953, y: 2.18541, z: 11.416817}
+  - {x: 40.384953, y: 0.4033985, z: 11.416817}
+  - {x: 35.897118, y: 2.18541, z: 12.051212}
+  - {x: 35.897118, y: 0.4033985, z: 12.051212}
+  - {x: 35.897118, y: 2.18541, z: 12.051212}
+  - {x: 35.897118, y: 0.4033985, z: 12.051212}
+  - {x: 32.0594, y: 2.18541, z: 12.09505}
+  - {x: 32.0594, y: 0.4033985, z: 12.09505}
+  - {x: 32.0594, y: 2.18541, z: 12.09505}
+  - {x: 32.0594, y: 0.4033985, z: 12.09505}
+  - {x: 32.019413, y: 2.18541, z: 10.136981}
+  - {x: 32.019413, y: 0.4033985, z: 10.136981}
+  - {x: 32.019413, y: 2.18541, z: 10.136981}
+  - {x: 32.019413, y: 0.4033985, z: 10.136981}
+  - {x: 42.546036, y: 2.18541, z: 10.477045}
+  - {x: 42.546036, y: 0.4033985, z: 10.477045}
+  - {x: 42.546036, y: 2.18541, z: 10.477045}
+  - {x: 42.546036, y: 0.4033985, z: 10.477045}
+  - {x: 42.682556, y: 2.18541, z: 5.6367064}
+  - {x: 42.682556, y: 0.4033985, z: 5.6367064}
+  - {x: 42.682556, y: 2.18541, z: 5.6367064}
+  - {x: 42.682556, y: 0.4033985, z: 5.6367064}
+  - {x: 40.022892, y: 2.18541, z: 5.2429137}
+  - {x: 40.022892, y: 0.4033985, z: 5.2429137}
+  - {x: 40.022892, y: 2.18541, z: 5.2429137}
+  - {x: 40.022892, y: 0.4033985, z: 5.2429137}
+  - {x: 23.675768, y: 2.18541, z: 5.2945495}
+  - {x: 23.675768, y: 0.4033985, z: 5.2945495}
+  - {x: 23.675768, y: 2.18541, z: 5.2945495}
+  - {x: 23.675768, y: 0.4033985, z: 5.2945495}
+  - {x: 19.628002, y: 2.18541, z: 2.45437}
+  - {x: 19.628002, y: 0.4033985, z: 2.45437}
+  - {x: 19.628002, y: 2.18541, z: 2.45437}
+  - {x: 19.628002, y: 0.4033985, z: 2.45437}
+  - {x: 16.09727, y: 2.18541, z: -3.556645}
+  - {x: 16.09727, y: 0.4033985, z: -3.556645}
+  - {x: 16.09727, y: 2.18541, z: -3.556645}
+  - {x: 16.09727, y: 0.4033985, z: -3.556645}
+  - {x: 15.9359455, y: 2.18541, z: -5.825246}
+  - {x: 15.9359455, y: 0.4033985, z: -5.825246}
+  - {x: 15.9359455, y: 2.18541, z: -5.825246}
+  - {x: 15.9359455, y: 0.4033985, z: -5.825246}
+  - {x: 9.473559, y: 2.18541, z: -3.959096}
+  - {x: 9.473559, y: 0.4033985, z: -3.959096}
+  - {x: 9.473559, y: 2.18541, z: -3.959096}
+  - {x: 9.473559, y: 0.4033985, z: -3.959096}
+  - {x: 9.332622, y: 2.18541, z: -7.360179}
+  - {x: 9.332622, y: 0.4033985, z: -7.360179}
+  - {x: 9.332622, y: 2.18541, z: -7.360179}
+  - {x: 9.332622, y: 0.4033985, z: -7.360179}
+  - {x: -0.98090553, y: 2.18541, z: -12.369027}
+  - {x: -0.98090553, y: 0.4033985, z: -12.369027}
+  - {x: -0.98090553, y: 2.18541, z: -12.369027}
+  - {x: -0.98090553, y: 0.4033985, z: -12.369027}
+  - {x: -1.1184313, y: 2.18541, z: -10.031541}
+  - {x: -1.1184313, y: 0.4033985, z: -10.031541}
+  - {x: -1.1184313, y: 2.18541, z: -10.031541}
+  - {x: -1.1184313, y: 0.4033985, z: -10.031541}
+  - {x: 1.6013372, y: 2.18541, z: -12.656822}
+  - {x: 1.6013372, y: 0.4033985, z: -12.656822}
+  - {x: 1.6013372, y: 2.18541, z: -12.656822}
+  - {x: 1.6013372, y: 0.4033985, z: -12.656822}
+  - {x: -23.630375, y: 2.18541, z: 20.004837}
+  - {x: -23.630375, y: 0.4033985, z: 20.004837}
+  - {x: -23.630375, y: 2.18541, z: 20.004837}
+  - {x: -23.630375, y: 0.4033985, z: 20.004837}
+  - {x: 11.900507, y: 2.18541, z: 14.145383}
+  - {x: 11.900507, y: 0.4033985, z: 14.145383}
+  - {x: 11.900507, y: 2.18541, z: 14.145383}
+  - {x: 11.900507, y: 0.4033985, z: 14.145383}
+  - {x: 14.565593, y: 2.18541, z: 13.5209255}
+  - {x: 14.565593, y: 0.4033985, z: 13.5209255}
+  - {x: 14.565593, y: 2.18541, z: 13.5209255}
+  - {x: 14.565593, y: 0.4033985, z: 13.5209255}
+  - {x: 12.475796, y: 2.18541, z: 11.572123}
+  - {x: 12.475796, y: 0.4033985, z: 11.572123}
+  - {x: 12.475796, y: 2.18541, z: 11.572123}
+  - {x: 12.475796, y: 0.4033985, z: 11.572123}
+  - {x: -1.4422352, y: 2.18541, z: 19.621716}
+  - {x: -1.4422352, y: 0.4033985, z: 19.621716}
+  - {x: 1.0499513, y: 2.18541, z: 21.71938}
+  - {x: 1.0499513, y: 0.4033985, z: 21.71938}
+  - {x: -21.800207, y: 2.18541, z: 0.3452587}
+  - {x: -21.800207, y: 0.4033985, z: 0.3452587}
+  - {x: -18.087553, y: 2.18541, z: -0.20700073}
+  - {x: -18.087553, y: 0.4033985, z: -0.20700073}
+  - {x: -19.863405, y: 2.18541, z: -2.162013}
+  - {x: -19.863405, y: 0.4033985, z: -2.162013}
+  m_Dering: 1
 --- !u!1 &1220534622
 GameObject:
   m_ObjectHideFlags: 0
@@ -19457,7 +20856,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1220534623
 Transform:
@@ -19556,6 +20955,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ladder
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84526c1817ff55a4fb01302780bcaf31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19740,6 +21144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Straight (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19971,6 +21380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Wall_Single (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19996,7 +21410,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1276041700
 Transform:
@@ -20170,6 +21584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Straight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20406,6 +21825,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Light (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20512,6 +21941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Wall_Single (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20750,6 +22184,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20839,6 +22278,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Corner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b064ba92e2d2ab8458f1c2840ca27bf5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20862,11 +22306,11 @@ GameObject:
   - component: {fileID: 1364575339}
   - component: {fileID: 1364575338}
   m_Layer: 0
-  m_Name: Point Light (3)
+  m_Name: Spot Light Pool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1364575337
 Transform:
@@ -20957,7 +22401,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -21042,6 +22486,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21149,6 +22603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21223,6 +22682,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shelf
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0240e6a09731b594b9da37760bbb4620,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21290,6 +22754,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GuardRail
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21485,6 +22954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Corner
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b064ba92e2d2ab8458f1c2840ca27bf5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21565,11 +23039,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2469209dd670f3445859638143786136, type: 3}
+--- !u!1 &1447968909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447968910}
+  m_Layer: 0
+  m_Name: -Probes-
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1447968910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447968909}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1196163599}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449727177
 GameObject:
   m_ObjectHideFlags: 0
@@ -21584,7 +23095,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1449727178
 Transform:
@@ -21635,7 +23146,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1454770986
 Transform:
@@ -21738,7 +23249,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1457886876
 Transform:
@@ -21852,6 +23363,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SupportBeam (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22036,6 +23552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SupportBeam (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22116,6 +23637,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22190,6 +23716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22211,7 +23742,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1500614549
 Transform:
@@ -22302,7 +23833,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -22486,6 +24017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22590,6 +24126,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22713,6 +24259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22787,6 +24338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipes_Sewer
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52114f49e4f5a4f44bb171643941cb7f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22855,6 +24411,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22909,11 +24470,11 @@ GameObject:
   - component: {fileID: 1550528863}
   - component: {fileID: 1550528864}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Spot Light_Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1550528862
 Transform:
@@ -22981,7 +24542,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -23078,6 +24639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23146,6 +24712,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Light (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23204,7 +24780,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1556303975
 Transform:
@@ -23294,6 +24870,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Water
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 86384fcba6a82984eb78e563e48d73de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23372,6 +24953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallCiment (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95127c71ac7e0b8409689a1c9eef9de3,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23462,6 +25048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23541,6 +25132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23642,6 +25238,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waterfall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 49f119a2771c6c64e9132573a7432807,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23730,6 +25331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23910,6 +25516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23999,6 +25610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass_Blades (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24073,6 +25689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Corner
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b064ba92e2d2ab8458f1c2840ca27bf5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24140,6 +25761,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24215,6 +25841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24240,7 +25871,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1641545303
 Transform:
@@ -24347,6 +25978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24620,7 +26256,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1677458281
 Transform:
@@ -24728,6 +26364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24920,6 +26561,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24937,11 +26583,11 @@ GameObject:
   - component: {fileID: 1716361670}
   - component: {fileID: 1716361669}
   m_Layer: 0
-  m_Name: Point Light (1)
+  m_Name: Spot Light Cavern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1716361668
 Transform:
@@ -25032,7 +26678,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -25137,6 +26783,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Floor
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 480ff2e8b84ad6b44b78402ddf4a8e31,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25168,7 +26819,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1731504067
 Transform:
@@ -25202,11 +26853,11 @@ GameObject:
   - component: {fileID: 1748770380}
   - component: {fileID: 1748770379}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: SpotLight 4holes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1748770378
 Transform:
@@ -25297,7 +26948,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -25370,6 +27021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SW_GridCover
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06e39824674b41e4c815c3c977fa8e51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25550,6 +27206,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Light (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25672,6 +27338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25760,6 +27431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26066,6 +27742,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26140,6 +27821,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Corner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b064ba92e2d2ab8458f1c2840ca27bf5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26159,7 +27845,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1820141595
 Transform:
@@ -26466,6 +28152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26491,7 +28182,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1853348459
 Transform:
@@ -26645,7 +28336,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1877649543
 Transform:
@@ -26925,6 +28616,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26993,6 +28689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodPallet
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2674b87b38700744db33326fa2f392bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27060,6 +28761,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27156,6 +28862,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27229,6 +28940,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pipe_Straight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27313,6 +29029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27334,7 +29055,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1930158066
 Transform:
@@ -27425,7 +29146,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -27614,6 +29335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SupportBeam (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 947a7a6b3fc84b14385bc974a7f71a76,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27703,6 +29429,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27777,6 +29508,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27850,6 +29586,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sewer_Light (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27957,6 +29703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WoodPallet (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2674b87b38700744db33326fa2f392bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28131,6 +29882,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bricks_Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28204,6 +29960,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks_Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28385,6 +30146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Foam
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a6aa9b78d0d6aa341a2df3b32e523df2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28474,6 +30240,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28548,6 +30319,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Wall_Single (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28579,7 +30355,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1998407818
 Transform:
@@ -28857,6 +30633,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pipe_Straight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: deebf5397243077469d4028f5cae30c4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28962,6 +30743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 107d602437757484eab3fd7a597fe669,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29034,6 +30820,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Pillar (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29117,6 +30908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tole
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a9103fd70ec52d44adf3c73c56e28de,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29246,11 +31042,11 @@ GameObject:
   - component: {fileID: 2054151034}
   - component: {fileID: 2054151033}
   m_Layer: 0
-  m_Name: Point Light (5)
+  m_Name: Spot Light Cavern_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2054151032
 Transform:
@@ -29341,7 +31137,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -29414,6 +31210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GuardRail
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29599,6 +31400,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Pillar (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2469209dd670f3445859638143786136,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29624,7 +31430,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2078158809
 Transform:
@@ -29719,6 +31525,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GuardRail (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 642012e5008a793439e9749c91a87cb5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29792,6 +31603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 107d602437757484eab3fd7a597fe669,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29981,6 +31797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Single
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30054,6 +31875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30144,6 +31970,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Circle_Foam (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e836a9c741173df479752dcd87a1101e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30211,6 +32042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bricks_Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a335c4444797d442bf09da39acd5000,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30323,6 +32159,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brick_Wall_Single (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67340a5a1fe92294f8666348a5ad2b7b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30411,6 +32252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Brick_Single (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0bbb0f2fc4d488f4e8ddfa4a7e13fb68,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30517,6 +32363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Wall_Fill
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: be525d06cfd40d84fb6ee68a902c39be,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30591,6 +32442,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodPallet (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2674b87b38700744db33326fa2f392bf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30658,6 +32514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass_Blades (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16f0194454aa074aa904e7083ac4ff2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30790,7 +32651,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &2138727744
 MonoBehaviour:
@@ -30894,6 +32755,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sewer_Light
       objectReference: {fileID: 0}
+    - target: {fileID: 5200465029675547212, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472720395773227414, guid: 74873ce79e62d24469cce0ceeb9300eb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30945,3 +32816,4 @@ SceneRoots:
   - {fileID: 6656195}
   - {fileID: 379165514}
   - {fileID: 1641545303}
+  - {fileID: 1447968910}
