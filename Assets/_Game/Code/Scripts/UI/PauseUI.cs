@@ -20,7 +20,7 @@ public class PauseUI : UIScreen
     {
 
         GameManager.Instance.UIManager.GetInputs().UI.Navigate.performed += NavigationPerformed;
-        GameManager.Instance.UIManager.GetInputs().UI.Cancel.performed += UnPause;
+        GameManager.Instance.UIManager.GetInputs().UI.Pause.performed += UnPause;
 
         PauseManager.OnPause += OpenPauseMenu;
         PauseManager.OnUnPause += ClosePauseMenu;
