@@ -120,8 +120,20 @@ public class Enemy : Unit
 
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
+        if(distance > MinHurtDistance){
+            if (Hearts.isPlaying) {
+                Hearts.Stop();
+            }
 
-        if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned){
+            return;
+        }
+
+
+        Vector3 dir = player.transform.position - transform.position;
+        Quaternion desiredRotation = Quaternion.LookRotation(dir);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation,desiredRotation, Mathf.Deg2Rad * 45);
+
+        if (hitIntervalTimer >= hitInterval && !_isStunned){
             
             GameObject missile = PoolManager.GetPoolObject(HeartMissile);
             missile.GetComponent<HeartMissile>().Setup(_missileSpawnPoint.position, transform.rotation, player.transform);
@@ -129,23 +141,10 @@ public class Enemy : Unit
             hitIntervalTimer = 0;
         }
 
-        // if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned) {
-
-        //     playerHealth.Hurt((int)(MinHurtDistance / distance));
-
-        //     hitIntervalTimer = 0;
-        // }
-
-        if (distance < MinHurtDistance && !_isStunned && !Hearts.isPlaying) {
+        if (!_isStunned && !Hearts.isPlaying) {
             Hearts.Play();
         }
-        else if (distance > MinHurtDistance && Hearts.isPlaying) {
-            Hearts.Stop();
-        }
     }
-
-
-
 
     public void Stun()
     {

@@ -4977,7 +4977,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4436901988079609195}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.7
+  m_Radius: 0.9
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -5020,7 +5020,7 @@ MonoBehaviour:
   - {fileID: 7029111667919281844, guid: b7ce1c430c2b1ed4293071f1466e0987, type: 3}
   - {fileID: 7029111667919281844, guid: 4494bc9c20dcc0a4fa7e3db9d4bed9d8, type: 3}
   - {fileID: 7029111667919281844, guid: 35796b7d93c98b04498aae0ac9380ad8, type: 3}
-  MinHurtDistance: 5
+  MinHurtDistance: 6
   hitInterval: 1
   hitIntervalTimer: 0.2
 --- !u!114 &2928440272184120157
