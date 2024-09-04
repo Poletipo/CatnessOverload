@@ -346,10 +346,60 @@ PrefabInstance:
       propertyPath: m_ChildForceExpandHeight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 96860750606968775, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 535.143
+      objectReference: {fileID: 0}
+    - target: {fileID: 96860750606968775, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 130.883
+      objectReference: {fileID: 0}
+    - target: {fileID: 96860750606968775, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1438.2579
+      objectReference: {fileID: 0}
+    - target: {fileID: 96860750606968775, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.2104
+      objectReference: {fileID: 0}
+    - target: {fileID: 975732322747429510, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1193557633674973461, guid: 0053fc8c39f831c47b32c94308b0384e,
         type: 3}
       propertyPath: m_Name
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3379143410933401848, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3903282257223467481, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3903282257223467481, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2400
+      objectReference: {fileID: 0}
+    - target: {fileID: 3903282257223467481, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 411.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912958150442013492, guid: 0053fc8c39f831c47b32c94308b0384e,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5613936961194573121, guid: 0053fc8c39f831c47b32c94308b0384e,
         type: 3}
