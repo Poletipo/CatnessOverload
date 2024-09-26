@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59d59e6131452b3498cc2742695e832a
+guid: 742e648ee5539cc4496ed8238d854582
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MAT_Metal
-    second: {fileID: 2100000, guid: 60a34c54074667e40b7a474450b30497, type: 2}
+      name: MAT_TreeLeaves
+    second: {fileID: 2100000, guid: 92fdf4347e831f34ba0ad40daf5e0ce6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MAT_TreeBark
-    second: {fileID: 2100000, guid: a0ab15c13156042459f2d54f4d9cd96d, type: 2}
+      name: MAT_TreeLeaves.001
+    second: {fileID: 2100000, guid: 92fdf4347e831f34ba0ad40daf5e0ce6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

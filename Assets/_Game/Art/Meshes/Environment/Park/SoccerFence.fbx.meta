@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59d59e6131452b3498cc2742695e832a
+guid: 8a2a734df30fb9f418579956475f477d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MAT_Metal
-    second: {fileID: 2100000, guid: 60a34c54074667e40b7a474450b30497, type: 2}
+      name: MAT_Fence_Grill
+    second: {fileID: 2100000, guid: 6e5b10042e7ba72438b458cc6feb1baa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MAT_TreeBark
-    second: {fileID: 2100000, guid: a0ab15c13156042459f2d54f4d9cd96d, type: 2}
+      name: MAT_Metal
+    second: {fileID: 2100000, guid: 1aeef5ee8dded614ba9dcfc0f82352c8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
