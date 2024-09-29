@@ -22,7 +22,6 @@ public static class PauseManager
             _gameIsPaused = false;
         }
         else {
-            Debug.Log("Pause I guess");
             OnPause?.Invoke();
             Time.timeScale = 0;
             _gameIsPaused = true;
