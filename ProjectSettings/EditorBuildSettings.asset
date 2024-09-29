@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Game/Level/Scenes/SCN_Sewer.unity
     guid: 69a91d785d767934da974f6779812622
+  - enabled: 1
+    path: Assets/_Game/Level/Scenes/SCN_Park.unity
+    guid: 40e1592f143d08342920054c0c10d3c4
   m_configObjects: {}

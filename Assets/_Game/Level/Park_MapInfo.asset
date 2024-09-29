@@ -16,4 +16,4 @@ MonoBehaviour:
   MapNameToLoad: SCN_Park
   Description: After escaping the sewer, our little robot friend ends up for a stroll
     in the park.
-  Thumbnail: {fileID: 21300000, guid: ea25d730de0b15741a4b3acf9c745d76, type: 3}
+  Thumbnail: {fileID: 21300000, guid: 96faa3a308973634291bece44e5d8083, type: 3}
